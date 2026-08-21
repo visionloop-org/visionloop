@@ -16,6 +16,9 @@ data/
 │   ├── aadhar_img_1_Im5.png            # Back-side Aadhaar scan (Photo & UID)
 │   └── proprietor_kyc_dossier.json     # Machine-readable validated KYC parameters
 │
+├── brand/                              # Official Brand Assets & Design System
+│   └── logo.png                        # Official 3D electric-cyan loop logo & icon
+│
 ├── legal/                              # Commercial Contracts & Counterparty Agreements
 │   └── COMMERCIAL_VEHICLE_LEASE_AGREEMENT.md  # Master Commercial Lease Agreement (24 Mo)
 │
