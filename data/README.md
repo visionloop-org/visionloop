@@ -26,6 +26,7 @@ data/
 │
 ├── compliance/                         # Institutional Handbooks & Regulatory Guides
 │   ├── INCORPORATION_AND_GST_GUIDE.md  # Sole Proprietorship, Udyam MSME & GST guide
+│   ├── GST_REGISTRATION_APPLICATION_DOSSIER.md # 1:1 Form GST REG-01 filing blueprint
 │   ├── BUSINESS_BEST_PRACTICES_MANUAL.md # 15% Sinking Fund & DPDP Act 2023 operating rules
 │   ├── OPERATIONAL_AND_DEVELOPMENT_GUIDELINES.md # Master SOP and architectural guidelines
 │   ├── PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY.md # Financial privacy rule for public channels
