@@ -24,13 +24,13 @@ I, **______________________________________** (Name of Property Owner / Husband)
 2. **Grant of Permission for Business Operations:**  
    That I have full knowledge and give my unconditional **NO OBJECTION and CONSENT** to my spouse, **SAPNA JAISWAL**, Sole Proprietor of the proprietary firm named **"VISION LOOP"**, to use and occupy the above-mentioned premises as the **Registered Office / Principal Place of Business / Operational Hub** for carrying on commercial activities including commercial asset & electric vehicle (EV) leasing, fleet depot operations, management, and allied business operations.
 
-3. **Statutory Registrations & Banking:**  
-   That I have **NO OBJECTION** whatsoever to the said business entity, **VISION LOOP** (Proprietor: **SAPNA JAISWAL**), applying for and obtaining:
-   * **Goods and Services Tax (GSTIN)** Registration under SAC 997311;
-   * **Udyam MSME Registration** under NIC 77101;
-   * **Shop and Commercial Establishment Registration**;
-   * **Bank Current Accounts** and financial facilities in any scheduled commercial bank;
-   * Receiving all official, legal, postal, and commercial communications at this address.
+3. **Statutory Registrations & Banking Applications:**  
+   That I have **NO OBJECTION** whatsoever to the said business entity, **VISION LOOP** (Proprietor: **SAPNA JAISWAL**), applying for, registering, and obtaining:
+   * **Fresh Goods and Services Tax (GSTIN)** Registration under SAC Code 997311;
+   * **New Udyam MSME Registration Certificate** under NIC Code 77101;
+   * **Shop and Commercial Establishment License** / Municipal Trade Registration;
+   * **Opening of Bank Current Account(s)** and merchant settlement facilities in the name of **"VISION LOOP"** in any scheduled commercial bank;
+   * Receiving all statutory, judicial, postal, tax, and commercial correspondence at this property address.
 
 4. **Rent-Free Consent:**  
    That this permission is granted out of mutual love, affection, and spousal consent on a **rent-free basis** (or as mutually agreed), and I confirm that there is no commercial dispute, litigation, or encumbrance concerning the said property.
