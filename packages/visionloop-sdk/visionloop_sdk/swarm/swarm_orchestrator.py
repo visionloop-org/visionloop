@@ -73,4 +73,9 @@ class SwarmOrchestrator:
         ]
 
     async def execute_task_with_cross_examination(self, goal: str, domain: str = "finance", context: Optional[Dict[str, Any]] = None) -> SwarmExecutionReceipt:
+        """Runs Phase 1 (Gather) -> Phase 2 (Plan) -> Phase 3 (Grill & Verify) -> Phase 4 (Present Proposal to Proprietor)."""
         return await self.executive.execute_hierarchical_workflow(goal=goal, domain=domain, context=context)
+
+    async def execute_approved_task(self, receipt: SwarmExecutionReceipt, proprietor_approval: bool = True) -> SwarmExecutionReceipt:
+        """Runs Phase 5 (Execute upon explicit proprietor approval)."""
+        return await self.executive.execute_approved_receipt(receipt=receipt, proprietor_approval=proprietor_approval)

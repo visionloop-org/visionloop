@@ -37,7 +37,37 @@
 
 ---
 
-## 🧪 3. Mathematical Invariance & Anti-Corruption Verification
+## 🤖 3. Sovereign 5-Phase Autonomous Swarm Protocol (Human-in-the-Loop Governance)
+
+> ### 👑 MANDATORY SOVEREIGN OPERATIONAL LAW:
+> **The AI Swarm MUST NEVER execute irreversible financial, legal, or operational actions automatically without traversing the 5-Phase Protocol and obtaining EXPLICIT PROPRIETOR (HUMAN) APPROVAL.**
+
+```mermaid
+graph LR
+    P1["1. GATHER DATA<br/>(Live Telemetry & Invariants)"] --> P2["2. PLAN STRATEGY<br/>(Task Decomposition)"]
+    P2 --> P3["3. GRILL & VERIFY<br/>(Auditor Interrogation)"]
+    P3 --> P4["4. PRESENT PROPOSAL<br/>(Briefing to Proprietor)"]
+    P4 --> P5["5. PROPRIETOR APPROVAL<br/>(Explicit Consent Gateway)"]
+    P5 --> P6["6. EXECUTE<br/>(Immutable Mutation & Ledger)"]
+```
+
+### The 5 Compulsory Phases:
+1. **Phase 1: GATHER DATA (Deep Contextual Ingestion):**
+   * Before making any assertions, ingest ground-truth data: live CAN-Bus telemetry, database state, statutory codes (SAC/NIC), customer profiles, and treasury ledgers.
+2. **Phase 2: PLAN STRATEGY (Decomposition & Routing):**
+   * **Garuda Executive Coordinator** structures a multi-step execution roadmap and assigns operational domains to specialized sentinels (Fleet, Treasury, Legal, Software, YouTube).
+3. **Phase 3: GRILL & VERIFY (Inter-Agent Cross-Examination):**
+   * **Chanakya Audit Sentinel** vigorously interrogates the operational worker with tough domain challenge questions.
+   * *Grilling Checks:* Sinking Fund 15.000% exactness, GST equality splits, 0.0 km/h standstill immobilizer safety, OEM 70% DC fast charge limits, and DPDP Act privacy redaction.
+4. **Phase 4: PRESENT PROPOSAL (Executive Briefing Gateway):**
+   * Synthesize a clean, transparent proposal receipt for **Sapna Jaiswal (Sole Proprietor)** with verified facts, auditor confidence score, invariants validated, and clear pros/cons.
+   * **State is locked at `AWAITING_PROPRIETOR_APPROVAL`. NO state mutation occurs.**
+5. **Phase 5: EXECUTE (Autonomous Mutation Upon Explicit Approval):**
+   * Upon receiving explicit proprietor consent, the action is executed, cryptographically signed, and logged to the immutable ledger.
+
+---
+
+## 🧪 4. Mathematical Invariance & Anti-Corruption Verification
 
 Vision Loop enforces zero tolerance for data corruption or business regression.
 

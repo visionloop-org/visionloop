@@ -3,6 +3,7 @@ from visionloop_sdk.swarm.models import (
     MessageType,
     AgentMessage,
     AgentVerificationResult,
+    HumanApprovalStatus,
     SwarmExecutionReceipt
 )
 from visionloop_sdk.swarm.base_agent import BaseSwarmAgent
@@ -22,6 +23,7 @@ __all__ = [
     "MessageType",
     "AgentMessage",
     "AgentVerificationResult",
+    "HumanApprovalStatus",
     "SwarmExecutionReceipt",
     "BaseSwarmAgent",
     "ChiefExecutiveSwarmAgent",
@@ -33,3 +35,4 @@ __all__ = [
     "YouTubeMarketingAgent",
     "SwarmOrchestrator"
 ]
+

@@ -50,12 +50,23 @@ class AgentVerificationResult(BaseModel):
     reasons: List[str] = Field(default_factory=list)
     certified_payload: Dict[str, Any] = Field(default_factory=dict)
 
+class HumanApprovalStatus(str, Enum):
+    AWAITING_PROPRIETOR_APPROVAL = "AWAITING_PROPRIETOR_APPROVAL"
+    PROPRIETOR_APPROVED = "PROPRIETOR_APPROVED"
+    PROPRIETOR_REJECTED = "PROPRIETOR_REJECTED"
+    EXECUTED = "EXECUTED"
+
 class SwarmExecutionReceipt(BaseModel):
     execution_id: str = Field(default_factory=lambda: f"SWARM-EXEC-{uuid.uuid4().hex[:8].upper()}")
     timestamp: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    phase: str = "PHASE_4_PROPOSAL_PRESENTATION"
     goal: str
-    assigned_agents: List[AgentRole]
+    gathered_data: Dict[str, Any] = Field(default_factory=dict)
+    strategic_plan: List[str] = Field(default_factory=list)
+    assigned_agents: List[AgentRole] = Field(default_factory=list)
     dialogue_log: List[AgentMessage] = Field(default_factory=list)
     verification: AgentVerificationResult
-    final_executive_summary: str
+    executive_proposal_to_proprietor: str
+    approval_status: HumanApprovalStatus = HumanApprovalStatus.AWAITING_PROPRIETOR_APPROVAL
+    final_execution_receipt: Optional[Dict[str, Any]] = None
     status: str

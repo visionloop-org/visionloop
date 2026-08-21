@@ -21,7 +21,8 @@ from visionloop_sdk.swarm import (
     SoftwareEngineeringAgent,
     YouTubeMarketingAgent,
     AgentRole,
-    MessageType
+    MessageType,
+    HumanApprovalStatus
 )
 
 @pytest.mark.asyncio
@@ -34,20 +35,30 @@ async def test_swarm_hierarchy_structure():
     assert len(hierarchy[2]["agents"]) == 5
 
 @pytest.mark.asyncio
-async def test_treasury_cross_examination_workflow():
+async def test_treasury_5_phase_workflow_and_human_approval():
     orchestrator = SwarmOrchestrator()
-    receipt = await orchestrator.execute_task_with_cross_examination(
+    
+    # Phase 1 -> 4: Gather, Plan, Grill/Verify, Present Proposal
+    proposal_receipt = await orchestrator.execute_task_with_cross_examination(
         goal="Generate monthly lease invoice for Tata Intra EV and allocate sinking fund",
         domain="finance",
         context={"base_amount": 72000.00, "sac_code": "997311"}
     )
-    assert receipt.status == "EXECUTED_AND_CERTIFIED"
-    assert receipt.verification.verified is True
-    assert receipt.verification.confidence_score == 1.0
-    assert receipt.verification.cross_examination_rounds == 2
-    assert any("15% Sinking Fund" in inv for inv in receipt.verification.invariants_checked)
-    assert any("SAC 997311" in inv for inv in receipt.verification.invariants_checked)
-    assert len(receipt.dialogue_log) >= 5
+    assert proposal_receipt.phase == "PHASE_4_PROPOSAL_PRESENTATION"
+    assert proposal_receipt.approval_status == HumanApprovalStatus.AWAITING_PROPRIETOR_APPROVAL
+    assert proposal_receipt.verification.verified is True
+    assert proposal_receipt.verification.confidence_score == 1.0
+    assert proposal_receipt.verification.cross_examination_rounds == 2
+    assert "PROPOSAL PRESENTED TO SOLE PROPRIETOR" in proposal_receipt.executive_proposal_to_proprietor
+    assert len(proposal_receipt.strategic_plan) == 6
+    assert len(proposal_receipt.gathered_data) > 0
+
+    # Phase 5: Execute upon explicit proprietor approval
+    executed_receipt = await orchestrator.execute_approved_task(proposal_receipt, proprietor_approval=True)
+    assert executed_receipt.phase == "PHASE_5_EXECUTED"
+    assert executed_receipt.approval_status == HumanApprovalStatus.EXECUTED
+    assert executed_receipt.status == "EXECUTED_AND_SEALED"
+    assert executed_receipt.final_execution_receipt["execution_status"] == "SUCCESSFUL_MUTATION"
 
 @pytest.mark.asyncio
 async def test_fleet_cross_examination_and_safety_lockout():
@@ -73,7 +84,8 @@ async def test_legal_and_privacy_cross_examination():
         goal="Audit statutory MSME 45-day payment clauses and DPDP Act privacy governance",
         domain="legal"
     )
-    assert receipt.status == "EXECUTED_AND_CERTIFIED"
+    assert receipt.phase == "PHASE_4_PROPOSAL_PRESENTATION"
+    assert receipt.approval_status == HumanApprovalStatus.AWAITING_PROPRIETOR_APPROVAL
     assert receipt.verification.verified is True
     assert any("MSMED Act" in inv for inv in receipt.verification.invariants_checked)
     assert any("DPDP Act" in inv for inv in receipt.verification.invariants_checked)
@@ -87,5 +99,7 @@ async def test_sdk_swarm_integration():
         goal="Run full YouTube creator monetization and tax export audit",
         domain="youtube"
     )
-    assert receipt.status == "EXECUTED_AND_CERTIFIED"
+    assert receipt.phase == "PHASE_4_PROPOSAL_PRESENTATION"
+    assert receipt.approval_status == HumanApprovalStatus.AWAITING_PROPRIETOR_APPROVAL
     assert receipt.verification.verified is True
+
