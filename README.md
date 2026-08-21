@@ -15,11 +15,13 @@
 
 ---
 
-## 🏢 1. Executive Overview
+**Vision Loop** is a technology-driven, multi-vertical Indian Sole Proprietorship enterprise owned by **Sapna Jaiswal**, headquartered in **Lucknow, Uttar Pradesh**. Vision Loop operates across three high-synergy divisions:
 
-**Vision Loop** is a technology-driven, zero-touch Indian Sole Proprietorship enterprise specializing in the institutional leasing and management of commercial electric vehicles (**Tata Intra EV**, Yellow Board `DL-01-EV-2026`). Founded and solely owned by **Sapna Jaiswal**, Vision Loop operates from its primary base hub in **Lucknow, Uttar Pradesh**, serving the high-density **Lucknow – Kanpur – Delhi NCR freight logistics corridors**.
+1. 🚚 **Commercial EV & Asset Leasing** (SAC `997311`, NIC `77101`): Institutional long-term leasing of commercial electric vehicles (Tata Intra EV) with IoT CAN-Bus telematics and 100% Section 17(5)(a) ITC recovery.
+2. 💻 **Enterprise Software & AI Products** (SAC `998314`, NIC `62011`): Engineering and licensing of modular Python developer packages (`visionloop-sdk`), autonomous multi-agent microservices, and IoT telematics software.
+3. 🎥 **YouTube Channel & Digital Media Marketing** (SAC `998361`, NIC `73100`): Digital marketing agency services, YouTube channel audience growth, creator monetization, and brand campaign management.
 
-The enterprise eliminates operational overhead through an autonomous **AI Multi-Agent Swarm** that reconciles **Zoho Books** invoices under **SAC 997311** (18% GST), enforces **MSMED Act 2006** 45-day statutory payment terms, audits IoT CAN-Bus battery telemetry, and sweeps **15% of monthly revenue** into a high-yield liquid sinking fund for debt-free capital replacement.
+The enterprise eliminates operational overhead through an autonomous **AI Multi-Agent Swarm** that reconciles **Zoho Books** invoices, enforces **MSMED Act 2006** 45-day statutory payment terms, and sweeps **15% of monthly revenue** into a high-yield liquid sinking fund for debt-free capital replacement.
 
 ---
 

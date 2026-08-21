@@ -16,15 +16,17 @@
 
 ---
 
-## 2. Statutory Registrations Matrix
+## 2. Multi-Vertical Statutory Registrations Matrix
 
-| Registration | Identifier / Status | Purpose & Statutory Significance |
-| :--- | :--- | :--- |
-| **Permanent Account Number (PAN)** | `VERIFIED_INDIVIDUAL` | Primary statutory tax identifier for the Sole Proprietorship (Private Vault). |
-| **Aadhaar Identity Verification** | `UIDAI_VERIFIED` | Biometric & OTP verification for e-Sign, Udyam, and GST registrations. |
-| **Udyam MSME Certificate** | NIC `77101` / `77109` (Service Micro Enterprise) | Enforces 45-day payment statutory terms under MSMED Act Sections 15 & 16 (3x RBI interest). |
-| **GSTIN Registration** | Primary SAC `997311` (18% GST) | Output billing on commercial leases; full 100% ITC claim under Section 17(5)(a). |
-| **Bank Current Account** | ICICI Bank Current Account (Trade Name: Vision Loop) | Connected to e-NACH mandate settlement and auto-sweep to 15% Sinking Fund. |
+| Registration Domain | Code / Classification | Division / Business Scope | Statutory Purpose |
+| :--- | :--- | :--- | :--- |
+| **Udyam MSME (Activity 1)** | **NIC 77101** | **Commercial EV & Asset Leasing** | Primary transport fleet operations & MSMED Act 45-day payment statutory protection. |
+| **Udyam MSME (Activity 2)** | **NIC 62011** | **Software & SaaS Product Sales** | Custom software, IP licensing, developer tools, and autonomous AI microservices. |
+| **Udyam MSME (Activity 3)** | **NIC 73100** | **YouTube Channel & Digital Marketing** | Digital media advertising, influencer campaign management, and creator growth marketing. |
+| **GSTIN (Service 1)** | **SAC 997311** (18% GST) | Transport Lease & Fleet Rental | Output billing with 100% Section 17(5)(a) Input Tax Credit claim. |
+| **GSTIN (Service 2)** | **SAC 998314** (18% GST) | Software Licensing & IT Services | SaaS subscription invoicing, custom API access, and enterprise software sales. |
+| **GSTIN (Service 3)** | **SAC 998361** (18% GST) | Digital Advertising & Video Marketing | YouTube brand sponsorship invoicing, ad placement, and digital agency billing. |
+| **Bank Current Account** | Trade Name: **Vision Loop** | Unified Corporate Treasury | Multi-channel receivables settlement (e-NACH, Stripe/Razorpay, UPI QR, Wire Transfers). |
 
 ---
 

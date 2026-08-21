@@ -22,12 +22,16 @@ I, **______________________________________** (Name of Property Owner / Husband)
    > **Pin Code:** **____________________**
 
 2. **Grant of Permission for Business Operations:**  
-   That I have full knowledge and give my unconditional **NO OBJECTION and CONSENT** to my spouse, **SAPNA JAISWAL**, Sole Proprietor of the proprietary firm named **"VISION LOOP"**, to use and occupy the above-mentioned premises as the **Registered Office / Principal Place of Business / Operational Hub** for carrying on commercial activities including commercial asset & electric vehicle (EV) leasing, fleet depot operations, management, and allied business operations.
+   That I have full knowledge and give my unconditional **NO OBJECTION and CONSENT** to my spouse, **SAPNA JAISWAL**, Sole Proprietor of the proprietary firm named **"VISION LOOP"**, to use and occupy the above-mentioned premises as the **Registered Office / Principal Place of Business / Operational Hub** for carrying on commercial activities including:
+   * **Commercial Asset & Electric Vehicle (EV) Leasing** and fleet operations;
+   * **Software Development, SaaS Products, IP Licensing & Computer Programming Services**;
+   * **Digital Media, YouTube Channel Marketing, Content Production & Advertising Agency Services**;
+   * All allied, administrative, and technological business operations.
 
 3. **Statutory Registrations & Banking Applications:**  
    That I have **NO OBJECTION** whatsoever to the said business entity, **VISION LOOP** (Proprietor: **SAPNA JAISWAL**), applying for, registering, and obtaining:
-   * **Fresh Goods and Services Tax (GSTIN)** Registration under SAC Code 997311;
-   * **New Udyam MSME Registration Certificate** under NIC Code 77101;
+   * **Fresh Goods and Services Tax (GSTIN)** Registration under SAC Codes: **997311** (Transport Lease), **998314** (Software Development/SaaS), and **998361** (Digital Advertising/Marketing);
+   * **New Udyam MSME Registration Certificate** under NIC Codes: **77101** (Motor Vehicle Leasing), **62011** (Software Development), and **73100** (Advertising & Digital Marketing);
    * **Shop and Commercial Establishment License** / Municipal Trade Registration;
    * **Opening of Bank Current Account(s)** and merchant settlement facilities in the name of **"VISION LOOP"** in any scheduled commercial bank;
    * Receiving all statutory, judicial, postal, tax, and commercial correspondence at this property address.
