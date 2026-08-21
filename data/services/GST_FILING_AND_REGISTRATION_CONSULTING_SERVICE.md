@@ -74,20 +74,16 @@ graph TD
 
 ---
 
-## 🔄 3. Monthly Retainer Filing Service
+## 💰 3. Flagship Service Pricing & Scope
 
-| Compliance Return | Due Date | Purpose & Optimization |
-| :--- | :--- | :--- |
-| **Form GSTR-1** | **11th of every month** | Outward supplies of services billed to clients. Invoices uploaded with B2B GSTIN. |
-| **Form GSTR-2B** | **14th of every month** | Auto-generated Input Tax Credit (ITC) statement. Verifies vendor tax remittance. |
-| **Form GSTR-3B** | **20th of every month** | Monthly tax summary: Offsets output liability against available ITC; pays net cash balance. |
-| **Form GST RFD-11 (LUT)** | **Annual (April 1st)** | Letter of Undertaking for zero-rated export of digital services (YouTube AdSense / SaaS). |
+| Service Package | Complete Deliverables | Pricing (INR) | Delivery Timeline |
+| :--- | :--- | :--- | :--- |
+| **Sole Proprietorship New GST Registration** *(Form GST REG-01)* | • Complete Form GST REG-01 Preparation on `gst.gov.in`<br/>• Custom Spousal / Shared Premises Consent NOC Drafting<br/>• Geocoded Principal Place of Business Address Mapping<br/>• Optimal SAC / HSN Code Strategic Selection<br/>• Aadhaar e-KYC EVC Authentication Assistance<br/>• End-to-End ARN Tracking until Form GST REG-06 Certificate is Issued | **₹1,999.00** *(All-inclusive One-time)* | **3 to 7 Working Days** |
 
 ---
 
-## 💰 4. Service Pricing Matrix
+## 🔒 4. Zero-Friction Proprietor Guarantee
 
-| Service Tier | Deliverables | Pricing (INR) |
-| :--- | :--- | :--- |
-| **Tier 1: New GST Registration** | Full Form GST REG-01 filing, Spousal/Shared Consent NOC drafting, Geocoded address proof mapping, Aadhaar e-KYC, and ARN tracking until Form GST REG-06 certificate is issued. | **₹1,999.00** *(One-time)* |
-| **Tier 2: Monthly Nil / Creator Export Filing** | Monthly GSTR-1 + GSTR-3B filings + Annual GST Letter of Undertaking (LUT / RFD-11) for zero-rated export of YouTube creator earnings & SaaS software services. | **₹999.00 / month** |
+* **No Physical Office Visit:** 100% digital portal execution via Aadhaar OTP.
+* **No Expensive Commercial Rent Agreement Required:** Fully compliant using our custom Legal Consent NOC with property owner's electricity bill.
+* **Statutory Compliance:** Form GST REG-06 Certificate issued directly to your official email.

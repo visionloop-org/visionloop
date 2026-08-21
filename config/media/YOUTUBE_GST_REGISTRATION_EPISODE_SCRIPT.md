@@ -95,16 +95,16 @@
 ---
 
 ### 🚀 Scene 5: Verification, ARN & Vision Loop Services (08:30 – 10:00)
-* **Visual Framing:** Aadhaar OTP popup followed by ARN success banner. Full-screen presentation of Vision Loop GST Compliance Services.
-* **On-Screen Graphic:** Vision Loop GST Suite: New Registration (₹1,999), Creator Export/LUT & Nil Filing (₹999/mo).
+* **Visual Framing:** Aadhaar OTP popup followed by ARN success banner. Full-screen presentation of Vision Loop New GST Registration Service.
+* **On-Screen Graphic:** Vision Loop Flagship Service: Sole Proprietorship New GST Registration (₹1,999 All-Inclusive).
 * **Voiceover (Hindi — `hi-IN`):**
   > *"अंतिम स्टेप में 'Verification' बॉक्स को टिक करके 'Submit with EVC' पर क्लिक करें और आधार OTP दर्ज करें।*
   > 
   > *बधाई हो! आपका 'Application Reference Number' (ARN) जनरेट हो चुका है। 3 से 7 दिनों के भीतर आपका ऑफिशियल GST सर्टिफिकेट (Form GST REG-06) आपकी ईमेल पर आ जाएगा।*
   > 
-  > *अगर आप यह पूरा प्रोसेस खुद नहीं करना चाहते, या हर महीने GSTR-1, GSTR-3B और जीरो टैक्स एक्सपोर्ट LUT का झंझट खत्म करना चाहते हैं, तो Vision Loop की प्रोफेशनल GST टीम आपके लिए एंड-टू-एंड सर्विस प्रदान करती है।*
+  > *अगर आप यह पूरा रजिस्ट्रेशन प्रोसेस बिना किसी गलती और बिना किसी परेशानी के करवाना चाहते हैं, तो Vision Loop की टीम आपके लिए Form GST REG-01 प्रिपरेशन, लीगल NOC ड्राफ्टिंग और ARN अप्रूवल तक का पूरा काम मात्र ₹1,999 में पूरा करती है।*
   > 
-  > *नीचे डिस्क्रिप्शन में दिए गए लिंक पर क्लिक करें या Telegram पर हमसे कनेक्ट करें। वीडियो को लाइक और सब्सक्राइब जरूर करें!"*
+  > *नीचे डिस्क्रिप्शन में दिए गए लिंक पर क्लिक करें या Telegram पर हमसे सीधे संपर्क करें। वीडियो को लाइक और सब्सक्राइब जरूर करें!"*
 
 ---
 
@@ -128,9 +128,11 @@ Learn how to get a 100% legal GSTIN for your Sole Proprietorship business in Ind
 🌐 Website: https://visionloop-org.github.io/visionloop/
 🤖 Telegram Support Bot: https://t.me/VisionLoop_Bot
 
-💼 VISION LOOP GST REGISTRATION & MONTHLY FILING SERVICES:
-• End-to-End New GST Registration (Form GST REG-01) — ₹1,999 (One-time)
-• Monthly GSTR-1 & GSTR-3B Returns + Zero-Rated Export LUT (YouTube & SaaS) — ₹999/mo
+💼 VISION LOOP FLAGSHIP GST SERVICE:
+• End-to-End Sole Proprietorship New GST Registration (Form GST REG-01) — ₹1,999 (All-Inclusive One-Time)
+• Custom Spousal/Shared Premises Consent NOC Drafting Included
+• Geocoded Business Address Setup & Strategic SAC Code Selection
+• Aadhaar e-KYC Verification Assistance & ARN Tracking until Form GST REG-06 Issuance
 
 CHAPTERS:
 00:00 - Hook & GST Benefits for Sole Proprietors
