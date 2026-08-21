@@ -43,8 +43,12 @@ data/
 │   ├── GITHUB_AND_PAGES_SETUP.md       # GitHub Account & GitHub.io Pages deployment guide
 │   └── EXECUTIVE_BIO_AND_BRAND_STORY.md # Official Executive Bio & Brand Story for Sapna Jaiswal
 │
+├── services/                           # Commercial Service Suites & Offerings
+│   └── GST_FILING_AND_REGISTRATION_CONSULTING_SERVICE.md # Sole Proprietorship GST filing as a service
+│
 ├── media/                              # Commercial Digital Media & YouTube Architecture
 │   ├── YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY.md # Content programming & FIRC AdSense monetization
+│   ├── YOUTUBE_GST_REGISTRATION_EPISODE_SCRIPT.md # Master 10-min 4K tutorial & 45s Shorts script
 │   ├── YOUTUBE_VIDEO_PRODUCTION_PARAMETERS.md # Shorts (9:16) & Long-form (16:9) technical specs
 │   └── brand_voice_guidelines.json     # Multilingual voice-over parameters (English & Hindi)
 │

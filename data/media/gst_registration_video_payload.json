@@ -1,0 +1,190 @@
+{
+  "longform": {
+    "title_english": "How to Build a Debt-Free Commercial EV Fleet in India (Complete Financial & Telematics Teardown)",
+    "title_hindi": "\u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u092c\u093f\u0928\u093e \u0915\u093f\u0938\u0940 \u0932\u094b\u0928 \u0915\u0947 \u0915\u092e\u0930\u094d\u0936\u093f\u092f\u0932 EV \u092b\u094d\u0932\u0940\u091f \u0915\u0948\u0938\u0947 \u0936\u0941\u0930\u0942 \u0915\u0930\u0947\u0902 (\u092b\u0941\u0932 \u092b\u093e\u0907\u0928\u0947\u0902\u0936\u093f\u092f\u0932 \u0914\u0930 \u091f\u0947\u0932\u0940\u092e\u0948\u091f\u093f\u0915\u094d\u0938 \u0917\u093e\u0907\u0921)",
+    "format_type": "LONGFORM_HORIZONTAL_16_9",
+    "target_duration_seconds": 600,
+    "visual_spec": {
+      "format_type": "LONGFORM_HORIZONTAL_16_9",
+      "aspect_ratio": "16:9",
+      "resolution_width": 3840,
+      "resolution_height": 2160,
+      "frame_rate_fps": 60,
+      "color_space": "Rec.709",
+      "target_video_codec": "H.264 / HEVC",
+      "branding_lut": "VisionLoop_CinematicTeal_Corporate_4K",
+      "auto_blur_sensitive_pii": true,
+      "sensitive_data_blur_zones": [
+        "PAN Numbers (BGVPJ3356G) & Aadhaar Numbers (Gaussian Blur Radius 25px)",
+        "Bank Account Numbers, IFSC Codes & Private Cash Flow Balances",
+        "API Keys, GitHub Tokens, Gmail Passwords & Cloud Credentials",
+        "Private Customer Phone Numbers & Full Residential Addresses",
+        "Vehicle VIN Chassis Numbers & Private Engine Serial Codes"
+      ]
+    },
+    "voiceover_spec": {
+      "language": "hi-IN",
+      "voice_name": "hi-IN-Neural2-B",
+      "voice_gender": "Professional Institutional Narrator",
+      "speaking_rate": 0.98,
+      "pitch": 0.0,
+      "target_loudness_lufs": -14.0,
+      "sample_rate_hz": 48000,
+      "audio_codec": "AAC-LC",
+      "bitrate_kbps": 320
+    },
+    "scenes": [
+      {
+        "scene_number": 1,
+        "timestamp_start_sec": 0.0,
+        "timestamp_end_sec": 60.0,
+        "visual_broll_prompt": "Cinematic 4K drone shot of Tata Intra EV fleet driving across Lucknow-Kanpur industrial expressway at sunrise",
+        "on_screen_text_english": "Chapter 1: The \u20b9100B Indian Commercial EV Revolution",
+        "voiceover_script_english": "Commercial electric vehicles are transforming Indian logistics. But high battery depreciation and finance costs break most fleet operators. Here is how Vision Loop engineered an autonomous, self-sustaining model.",
+        "voiceover_script_hindi": "\u0915\u092e\u0930\u094d\u0936\u093f\u092f\u0932 \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u093f\u0915 \u0935\u093e\u0939\u0928 \u092d\u093e\u0930\u0924\u0940\u092f \u0932\u0949\u091c\u093f\u0938\u094d\u091f\u093f\u0915\u094d\u0938 \u0915\u094b \u092c\u0926\u0932 \u0930\u0939\u0947 \u0939\u0948\u0902\u0964 \u0932\u0947\u0915\u093f\u0928 \u092c\u0948\u091f\u0930\u0940 \u0921\u093f\u092a\u094d\u0930\u093f\u0938\u093f\u090f\u0936\u0928 \u0914\u0930 \u092d\u093e\u0930\u0940 \u092c\u094d\u092f\u093e\u091c \u0911\u092a\u0930\u0947\u091f\u0930\u094b\u0902 \u0915\u094b \u0928\u0941\u0915\u0938\u093e\u0928 \u092a\u0939\u0941\u0902\u091a\u093e\u0924\u0947 \u0939\u0948\u0902\u0964 \u0926\u0947\u0916\u093f\u090f \u0915\u0948\u0938\u0947 Vision Loop \u0928\u0947 \u090f\u0915 \u0911\u091f\u094b\u0928\u0949\u092e\u0938 \u0914\u0930 \u091f\u093f\u0915\u093e\u090a \u092e\u0949\u0921\u0932 \u092c\u0928\u093e\u092f\u093e\u0964",
+        "animation_notes": "Lower-third title banner with animated episode chapter marks"
+      },
+      {
+        "scene_number": 2,
+        "timestamp_start_sec": 60.0,
+        "timestamp_end_sec": 240.0,
+        "visual_broll_prompt": "Detailed walkthrough of SAC 997311 invoicing, 18% GST equality split, and 100% Section 17(5)(a) Input Tax Credit recovery",
+        "on_screen_text_english": "Chapter 2: The Tax Architecture (SAC 997311 & 100% ITC)",
+        "voiceover_script_english": "By structuring contracts under SAC 997311, enterprise clients recover 100% of GST under Section 17(5)(a), reducing effective monthly fleet costs while maintaining statutory perfection.",
+        "voiceover_script_hindi": "SAC 997311 \u0915\u0947 \u0924\u0939\u0924 \u0905\u0928\u0941\u092c\u0902\u0927 \u0938\u0902\u0930\u091a\u0928\u093e \u0915\u0930\u0915\u0947, \u0915\u0949\u0930\u094d\u092a\u094b\u0930\u0947\u091f \u0917\u094d\u0930\u093e\u0939\u0915 \u0927\u093e\u0930\u093e 17(5)(a) \u0915\u0947 \u0924\u0939\u0924 100% GST \u0907\u0928\u092a\u0941\u091f \u0915\u094d\u0930\u0947\u0921\u093f\u091f \u0935\u093e\u092a\u0938 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964",
+        "animation_notes": "Split-screen breakdown of CGST \u20b96,480 + SGST \u20b96,480 on \u20b972k Base"
+      },
+      {
+        "scene_number": 3,
+        "timestamp_start_sec": 240.0,
+        "timestamp_end_sec": 420.0,
+        "visual_broll_prompt": "3D interactive simulation of the 15% Sinking Fund reserve accumulating \u20b93.88 Lakhs at ~6.8% CAGR by Month 36",
+        "on_screen_text_english": "Chapter 3: Sinking Fund Mathematics \u2014 Debt-Free Asset Replacement",
+        "voiceover_script_english": "Instead of paying loan interest to banks, Vision Loop sweeps 15% of revenue into liquid overnight treasury funds, completely self-funding battery and vehicle upgrades.",
+        "voiceover_script_hindi": "\u092c\u0948\u0902\u0915\u094b\u0902 \u0915\u094b \u092c\u094d\u092f\u093e\u091c \u0926\u0947\u0928\u0947 \u0915\u0947 \u092c\u091c\u093e\u092f, Vision Loop 15% \u0930\u0947\u0935\u0947\u0928\u094d\u092f\u0942 \u0915\u094b \u0932\u093f\u0915\u094d\u0935\u093f\u0921 \u091f\u094d\u0930\u0947\u091c\u0930\u0940 \u092b\u0902\u0921 \u092e\u0947\u0902 \u0928\u093f\u0935\u0947\u0936 \u0915\u0930\u0924\u093e \u0939\u0948, \u091c\u093f\u0938\u0938\u0947 36\u0935\u0947\u0902 \u092e\u0939\u0940\u0928\u0947 \u092e\u0947\u0902 \u092c\u093f\u0928\u093e \u0932\u094b\u0928 \u0915\u0947 \u0928\u092f\u093e \u0935\u093e\u0939\u0928 \u0906 \u091c\u093e\u0924\u093e \u0939\u0948\u0964",
+        "animation_notes": "Exponential compound growth curve chart overlay"
+      },
+      {
+        "scene_number": 4,
+        "timestamp_start_sec": 420.0,
+        "timestamp_end_sec": 600.0,
+        "visual_broll_prompt": "Live telematics dashboard, CAN-Bus battery telemetry, standstill immobilizer lockout demonstration, and concluding call to action",
+        "on_screen_text_english": "Chapter 4: Live Telematics & Autonomous AI Swarm Governance",
+        "voiceover_script_english": "Every vehicle is monitored by autonomous AI sentinels ensuring safety and 99.4% battery health. Explore our open architecture at visionloop.in.",
+        "voiceover_script_hindi": "\u092a\u094d\u0930\u0924\u094d\u092f\u0947\u0915 \u0935\u093e\u0939\u0928 \u0915\u0940 \u0938\u0941\u0930\u0915\u094d\u0937\u093e \u0914\u0930 99.4% \u092c\u0948\u091f\u0930\u0940 \u0939\u0947\u0932\u094d\u0925 \u0939\u092e\u093e\u0930\u0947 AI \u0938\u0947\u0902\u091f\u093f\u0928\u0932\u094d\u0938 \u0926\u094d\u0935\u093e\u0930\u093e 24/7 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0930\u0916\u0940 \u091c\u093e\u0924\u0940 \u0939\u0948\u0964",
+        "animation_notes": "End-screen cards linking to next video and Telegram bot"
+      }
+    ],
+    "tags_and_hashtags": [
+      "Commercial EV India",
+      "Tata Intra EV",
+      "EV Leasing",
+      "Fleet Management",
+      "GST SAC 997311",
+      "Sinking Fund",
+      "Autonomous Swarm"
+    ],
+    "description_english": "In this comprehensive deep-dive, we break down how Vision Loop operates commercial EV assets in Lucknow, UP using SAC 997311 GST structures, 15% Sinking Funds, and CAN-Bus battery telematics.\n\n\ud83d\udccc CHAPTERS:\n00:00 - The Commercial EV Opportunity in India\n01:00 - SAC 997311 Invoicing & 100% ITC Recovery\n04:00 - 15% Sinking Fund Mathematics (~6.8% CAGR)\n07:00 - CAN-Bus Battery SLA & Standstill Safety Guardrail\n09:30 - Conclusion & Open Architecture Access\n\n\ud83c\udf10 Website: https://visionloop-org.github.io/visionloop/\n\ud83e\udd16 Telegram Bot: https://t.me/VisionLoop_Bot",
+    "description_hindi": "\u0907\u0938 \u0935\u0940\u0921\u093f\u092f\u094b \u092e\u0947\u0902 \u091c\u093e\u0928\u093f\u090f \u0915\u0948\u0938\u0947 Vision Loop \u0932\u0916\u0928\u090a, \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936 \u092e\u0947\u0902 \u0915\u092e\u0930\u094d\u0936\u093f\u092f\u0932 EV \u092b\u094d\u0932\u0940\u091f \u0915\u094b 18% GST (SAC 997311), 15% \u0938\u093f\u0902\u0915\u093f\u0902\u0917 \u092b\u0902\u0921 \u0914\u0930 CAN-Bus AI \u091f\u0947\u0932\u0940\u092e\u0948\u091f\u093f\u0915\u094d\u0938 \u0915\u0947 \u0938\u093e\u0925 \u091a\u0932\u093e\u0924\u093e \u0939\u0948\u0964",
+    "cta_action": "SUBSCRIBE_AND_CHECK_DESCRIPTION_LINKS",
+    "estimated_production_cost_inr": 0.0,
+    "content_rating_india": "U (Universal / All Ages)",
+    "grievance_officer_email": "visionloop.in@gmail.com",
+    "statutory_financial_disclaimer_india": "DISCLAIMER & AI DISCLOSURE: Content published by Vision Loop is generated and modeled with the assistance of Autonomous Artificial Intelligence (AI) and is for educational and operational informational purposes only. AI-assisted models, calculations, and scripts may contain inadvertent errors or approximations. Commercial EV lease returns, battery lifecycles, and treasury fund yields are subject to operating market conditions. Vision Loop does not provide SEBI-registered investment advice. Consult a licensed Chartered Accountant (CA) or financial advisor.",
+    "arai_range_certification_disclosed": true
+  },
+  "shorts": {
+    "title_english": "How Autonomous EV Fleets Scale in India with ZERO Debt! \u26a1 #Shorts",
+    "title_hindi": "\u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u092c\u093f\u0928\u093e \u0915\u093f\u0938\u0940 \u0915\u0930\u094d\u091c\u093c \u0915\u0947 \u0915\u092e\u0930\u094d\u0936\u093f\u092f\u0932 EV \u092b\u094d\u0932\u0940\u091f \u0915\u0948\u0938\u0947 \u092c\u0922\u093c\u093e\u090f\u0902? \u26a1 #Shorts",
+    "format_type": "SHORTS_VERTICAL_9_16",
+    "target_duration_seconds": 45,
+    "visual_spec": {
+      "format_type": "SHORTS_VERTICAL_9_16",
+      "aspect_ratio": "9:16",
+      "resolution_width": 1080,
+      "resolution_height": 1920,
+      "frame_rate_fps": 60,
+      "color_space": "Rec.709",
+      "target_video_codec": "H.264 / HEVC",
+      "branding_lut": "VisionLoop_ElectricCyan_HighContrast_Shorts",
+      "auto_blur_sensitive_pii": true,
+      "sensitive_data_blur_zones": [
+        "PAN Numbers (BGVPJ3356G) & Aadhaar Numbers (Gaussian Blur Radius 25px)",
+        "Bank Account Numbers, IFSC Codes & Private Cash Flow Balances",
+        "API Keys, GitHub Tokens, Gmail Passwords & Cloud Credentials",
+        "Private Customer Phone Numbers & Full Residential Addresses",
+        "Vehicle VIN Chassis Numbers & Private Engine Serial Codes"
+      ]
+    },
+    "voiceover_spec": {
+      "language": "hi-IN",
+      "voice_name": "hi-IN-Neural2-A",
+      "voice_gender": "Male/Female Energetic Tech Narrator",
+      "speaking_rate": 1.1,
+      "pitch": 0.0,
+      "target_loudness_lufs": -14.0,
+      "sample_rate_hz": 48000,
+      "audio_codec": "AAC-LC",
+      "bitrate_kbps": 320
+    },
+    "scenes": [
+      {
+        "scene_number": 1,
+        "timestamp_start_sec": 0.0,
+        "timestamp_end_sec": 5.0,
+        "visual_broll_prompt": "Dynamic fast zoom into Tata Intra EV digital dashboard glowing cyan at 0.0 km/h in Lucknow depot",
+        "on_screen_text_english": "How EV Fleets Scale with ZERO Debt! \u26a1",
+        "voiceover_script_english": "What happens when your commercial EV battery degrades? Most companies take high-interest loans. Vision Loop does this instead.",
+        "voiceover_script_hindi": "\u0915\u094d\u092f\u093e \u0906\u092a \u091c\u093e\u0928\u0924\u0947 \u0939\u0948\u0902 \u0915\u093f \u0915\u092e\u0930\u094d\u0936\u093f\u092f\u0932 EV \u0915\u0940 \u092c\u0948\u091f\u0930\u0940 \u0921\u093f\u0917\u094d\u0930\u0947\u0921 \u0939\u094b\u0928\u0947 \u092a\u0930 \u0915\u094d\u092f\u093e \u0939\u094b\u0924\u093e \u0939\u0948? \u091c\u094d\u092f\u093e\u0926\u093e\u0924\u0930 \u0932\u094b\u0917 \u092d\u093e\u0930\u0940 \u0915\u0930\u094d\u091c \u0932\u0947\u0924\u0947 \u0939\u0948\u0902, \u092a\u0930 Vision Loop \u0915\u093e \u0924\u0930\u0940\u0915\u093e \u092c\u093f\u0932\u094d\u0915\u0941\u0932 \u0905\u0932\u0917 \u0939\u0948!",
+        "animation_notes": "High-energy kinetic typography burn at bottom 1/3 viewport"
+      },
+      {
+        "scene_number": 2,
+        "timestamp_start_sec": 5.0,
+        "timestamp_end_sec": 18.0,
+        "visual_broll_prompt": "3D animated ledger showing 15% revenue automated sweep into liquid overnight treasury pool",
+        "on_screen_text_english": "The 15% Sinking Fund Engine \ud83d\udcb0",
+        "voiceover_script_english": "Every single month, 15% of lease revenue is automatically swept into a high-yield liquid treasury fund.",
+        "voiceover_script_hindi": "\u0939\u0930 \u092e\u0939\u0940\u0928\u0947 \u0932\u0940\u091c \u0930\u0947\u0935\u0947\u0928\u094d\u092f\u0942 \u0915\u093e \u0920\u0940\u0915 15% \u0911\u091f\u094b\u092e\u0948\u091f\u093f\u0915\u0932\u0940 \u0932\u093f\u0915\u094d\u0935\u093f\u0921 \u0913\u0935\u0930\u0928\u093e\u0907\u091f \u091f\u094d\u0930\u0947\u091c\u0930\u0940 \u092b\u0902\u0921 \u092e\u0947\u0902 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0939\u094b \u091c\u093e\u0924\u093e \u0939\u0948\u0964",
+        "animation_notes": "Smooth counter ticking up to \u20b910,800/mo reserve"
+      },
+      {
+        "scene_number": 3,
+        "timestamp_start_sec": 18.0,
+        "timestamp_end_sec": 32.0,
+        "visual_broll_prompt": "Real-time CAN-Bus battery telemetry showing 99.4% SoH and standstill safety guardrail",
+        "on_screen_text_english": "AI CAN-Bus Battery Shield \ud83d\udee1\ufe0f",
+        "voiceover_script_english": "Our AI monitors DC fast charge ratios and thermal limits 24/7 to protect the 5-year Tata OEM warranty.",
+        "voiceover_script_hindi": "\u0939\u092e\u093e\u0930\u093e AI \u0938\u093f\u0938\u094d\u091f\u092e \u091a\u094c\u092c\u0940\u0938\u094b\u0902 \u0918\u0902\u091f\u0947 DC \u092b\u093e\u0938\u094d\u091f \u091a\u093e\u0930\u094d\u091c\u093f\u0902\u0917 \u0914\u0930 \u092c\u0948\u091f\u0930\u0940 \u0924\u093e\u092a\u092e\u093e\u0928 \u0915\u094b \u092e\u0949\u0928\u093f\u091f\u0930 \u0915\u0930\u0915\u0947 OEM \u0935\u093e\u0930\u0902\u091f\u0940 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0930\u0916\u0924\u093e \u0939\u0948\u0964",
+        "animation_notes": "Telemetry graph overlay with green COMPLIANT badge"
+      },
+      {
+        "scene_number": 4,
+        "timestamp_start_sec": 32.0,
+        "timestamp_end_sec": 45.0,
+        "visual_broll_prompt": "Vision Loop 3D electric-cyan ribbon infinity logo glowing with website URL and Telegram bot link",
+        "on_screen_text_english": "Lease Clean. Scale Fast. \ud83d\ude80",
+        "voiceover_script_english": "Zero human friction. Institutional EV leasing in India. Visit visionloop.in or link in bio!",
+        "voiceover_script_hindi": "\u091c\u093c\u0940\u0930\u094b \u0939\u094d\u092f\u0942\u092e\u0928 \u092b\u094d\u0930\u093f\u0915\u094d\u0936\u0928\u0964 \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0906\u0927\u0941\u0928\u093f\u0915 EV \u0932\u0940\u091c\u093f\u0902\u0917\u0964 \u0906\u091c \u0939\u0940 visionloop.in \u092a\u0930 \u091c\u093e\u090f\u0902!",
+        "animation_notes": "Pulsing Subscribe button & Bio link pointer"
+      }
+    ],
+    "tags_and_hashtags": [
+      "#Shorts",
+      "#EVIndia",
+      "#TataIntraEV",
+      "#ElectricVehicles",
+      "#FleetManagement",
+      "#Lucknow",
+      "#VisionLoop"
+    ],
+    "description_english": "Discover how Vision Loop uses autonomous AI swarms, CAN-Bus battery monitoring, and a 15% Sinking Fund to scale commercial EV fleets across India with zero debt distress.",
+    "description_hindi": "\u091c\u093e\u0928\u093f\u090f \u0915\u0948\u0938\u0947 Vision Loop \u0911\u091f\u094b\u0928\u0949\u092e\u0938 AI, CAN-Bus \u091f\u0947\u0932\u0940\u092e\u0948\u091f\u093f\u0915\u094d\u0938 \u0914\u0930 15% \u0938\u093f\u0902\u0915\u093f\u0902\u0917 \u092b\u0902\u0921 \u0915\u0947 \u0938\u093e\u0925 \u092c\u093f\u0928\u093e \u0915\u093f\u0938\u0940 \u0932\u094b\u0928 \u0915\u0947 \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 EV \u092b\u094d\u0932\u0940\u091f \u0938\u0902\u091a\u093e\u0932\u093f\u0924 \u0915\u0930\u0924\u093e \u0939\u0948\u0964",
+    "cta_action": "PINNED_COMMENT_LINK_TO_WEBSITE",
+    "estimated_production_cost_inr": 0.0,
+    "content_rating_india": "U (Universal / All Ages)",
+    "grievance_officer_email": "visionloop.in@gmail.com",
+    "statutory_financial_disclaimer_india": "DISCLAIMER & AI DISCLOSURE: Content published by Vision Loop is generated and modeled with the assistance of Autonomous Artificial Intelligence (AI) and is for educational and operational informational purposes only. AI-assisted models, calculations, and scripts may contain inadvertent errors or approximations. Commercial EV lease returns, battery lifecycles, and treasury fund yields are subject to operating market conditions. Vision Loop does not provide SEBI-registered investment advice. Consult a licensed Chartered Accountant (CA) or financial advisor.",
+    "arai_range_certification_disclosed": true
+  }
+}
