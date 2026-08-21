@@ -80,4 +80,26 @@ Every long-form video is structured with **YouTube Timestamp Chapters** to maxim
 
 * 📱 **`YouTubeShortsProducerAgent` (Laghu Vani):** Enforces 9:16 vertical resolution, duration < 60s, and rapid hook pacing.
 * 📺 **`YouTubeLongformDirectorAgent` (Dirgha Vani):** Enforces 16:9 4K resolution, duration >= 8 mins for mid-rolls, and chapter metadata.
-* 🔍 **`ChiefAuditorVerificationAgent` (Chanakya):** Cross-examines all video proposals on aspect ratio framing, -14.0 LUFS loudness, and dual English/Hindi localization before presenting to the Proprietor.
+* 🔍 **`ChiefAuditorVerificationAgent` (Chanakya):** Cross-examines all video proposals on aspect ratio framing, -14.0 LUFS loudness, dual English/Hindi localization, and **on-screen credential & PII blurring** before presenting to the Proprietor.
+
+---
+
+## 🔒 6. On-Screen Sensitive Data & Credential Blurring Protocol (DPDP Act 2023)
+
+> ### ⚠️ MANDATORY PRODUCTION SAFETY DIRECTIVE:
+> **All screen recordings, UI B-roll captures, accounting ledgers, and live code walkthroughs MUST apply an automated 25px Gaussian Blur filter over all sensitive credentials, government identifiers, and banking details.**
+
+### A. Elements That MUST Be 100% Blurred / Masked in Videos:
+1. **Proprietor Identifiers:** Permanent Account Number (`BGVPJ3356G`), 12-digit Aadhaar numbers, residential house numbers.
+2. **Banking & Treasury Details:** Bank account numbers, IFSC codes, UPI VPA IDs, customer private balances, and payment gateway secret keys.
+3. **API & Cloud Credentials:** Google App Passwords, GitHub Personal Access Tokens (PAT), MongoDB connection URIs with passwords, Telegram bot tokens.
+4. **Vehicular & Driver PII:** Full Vehicle Identification Numbers (VIN chassis numbers), driver personal mobile numbers, and lessee signatory private contact details.
+
+### B. What CAN Be Safely Displayed On-Screen:
+* ✅ Trade Name: `Vision Loop`
+* ✅ Official Badges: `INCOME_TAX_VERIFIED`, `UIDAI_OTP_VERIFIED`
+* ✅ Masked Contract IDs: `VL-LEASE-2026-001`, `DL-01-EV-2026`
+* ✅ Statutory Tax Classification: `SAC 997311 (18% GST)`
+* ✅ Sinking Fund Percentages: `15.0% Automated Sweep`
+* ✅ Telemetry Gauges: `SoC 92.5%`, `SoH 99.4%`, `Temp 33.5°C`, `Speed 0.0 km/h`
+

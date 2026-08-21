@@ -41,6 +41,7 @@ async def test_youtube_shorts_production_and_cross_examination():
     assert audit_result.verified is True
     assert any("YouTube Shorts Formatting" in inv for inv in audit_result.invariants_checked)
     assert any("Bilingual Audio" in inv for inv in audit_result.invariants_checked)
+    assert any("On-Screen PII & Credential Blurring" in inv for inv in audit_result.invariants_checked)
 
 
 @pytest.mark.asyncio
@@ -59,6 +60,8 @@ async def test_youtube_longform_production_and_cross_examination():
     assert pkg["visual_spec"]["aspect_ratio"] == "16:9"
     assert pkg["visual_spec"]["resolution_width"] == 3840
     assert pkg["visual_spec"]["resolution_height"] == 2160
+    assert pkg["visual_spec"]["auto_blur_sensitive_pii"] is True
+    assert len(pkg["visual_spec"]["sensitive_data_blur_zones"]) >= 5
     assert pkg["target_duration_seconds"] == 600
     assert pkg["voiceover_spec"]["target_loudness_lufs"] == -14.0
     assert len(pkg["scenes"]) == 4
@@ -69,3 +72,4 @@ async def test_youtube_longform_production_and_cross_examination():
     assert audit_result.verified is True
     assert any("YouTube Long-Form Invariant" in inv for inv in audit_result.invariants_checked)
     assert any("Bilingual Audio" in inv for inv in audit_result.invariants_checked)
+    assert any("On-Screen PII & Credential Blurring" in inv for inv in audit_result.invariants_checked)

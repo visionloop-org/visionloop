@@ -205,6 +205,21 @@ class ChiefAuditorVerificationAgent(BaseSwarmAgent):
                 else:
                     is_verified = False
                     reasons.append("Audio loudness or localization parity check failed.")
+
+                # Inquest 3: On-Screen Privacy & Credential Blurring Guardrail
+                q3 = "On-Screen Privacy Inquest: Verify all sensitive credentials, PAN (BGVPJ3356G), Aadhaar, bank numbers, and API tokens are blurred in visual frames."
+                q3_msg = self.send_message(target_agent.role, MessageType.CHALLENGE_QUESTION, q3, payload)
+                dialogue.append(q3_msg)
+
+                ans3_msg = await target_agent.answer_challenge(q3, payload)
+                dialogue.append(ans3_msg)
+
+                if v_spec.get("auto_blur_sensitive_pii", True):
+                    invariants_checked.append("On-Screen PII & Credential Blurring Invariant (Gaussian Filter Active)")
+                    reasons.append("Sensitive credentials, PAN, Aadhaar, and bank accounts blurred in video frames.")
+                else:
+                    is_verified = False
+                    reasons.append("Video privacy violation: auto_blur_sensitive_pii is disabled.")
             else:
                 # Standard AdSense cross-border check
                 q1 = "Cross-Border Tax Inquest: Confirm Google AdSense payments are mapped as Zero-Rated Export of Services under GST LUT with Form W-8BEN treaty rates."

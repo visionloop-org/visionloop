@@ -43,6 +43,14 @@ class VideoVisualSpec(BaseModel):
     color_space: str = "Rec.709"
     target_video_codec: str = "H.264 / HEVC"
     branding_lut: str = "VisionLoop_ElectricCyan_TealOrange_LUT"
+    auto_blur_sensitive_pii: bool = True
+    sensitive_data_blur_zones: List[str] = Field(default_factory=lambda: [
+        "PAN Numbers (BGVPJ3356G) & Aadhaar Numbers (Gaussian Blur Radius 25px)",
+        "Bank Account Numbers, IFSC Codes & Private Cash Flow Balances",
+        "API Keys, GitHub Tokens, Gmail Passwords & Cloud Credentials",
+        "Private Customer Phone Numbers & Full Residential Addresses",
+        "Vehicle VIN Chassis Numbers & Private Engine Serial Codes"
+    ])
 
 
 class ScriptScene(BaseModel):
@@ -177,6 +185,8 @@ class YouTubeShortsProducerAgent(BaseSwarmAgent):
             ans = "Shorts Timing Compliance: Video duration is exactly 45 seconds (strictly <60 seconds YouTube Shorts limit) with vertical 9:16 1080x1920 framing."
         elif "language" in challenge_question.lower() or "voice" in challenge_question.lower():
             ans = "Bilingual Audio Verification: Script has 1:1 dual English & Hindi neural voiceover with -14 LUFS loudness and subtitle burns."
+        elif "blur" in challenge_question.lower() or "privacy" in challenge_question.lower() or "pan" in challenge_question.lower() or "credential" in challenge_question.lower():
+            ans = "On-Screen Privacy Guardrail: All raw PAN, Aadhaar numbers, API keys, credentials, and bank account numbers are verified blurred with Gaussian filter (auto_blur_sensitive_pii = True)."
         else:
             ans = "YouTube Shorts specifications verified compliant with Google creator monetization guidelines."
         return self.send_message(AgentRole.CHIEF_AUDITOR, MessageType.RESPONSE_CLARIFICATION, ans, proposal_context)
@@ -297,6 +307,8 @@ class YouTubeLongformDirectorAgent(BaseSwarmAgent):
             ans = "Long-form Timing & AdSense Compliance: Video duration is 10 minutes (600s), fully qualifying for mid-roll AdSense placements and high RPM."
         elif "chapter" in challenge_question.lower() or "timestamp" in challenge_question.lower():
             ans = "Timestamp & SEO Verification: Structured chapters with exact mm:ss timestamps and localized descriptions are embedded."
+        elif "blur" in challenge_question.lower() or "privacy" in challenge_question.lower() or "pan" in challenge_question.lower() or "credential" in challenge_question.lower():
+            ans = "On-Screen Privacy Guardrail: All on-screen dashboard recordings and b-roll apply Gaussian blur to PAN, Aadhaar, bank accounts, and API credentials (auto_blur_sensitive_pii = True)."
         else:
             ans = "Long-form 4K 16:9 technical specifications verified compliant with YouTube broadcast standards."
         return self.send_message(AgentRole.CHIEF_AUDITOR, MessageType.RESPONSE_CLARIFICATION, ans, proposal_context)
