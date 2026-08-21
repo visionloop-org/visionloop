@@ -12,9 +12,10 @@ data/
 ├── kyc/                                # Proprietor Identity & Statutory KYC Dossier
 │   ├── aadhar.pdf                      # Original UIDAI Aadhaar document (Sapna Jaiswal)
 │   ├── sapna_pan.pdf                   # Original Income Tax Dept PAN card (Sapna Jaiswal)
-│   ├── aadhar_img_0_Im4.png            # Front-side Aadhaar scan (Patna registered address)
-│   ├── aadhar_img_1_Im5.png            # Back-side Aadhaar scan (Photo & UID)
-│   └── proprietor_kyc_dossier.json     # Machine-readable validated KYC parameters
+│   ├── aadhar_img_0_Im4.png            # Front-side Aadhaar scan (Sealed in private vault)
+│   ├── aadhar_img_0_Im5.png            # QR-coded Aadhaar verification scan
+│   ├── pan_img_0_Im6.png               # Income Tax Dept PAN card scan
+│   └── proprietor_kyc_dossier.json     # Machine-readable KYC record & metadata
 │
 ├── brand/                              # Official Brand Assets & Design System
 │   └── logo.png                        # Official 3D electric-cyan loop logo & icon
@@ -66,8 +67,7 @@ data/
 * **Proprietor:** **Sapna Jaiswal** (D/O Sanjay Jaiswal)
 * **Proprietor Status:** **Verified Individual Sole Proprietor** (Income Tax & UIDAI Verified)
 * **Privacy & Governance:** **DPDP Act 2023 Compliant** (Raw Identity Assets Sealed in Ring-Fenced Vault)
-* **Registered Address:** `Patna, Bihar - 801503`
-* **Base Operating Hub:** `Lucknow, Uttar Pradesh, India` (Corridors: Lucknow - Kanpur - Delhi NCR)
+* **Registered Office & Base Hub:** **Lucknow, Uttar Pradesh, India** (Corridors: Lucknow - Kanpur - Delhi NCR)
 * **JSON Metadata:** [`data/kyc/proprietor_kyc_dossier.json`](file:///d:/VisionLoop/data/kyc/proprietor_kyc_dossier.json)
 
 ### 2.2 Commercial Legal Contracts (`data/legal/`)

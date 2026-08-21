@@ -5,7 +5,7 @@
 ### 1. PARTIES
 
 **LESSOR:**
-**VISION LOOP**, a Sole Proprietorship firm organized under the laws of India, having its principal operational base hub at **Lucknow, Uttar Pradesh** and registered office at 72/75 A, Kaliasthan, Dinapur-Cum-Khagaul, Patna, Bihar - 801503, represented herein by its Sole Proprietor, **SAPNA JAISWAL** (PAN: **`BGVPJ3356G`**, Aadhaar: **`XXXX-XXXX-4390`**), hereinafter referred to as the **"LESSOR"** (which expression shall include successors and assigns).
+**VISION LOOP**, a Sole Proprietorship firm organized under the laws of India, having its principal place of operations and registered office at **Lucknow, Uttar Pradesh, India**, represented herein by its Sole Proprietor, **SAPNA JAISWAL** (PAN: **`BGVPJ3356G`**, Aadhaar: **`XXXX-XXXX-4390`**), hereinafter referred to as the **"LESSOR"** (which expression shall include successors and assigns).
 
 **AND**
 

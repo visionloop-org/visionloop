@@ -9,10 +9,8 @@
 * **Legal Form:** **Sole Proprietorship** (Organized under the laws of the Republic of India)
 * **Sole Proprietor:** **Sapna Jaiswal** (D/O Sanjay Jaiswal)
 * **Permanent Account Number (PAN):** Verified Individual Proprietor (Sealed in Private Vault)
-* **Aadhaar Identity:** UIDAI Verified (Sealed in Private Vault)
-* **Registered Residential / Official Address:**
-  `72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503`
-* **Operational Fleet Base Hub:** **Lucknow, Uttar Pradesh** (Commercial Freight Corridors: Lucknow – Kanpur – Delhi NCR)
+* **Registered Office & Fleet Base Depot:** **Lucknow, Uttar Pradesh, India** (State Code `09`)
+* **Primary Operating Corridors:** Lucknow – Kanpur – Delhi NCR Commercial Expressways
 
 ---
 

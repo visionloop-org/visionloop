@@ -15,7 +15,7 @@
         "proprietor_name": "Sapna Jaiswal",
         "proprietor_pan": "BGVPJ3356G",
         "country": "India",
-        "registered_state": "Bihar (10) / Base Hub: Lucknow, Uttar Pradesh (09)",
+        "registered_state": "Uttar Pradesh (State Code 09)",
         "operating_corridors": "Lucknow - Kanpur - Delhi NCR Expressways",
         "msme_udyam_nic": "77101",
         "operational_model": "Autonomous Asset Rental",
@@ -34,7 +34,7 @@
         "pan_category": "Individual (P)",
         "aadhaar_masked": "XXXX-XXXX-4390",
         "registered_phone": "9935858549",
-        "registered_address": "72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503",
+        "registered_address": "Lucknow Base Logistics Hub, Uttar Pradesh, India - 226001",
         "kyc_status": "VERIFIED_AUTHENTIC",
         "dpdp_consent_status": "GRANTED"
       }

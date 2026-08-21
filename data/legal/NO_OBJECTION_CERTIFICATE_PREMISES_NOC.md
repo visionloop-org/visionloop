@@ -6,7 +6,7 @@
 ### **TO WHOMSOEVER IT MAY CONCERN**
 
 **Date:** `___ / ___ / 2026`  
-**Place:** Lucknow, Uttar Pradesh / Patna, Bihar  
+**Place:** Lucknow, Uttar Pradesh, India  
 
 ---
 

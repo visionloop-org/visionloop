@@ -58,7 +58,7 @@ graph TD
 
 ## 2. Ontological Node Encyclopedia
 
-1. **`PROPRIETOR:SAPNA_JAISWAL`**: Sole Proprietor with 100% equity. Income Tax & UIDAI Verified KYC (Identity records sealed in private vault), Registered Address in Patna, Bihar - 801503, Base Hub in Lucknow, Uttar Pradesh.
+1. **`PROPRIETOR:SAPNA_JAISWAL`**: Sole Proprietor with 100% equity. Income Tax & UIDAI Verified KYC (Identity records sealed in private vault), Registered Office & Fleet Base Depot in Lucknow, Uttar Pradesh, India.
 2. **`ENTITY:VISION_LOOP`**: Indian Sole Proprietorship trading entity registered under MSME Udyam **NIC 77101** (Rental/Leasing of Motor Vehicles).
 3. **`ASSET:VL-EV-001`**: Commercial Electric Goods Carriage — **Tata Intra EV** (Yellow Board `DL-01-EV-2026`, VIN: `MAT612345N2A09876`, 26.0 kWh battery).
 4. **`LESSEE:SWIFTLOGIX`**: SwiftLogix Express Delivery Pvt Ltd (PAN: `AAACS1234F`, GSTIN: `07AAACS1234F1Z5`).
@@ -80,5 +80,5 @@ graph TD
 
 ## 3. Cryptographic Proof of Zero Corruption
 
-$$\text{SHA-256 Checksum: } \mathbf{21f3f2c131a533f7edbeb4eb5272c048915ad68eaf59817cb96046e39438dd0e}$$
+$$\text{SHA-256 Checksum: } \mathbf{ce9d2966c586e624834a8b8f98738b5aadf5e3724f83d6c836ed310d02afb005}$$
 *All 29 Mathematical & Structural Invariants Verified with 100% Precision.*

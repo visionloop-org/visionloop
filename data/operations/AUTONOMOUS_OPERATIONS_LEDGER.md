@@ -23,7 +23,7 @@ stateDiagram-v2
 
 | Event Identifier | Domain | Description & Audit Payload | Cryptographic Verification |
 | :--- | :--- | :--- | :--- |
-| **`INCORPORATION_AND_KYC_VERIFIED`** | `GOVERNANCE` | Verified Sole Proprietorship KYC for Sapna Jaiswal (Income Tax PAN & UIDAI Aadhaar Verified, Patna, Bihar). | Income Tax Dept & UIDAI Verified ✓ |
+| **`INCORPORATION_AND_KYC_VERIFIED`** | `GOVERNANCE` | Verified Sole Proprietorship KYC for Sapna Jaiswal (Income Tax PAN & UIDAI Aadhaar Verified, Lucknow, Uttar Pradesh). | Income Tax Dept & UIDAI Verified ✓ |
 | **`CANONICAL_KNOWLEDGE_GRAPH_SEALED`** | `SECURITY` | Sealed canonical ontology with **17 Nodes and 16 Relationships**; verified 29 mathematical invariants. | SHA-256 Checksum: `21f3f2c1...` ✓ |
 | **`MASTER_LEASE_EXECUTED`** | `LEGAL` | Executed 24-Month Commercial Lease with SwiftLogix Express for Tata Intra EV (`DL-01-EV-2026`) @ ₹84,960.00 / month. | Security Deposit: ₹1,44,000.00 Held ✓ |
 | **`GOOGLE_CORP_INFRASTRUCTURE_ACTIVATED`** | `INFRASTRUCTURE` | Activated official Google corporate account **`visionloop.in@gmail.com`** with GCP and Gmail relay. | Phone 2FA: `+91 9935858549` Verified ✓ |

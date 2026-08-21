@@ -44,7 +44,7 @@ Starting with commercial electric goods carriages (**Tata Intra EV**, Yellow Boa
 | **Corporate Email** | **`visionloop.in@gmail.com`** |
 | **Recovery Email** | `ruhiljaiswal1993@gmail.com` |
 | **Primary Contact (2FA)** | `+91 9935858549` |
-| **Registered Office** | `72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503` |
+| **Registered Office & Base Hub** | **Lucknow, Uttar Pradesh, India** (State Code `09`) |
 | **MSME Udyam Activity** | Services -> **NIC 77101** (Renting and leasing of motor vehicles without operator) |
 | **GST Classification** | **SAC 997311** (Leasing of transport vehicles without operator @ 18% GST) |
 | **Official Website** | **[https://visionloop-org.github.io/visionloop/](https://visionloop-org.github.io/visionloop/)** |

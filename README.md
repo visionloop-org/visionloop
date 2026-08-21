@@ -156,8 +156,8 @@ python scripts/verify_data_integrity.py
 * **Sole Proprietor:** **Sapna Jaiswal** (D/O Sanjay Jaiswal)
 * **Proprietor Identity:** **Verified Individual Sole Proprietor** (Income Tax & UIDAI Verified)
 * **Data Protection Tier:** **DPDP Act 2023 Compliant** (PII Ring-Fenced in Private Vault)
-* **Base Operating Hub:** **Lucknow, Uttar Pradesh, India**
-* **Registered Address:** `Patna, Bihar - 801503`
+* **Registered Office & Operating Hub:** **Lucknow, Uttar Pradesh, India** (State Code `09`)
+* **Freight Operating Corridors:** Lucknow – Kanpur – Delhi NCR Commercial Expressways
 * **Udyam MSME Classification:** **NIC 77101** (Rental/Leasing of Motor Vehicles)
 * **GSTIN Classification:** **SAC 997311** (18% GST)
 * **Official Email:** `visionloop.in@gmail.com`
