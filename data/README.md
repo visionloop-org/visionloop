@@ -20,7 +20,8 @@ data/
 │   └── logo.png                        # Official 3D electric-cyan loop logo & icon
 │
 ├── legal/                              # Commercial Contracts & Counterparty Agreements
-│   └── COMMERCIAL_VEHICLE_LEASE_AGREEMENT.md  # Master Commercial Lease Agreement (24 Mo)
+│   ├── COMMERCIAL_VEHICLE_LEASE_AGREEMENT.md  # Master Commercial Lease Agreement (24 Mo)
+│   └── NO_OBJECTION_CERTIFICATE_PREMISES_NOC.md # Premises NOC from Property Owner for GST/MSME
 │
 ├── compliance/                         # Institutional Handbooks & Regulatory Guides
 │   ├── INCORPORATION_AND_GST_GUIDE.md  # Sole Proprietorship, Udyam MSME & GST guide
