@@ -41,10 +41,11 @@ data/
 │   ├── knowledge_graph.json            # Machine-readable 17-node graph with SHA-256 hash
 │   └── KNOWLEDGE_GRAPH.md              # Mathematical invariant specifications & Mermaid diagrams
 │
-├── operations/                         # Autonomous Operational Journals & Growth Models
-│   ├── AUTONOMOUS_OPERATIONS_LEDGER.md # Canonical chronological operations log
-│   ├── SELF_SUSTAINING_GROWTH_MODEL.md # 5-Year exponential debt-free scale model
-│   └── live_operational_events.json    # Machine-readable SHA-256 event stream
+├── operations/                         # Autonomous Operational Ledgers & Swarm Blueprints
+│   ├── AUTONOMOUS_OPERATIONS_LEDGER.md # Chronological event stream with SHA-256 signatures
+│   ├── MULTI_AGENT_HIERARCHY_BLUEPRINT.md # 3-Tier agent swarm hierarchy & cross-examination protocol
+│   ├── SELF_SUSTAINING_GROWTH_MODEL.md # 5-Year exponential debt-free fleet scaling model
+│   └── live_operational_events.json    # Structured machine-readable event ledger
 │
 ├── credentials/                        # Master Credentials & Secrets Vault
 │   ├── CREDENTIALS_AND_ACCOUNTS_VAULT.md # Master logins, passwords & recovery records

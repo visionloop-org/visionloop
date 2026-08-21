@@ -68,7 +68,7 @@ graph TD
 8. **`STATUTE:MSMED_ACT_2006`**: Statutory 45-day payment enforcement with 3x RBI compounding interest.
 9. **`SLA:BATTERY_WARRANTY`**: Tata OEM SLA (max 70% DC fast charge ratio, thermal limit 42°C, 10k km service intervals).
 10. **`SECURITY:IMMOBILIZER_RELAY`**: Ethical remote motor cut-off relay with `speed == 0.0 km/h` standstill guardrail.
-11. **`AI_SWARM:SENTINELS`**: Autonomous Multi-Agent Swarm (Financial, Telematics, Legal, Executive).
+11. **`AI_SWARM:SENTINELS`**: 3-Tier Autonomous AI Multi-Agent Swarm (Tier 1: Garuda Executive, Tier 2: Chanakya Auditor Cross-Examiner, Tier 3: 5 Operational Domain Sentinels).
 12. **`COMMS:TELEGRAM_BOT`**: 24/7 Mobile Command Center (`@VisionLoop_Bot`, Port 8004).
 13. **`IP:VISIONLOOP_SDK`**: Standalone modular Python libraries (`visionloop-finance`, `visionloop-telematics`, etc.).
 14. **`ACCOUNT:GOOGLE_CORP`**: Corporate Google Account (`visionloop.in@gmail.com`) for Gmail relay, GCP credits, and Gemini API.
@@ -80,5 +80,5 @@ graph TD
 
 ## 3. Cryptographic Proof of Zero Corruption
 
-$$\text{SHA-256 Checksum: } \mathbf{ce9d2966c586e624834a8b8f98738b5aadf5e3724f83d6c836ed310d02afb005}$$
+$$\text{SHA-256 Checksum: } \mathbf{a7528522d675c3303553298fa9f43abef0396ff32923417290247c7b78cf53e1}$$
 *All 29 Mathematical & Structural Invariants Verified with 100% Precision.*

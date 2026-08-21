@@ -159,12 +159,18 @@
     {
       "id": "AI_SWARM:SENTINELS",
       "type": "AIAgentSwarm",
-      "label": "Autonomous AI Multi-Agent Swarm",
+      "label": "3-Tier Autonomous AI Multi-Agent Swarm",
       "properties": {
-        "financial_sentinel": "Zoho Invoicing & WhatsApp Collections",
-        "telematics_sentinel": "Battery Health & 10k KM Maintenance Booking",
-        "legal_sentinel": "Lease Synthesis & MSMED Act Enforcement",
-        "executive_agent": "Enterprise Health & Treasury Ledger Synthesis"
+        "tier1_executive": "Garuda Executive Swarm Coordinator (Task Decomposition & Delegation)",
+        "tier2_auditor": "Chanakya Audit Sentinel (Inter-Agent Cross-Examination & Inquest)",
+        "tier3_operational_sentinels": [
+          "Aegis Fleet Operations",
+          "Kuber Treasury & Finance",
+          "Nyaya Legal & Compliance",
+          "Sutra Software Engineering",
+          "Vani YouTube & Digital Media"
+        ],
+        "verification_protocol": "Zero-Trust Invariant Cross-Examination with SHA-256 Hashed Dialogue Receipts"
       }
     },
     {

@@ -53,19 +53,42 @@ async def run_legal_agent():
 async def get_executive_briefing():
     return await executive_agent.generate_briefing()
 
-@app.post("/agents/swarm/execute-all")
-async def execute_all_agents():
-    fin = await financial_agent.scan_and_collect()
-    tel = await telematics_agent.evaluate_fleet_health()
-    leg = await legal_agent.audit_compliance()
-    exe = await executive_agent.generate_briefing()
-    return {
-        "status": "success",
-        "message": "All autonomous agents executed cycle successfully",
-        "results": {
-            "financial": fin,
-            "telematics": tel,
-            "legal": leg,
-            "executive": exe
-        }
-    }
+import sys
+from pathlib import Path
+
+# Add packages to path
+root_dir = Path(__file__).resolve().parent.parent.parent.parent
+sys.path.insert(0, str(root_dir / "packages" / "visionloop-finance"))
+sys.path.insert(0, str(root_dir / "packages" / "visionloop-telematics"))
+sys.path.insert(0, str(root_dir / "packages" / "visionloop-legal"))
+sys.path.insert(0, str(root_dir / "packages" / "visionloop-comms"))
+sys.path.insert(0, str(root_dir / "packages" / "visionloop-sdk"))
+
+from visionloop_sdk.swarm import SwarmOrchestrator
+
+swarm_engine = SwarmOrchestrator()
+
+class SwarmTaskRequest(BaseModel):
+    goal: str
+    domain: Optional[str] = "finance"
+    context: Optional[Dict[str, Any]] = None
+
+@app.get("/agents/hierarchy")
+async def get_agent_hierarchy():
+    """Returns the 3-tier hierarchical agent organization tree."""
+    return {"hierarchy": swarm_engine.list_hierarchy()}
+
+@app.post("/agents/swarm/cross-examine")
+async def execute_swarm_task(req: SwarmTaskRequest):
+    """
+    Executes a high-level enterprise task through the multi-agent swarm hierarchy.
+    Operational workers propose solutions, the Chief Auditor cross-examines with Q&A challenges,
+    and the Chief Executive certifies the final audited action receipt.
+    """
+    receipt = await swarm_engine.execute_task_with_cross_examination(
+        goal=req.goal,
+        domain=req.domain or "finance",
+        context=req.context
+    )
+    return receipt.model_dump()
+
