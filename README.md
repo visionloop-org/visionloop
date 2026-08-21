@@ -19,20 +19,17 @@
 
 **Vision Loop** is a technology-driven, zero-touch Indian Sole Proprietorship enterprise specializing in the institutional leasing and management of commercial electric vehicles (**Tata Intra EV**, Yellow Board `DL-01-EV-2026`). Founded and solely owned by **Sapna Jaiswal**, Vision Loop operates from its primary base hub in **Lucknow, Uttar Pradesh**, serving the high-density **Lucknow – Kanpur – Delhi NCR freight logistics corridors**.
 
-The enterprise eliminates operational overhead through an autonomous **AI Multi-Agent Swarm** that reconciles **Zoho Books** invoices under **SAC 997311** (18% GST), enforces **MSMED Act 2006** 45-day statutory payment terms, audits IoT CAN-Bus battery telemetry, and sweeps **15% of monthly revenue (₹10,800/mo)** into a high-yield liquid sinking fund for debt-free capital replacement.
+The enterprise eliminates operational overhead through an autonomous **AI Multi-Agent Swarm** that reconciles **Zoho Books** invoices under **SAC 997311** (18% GST), enforces **MSMED Act 2006** 45-day statutory payment terms, audits IoT CAN-Bus battery telemetry, and sweeps **15% of monthly revenue** into a high-yield liquid sinking fund for debt-free capital replacement.
 
 ---
 
-## 💰 2. Financial Architecture & Unit Economics (SAC 997311)
+## 🏛️ 2. Institutional Financial & Statutory Architecture (SAC 997311)
 
-$$\begin{aligned}
-\text{Base Commercial Rent} &= \mathbf{₹72,000.00 / \text{month}} \\
-\text{18\% GST (SAC 997311)} &= \mathbf{₹12,960.00 / \text{month}} \quad (\text{CGST } ₹6,480 + \text{SGST } ₹6,480) \\
-\text{Total Gross Invoiced} &= \mathbf{₹84,960.00 / \text{month (e-NACH / UPI QR)}} \\
-\text{15\% Sinking Fund} &= \mathbf{₹10,800.00 / \text{month (Liquid Overnight Fund @ 6.8\% CAGR)}} \\
-\text{Refundable Security Deposit} &= \mathbf{₹1,44,000.00 (2 Months Base Rent in Escrow)} \\
-\text{100\% Input Tax Credit (ITC)} &= \mathbf{\text{Claimable under Section 17(5)(a) of CGST Act}}
-\end{aligned}$$
+* **Commercial Billing Standard:** **SAC 997311** (Leasing of Freight Transport Vehicles without Operator).
+* **Statutory Tax Framework:** 18% GST (CGST 9% + SGST 9%) with **100% Input Tax Credit (ITC)** claimable under **Section 17(5)(a)** of the CGST Act against EV purchase, insurance, and charging infrastructure.
+* **15% Sinking Fund Treasury:** 15% of monthly revenue is automatically swept into High-Yield Liquid Overnight Treasury Instruments (~6.8% CAGR) for debt-free 36-month asset renewal.
+* **Escrow Risk Buffer:** 2-Month Base Equivalent Security Deposit held in escrow throughout the lease tenure.
+* **Statutory MSME Protection:** Automated enforcement of **MSMED Act 2006 (Sections 15 & 16)** imposing 3x RBI compounding interest on overdue receivables beyond 45 days.
 
 ---
 

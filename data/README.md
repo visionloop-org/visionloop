@@ -25,6 +25,7 @@ data/
 ├── compliance/                         # Institutional Handbooks & Regulatory Guides
 │   ├── INCORPORATION_AND_GST_GUIDE.md  # Sole Proprietorship, Udyam MSME & GST guide
 │   ├── BUSINESS_BEST_PRACTICES_MANUAL.md # 15% Sinking Fund & DPDP Act 2023 operating rules
+│   ├── PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY.md # Financial privacy rule for public channels
 │   ├── GOOGLE_ACCOUNT_AND_GCP_SETUP.md # Official Google Account & GCP setup guide
 │   ├── GITHUB_AND_PAGES_SETUP.md       # GitHub Account & GitHub.io Pages deployment guide
 │   └── EXECUTIVE_BIO_AND_BRAND_STORY.md # Official Executive Bio & Brand Story for Sapna Jaiswal
