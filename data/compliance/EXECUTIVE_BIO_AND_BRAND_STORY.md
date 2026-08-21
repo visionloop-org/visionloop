@@ -23,7 +23,7 @@ Starting with commercial electric goods carriages (**Tata Intra EV**, Yellow Boa
 
 ## 👤 3. Proprietor Executive Profile: Sapna Jaiswal
 
-**Sapna Jaiswal** is the Sole Proprietor and unencumbered 100% beneficial owner of **Vision Loop**. Operating from Patna, Bihar with fleet operations across the high-density Delhi NCR logistics corridor, Sapna pioneered an asset-light, technology-first model for commercial fleet management in India.
+**Sapna Jaiswal** is the Sole Proprietor and unencumbered 100% beneficial owner of **Vision Loop**. Headquartered with primary base operations in **Lucknow, Uttar Pradesh**, and serving the Lucknow - Kanpur - Delhi NCR high-density commercial freight corridors, Sapna pioneered an asset-light, technology-first model for commercial fleet management in India.
 
 ### Key Pillars of Governance:
 1. **Statutory & Tax Precision:** Full compliance with the Central Goods and Services Tax (CGST) Act, claiming 100% Input Tax Credit (ITC) on commercial goods vehicles under Section 17(5)(a), and enforcing statutory MSMED Act protections under Sections 15 & 16.
