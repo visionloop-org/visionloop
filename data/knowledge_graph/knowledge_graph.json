@@ -233,6 +233,81 @@
         "status": "SECURED_LOCALLY",
         "gitignore_protected": true
       }
+    },
+    {
+      "id": "DIVISION:COMMERCIAL_EV_LEASING",
+      "type": "EnterpriseDivision",
+      "label": "Commercial EV & Asset Leasing Division",
+      "properties": {
+        "statutory_sac": "997311",
+        "statutory_nic": "77101",
+        "gst_rate": "18%",
+        "itc_entitlement": "100% Section 17(5)(a)",
+        "base_depot": "Lucknow, Uttar Pradesh (State Code 09)"
+      }
+    },
+    {
+      "id": "DIVISION:SOFTWARE_SAAS_IP",
+      "type": "EnterpriseDivision",
+      "label": "Software Products & SaaS IP Licensing Division",
+      "properties": {
+        "statutory_sac": "998314",
+        "statutory_nic": "62011",
+        "gst_rate": "18%",
+        "master_sdk": "visionloop-sdk",
+        "open_source_license": "Apache License 2.0"
+      }
+    },
+    {
+      "id": "DIVISION:YOUTUBE_COMMERCIAL_MEDIA",
+      "type": "EnterpriseDivision",
+      "label": "YouTube Commercial Channel & Creator Media Division",
+      "properties": {
+        "statutory_sac": "998361",
+        "statutory_nic": "73100 / 59112",
+        "tax_treatment": "Zero-Rated Export of Services with GST LUT",
+        "forex_remittance": "FIRC Bank Inward Remittance",
+        "production_agents": ["Laghu Vani (Shorts 9:16)", "Dirgha Vani (Longform 16:9)"]
+      }
+    },
+    {
+      "id": "PROTOCOL:SOVEREIGN_5_PHASE_GOVERNANCE",
+      "type": "GovernanceProtocol",
+      "label": "Sovereign 5-Phase Human-in-the-Loop Protocol",
+      "properties": {
+        "phases": [
+          "Phase 1: Gather Ground-Truth Data",
+          "Phase 2: Plan Strategic Roadmap",
+          "Phase 3: Grill & Verify (Auditor Inquest)",
+          "Phase 4: Present Proposal (Briefing)",
+          "Phase 5: Execute Upon Explicit Human Approval"
+        ],
+        "zero_autonomous_mutation": true,
+        "human_approval_gate": "MANDATORY"
+      }
+    },
+    {
+      "id": "FRAMEWORK:PUBLIC_LICENSING",
+      "type": "LegalFramework",
+      "label": "Multi-Tier Public Licensing Architecture",
+      "properties": {
+        "code_license": "Apache License 2.0",
+        "documentation_license": "CC BY-SA 4.0",
+        "trademark_reservation": "Vision Loop™ (All Rights Reserved)",
+        "disclaimer_active": true
+      }
+    },
+    {
+      "id": "FRAMEWORK:STRICT_SAFETY_GUARDRAILS",
+      "type": "SafetyFramework",
+      "label": "5 Sovereign Enterprise Safety Pillars",
+      "properties": {
+        "standstill_relay_invariant": "Speed == 0.0 km/h verified",
+        "oem_dc_fast_charge_cap": "70%",
+        "thermal_limit_c": 42.0,
+        "sinking_fund_reserve": "15.0%",
+        "dpdp_pii_redaction": "PAN BGVPJ3356G & Aadhaar Sealed"
+      }
     }
   ],
   "edges": [
@@ -331,6 +406,42 @@
       "target": "VAULT:ENTERPRISE_CREDENTIALS",
       "relationship": "SEALED_IN_SECURITY_VAULT",
       "properties": { "encryption_tier": "Local Ring-Fenced Storage" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "DIVISION:COMMERCIAL_EV_LEASING",
+      "relationship": "OPERATES_DIVISION",
+      "properties": { "status": "ACTIVE_OPERATIONAL" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "DIVISION:SOFTWARE_SAAS_IP",
+      "relationship": "OPERATES_DIVISION",
+      "properties": { "status": "ACTIVE_OPERATIONAL" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "DIVISION:YOUTUBE_COMMERCIAL_MEDIA",
+      "relationship": "OPERATES_DIVISION",
+      "properties": { "status": "ACTIVE_OPERATIONAL" }
+    },
+    {
+      "source": "AI_SWARM:SENTINELS",
+      "target": "PROTOCOL:SOVEREIGN_5_PHASE_GOVERNANCE",
+      "relationship": "ENFORCES_GOVERNANCE_LIFECYCLE",
+      "properties": { "status": "ACTIVE_ENFORCED" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "FRAMEWORK:PUBLIC_LICENSING",
+      "relationship": "PUBLISHES_UNDER_LICENSE",
+      "properties": { "status": "ACTIVE_ENFORCED" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "FRAMEWORK:STRICT_SAFETY_GUARDRAILS",
+      "relationship": "ENFORCES_SAFETY_GUARDRAILS",
+      "properties": { "status": "ACTIVE_ENFORCED" }
     }
   ]
 }

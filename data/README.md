@@ -20,6 +20,9 @@ data/
 ├── brand/                              # Official Brand Assets & Design System
 │   └── logo.png                        # Official 3D electric-cyan loop logo & icon
 │
+├── business_model/                     # Master Enterprise Business Architecture
+│   └── ENTERPRISE_BUSINESS_MODEL_AND_PROCESS_ARCHITECTURE.md # 3 Verticals, unit economics & lifecycle
+│
 ├── legal/                              # Commercial Contracts & Binding Legal Instruments
 │   ├── MASTER_COMMERCIAL_FLEET_LEASE_AGREEMENT.md # 36-Month SAC 997311 lease contract
 │   ├── NO_OBJECTION_CERTIFICATE_PREMISES_NOC.md # Lucknow registered office spousal consent NOC
@@ -45,8 +48,8 @@ data/
 │   └── brand_voice_guidelines.json     # Multilingual voice-over parameters (English & Hindi)
 │
 ├── knowledge_graph/                    # Canonical Ontological Knowledge Graph
-│   ├── knowledge_graph.json            # Machine-readable 17-node graph with SHA-256 hash
-│   └── KNOWLEDGE_GRAPH.md              # Mathematical invariant specifications & Mermaid diagrams
+│   ├── knowledge_graph.json            # Machine-readable 23-node graph with SHA-256 hash
+│   └── KNOWLEDGE_GRAPH.md              # 35 Invariant specifications & Mermaid topology diagrams
 │
 ├── operations/                         # Autonomous Operational Ledgers & Swarm Blueprints
 │   ├── AUTONOMOUS_OPERATIONS_LEDGER.md # Chronological event stream with SHA-256 signatures
