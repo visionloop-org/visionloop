@@ -52,9 +52,12 @@ Whenever a video features commercial brand integrations, vehicle OEM sponsorship
 3. **Description Disclosure:** The first 3 lines of the YouTube description must state:
    * *"This video includes a paid brand integration with [Partner Name]."*
 
-### B. SEBI / ASCI Financial Content Disclaimer:
-All discussions regarding the 15% Sinking Fund, overnight treasury compound yields, and commercial vehicle leasing returns must carry the mandatory educational disclaimer:
-> *"DISCLAIMER: Content published by Vision Loop is for educational and operational informational purposes only. Commercial EV lease returns, battery life cycles, and treasury yields are subject to operating conditions. Vision Loop does not offer SEBI-registered investment advice. Please consult a licensed Chartered Accountant (CA) or financial advisor before making business commitments."*
+### B. SEBI / ASCI Financial & AI-Generated Content Disclaimer:
+All video descriptions and discussions regarding financial numbers, 15% Sinking Fund calculations, overnight treasury yields, and commercial vehicle leasing returns must carry the mandatory educational & AI disclosure:
+> *"DISCLAIMER & AI DISCLOSURE: Content published by Vision Loop is generated and modeled with the assistance of Autonomous Artificial Intelligence (AI) and is for educational and operational informational purposes only. AI-assisted models, calculations, and scripts may contain inadvertent errors, approximations, or variances. Commercial EV lease returns, battery life cycles, and treasury yields are subject to operating market conditions. Vision Loop does not provide SEBI-registered investment advice. Please consult a certified Chartered Accountant (CA) or financial advisor before making business commitments."*
+
+### C. YouTube AI Altered / Synthetic Media Disclosure:
+In compliance with YouTube's 2024 Altered Media Policy, any synthetic voiceovers or generative AI visual mockups must be declared in YouTube Studio under **"Altered content (Does content show realistic altered or synthetic material? -> YES)"**.
 
 ---
 

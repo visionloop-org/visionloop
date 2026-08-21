@@ -80,11 +80,12 @@ class YouTubeVideoProductionPackage(BaseModel):
     # Indian Regulatory Compliance Metadata (IT Rules 2021 & ASCI)
     content_rating_india: str = "U (Universal / All Ages)"
     grievance_officer_email: str = "visionloop.in@gmail.com"
-    asci_sponsored_disclosure_required: bool = False
     statutory_financial_disclaimer_india: str = (
-        "DISCLAIMER: Content published by Vision Loop is for educational and informational purposes only. "
-        "Lease returns, EV battery lifecycles, and treasury fund yields are subject to operating market conditions. "
-        "Vision Loop does not provide SEBI-registered investment advice. Consult a licensed CA/financial advisor."
+        "DISCLAIMER & AI DISCLOSURE: Content published by Vision Loop is generated and modeled with the assistance of "
+        "Autonomous Artificial Intelligence (AI) and is for educational and operational informational purposes only. "
+        "AI-assisted models, calculations, and scripts may contain inadvertent errors or approximations. "
+        "Commercial EV lease returns, battery lifecycles, and treasury fund yields are subject to operating market conditions. "
+        "Vision Loop does not provide SEBI-registered investment advice. Consult a licensed Chartered Accountant (CA) or financial advisor."
     )
     arai_range_certification_disclosed: bool = True
 

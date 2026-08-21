@@ -7,11 +7,23 @@
 **Headquartered in Lucknow, Uttar Pradesh • Republic of India**
 
 [![Live Website](https://img.shields.io/badge/Live_Website-visionloop--org.github.io-06b6d4?style=for-the-badge&logo=github)](https://visionloop-org.github.io/visionloop/)
-[![Knowledge Graph](https://img.shields.io/badge/Knowledge_Graph-17_Nodes_•_Verified-10b981?style=for-the-badge)](data/knowledge_graph/KNOWLEDGE_GRAPH.md)
-[![Tests](https://img.shields.io/badge/Tests-24%2F24_Passing-38bdf8?style=for-the-badge)](tests/)
-[![License](https://img.shields.io/badge/Entity-Sole_Proprietorship_(India)-f59e0b?style=for-the-badge)](data/compliance/EXECUTIVE_BIO_AND_BRAND_STORY.md)
+[![Knowledge Graph](https://img.shields.io/badge/Knowledge_Graph-23_Nodes_•_Verified-10b981?style=for-the-badge)](data/knowledge_graph/KNOWLEDGE_GRAPH.md)
+[![Tests](https://img.shields.io/badge/Tests-31%2F31_Passing-38bdf8?style=for-the-badge)](tests/)
+[![License](https://img.shields.io/badge/Code_License-Apache--2.0-f59e0b?style=for-the-badge)](LICENSE)
+[![AI Disclosed](https://img.shields.io/badge/AI_Assisted-Transparency_Disclosed-ec4899?style=for-the-badge)](#-ai-generated-content--technical-uncertainty-disclosure)
 
 </div>
+
+---
+
+> ### ⚠️ AI-GENERATED CONTENT & TECHNICAL UNCERTAINTY DISCLOSURE
+> **Vision Loop’s codebase, architectural blueprints, financial models, telematics engines, tax simulations (SAC 997311), and video production scripts are generated, modeled, and maintained with the assistance of Autonomous Artificial Intelligence and Multi-Agent Swarms.**
+>
+> While all mathematical identities, ontological relationships, and security invariants undergo deterministic CI/CD validation, **AI-generated materials may contain inadvertent errors, approximations, statutory variances, or technical inaccuracies.** 
+>
+> * **Financial & Tax Notice:** All financial projections, cash flow models, and GST calculations are programmatic references. Users and counterparties must seek independent verification from a licensed **Chartered Accountant (CA)** before executing financial commitments.
+> * **Automotive & Telematics Safety:** Telematics algorithms and remote cut-off relay logic are experimental models provided **"AS IS"**. Always consult OEM-certified automotive engineers prior to physical vehicle deployment.
+> * **Legal & Contractual Terms:** Master commercial lease templates and policies must be reviewed by qualified legal counsel in your respective jurisdiction.
 
 ---
 

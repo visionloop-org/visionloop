@@ -76,3 +76,8 @@ The following assets are **STRICTLY RESERVED** and **NOT** licensed under open-s
 
 ### 5.3 Data Privacy & DPDP Act 2023:
 * Users integrating this software are solely responsible for ensuring compliance with the **Digital Personal Data Protection Act 2023 (India)** regarding end-user consent and PII storage.
+
+### 5.4 AI-Generated Content & Technical Error Uncertainty Disclosure:
+* **AI-Assisted Modeling Notice:** All software code, ontological knowledge graphs, statutory guides, financial formulas, video storyboards, and multi-agent workflows across Vision Loop repositories are created, synthesized, and maintained with the assistance of **Autonomous Artificial Intelligence (AI) and Generative Large Language Models (LLMs)**.
+* **Potential for Errors & Inaccuracies:** While all mathematical invariants and software tests undergo automated cryptographic verification, **AI-generated materials may contain inadvertent errors, outdated statutory interpretations, typographical bugs, or technical approximations.**
+* **Professional Consultation Mandate:** None of the materials presented constitute binding certified financial advice, licensed legal counsel, or OEM vehicular engineering certifications. All users and enterprise clients must independently verify all facts, numbers, tax filings, and technical configurations with certified human experts (licensed CAs, legal advocates, and certified automotive technicians) prior to reliance or deployment.
