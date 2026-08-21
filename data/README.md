@@ -26,7 +26,8 @@ data/
 │   ├── INCORPORATION_AND_GST_GUIDE.md  # Sole Proprietorship, Udyam MSME & GST guide
 │   ├── BUSINESS_BEST_PRACTICES_MANUAL.md # 15% Sinking Fund & DPDP Act 2023 operating rules
 │   ├── GOOGLE_ACCOUNT_AND_GCP_SETUP.md # Official Google Account & GCP setup guide
-│   └── GITHUB_AND_PAGES_SETUP.md       # GitHub Account & GitHub.io Pages deployment guide
+│   ├── GITHUB_AND_PAGES_SETUP.md       # GitHub Account & GitHub.io Pages deployment guide
+│   └── EXECUTIVE_BIO_AND_BRAND_STORY.md # Official Executive Bio & Brand Story for Sapna Jaiswal
 │
 ├── knowledge_graph/                    # Canonical Ontological Knowledge Graph
 │   ├── knowledge_graph.json            # Machine-readable 13-node graph with SHA-256 hash

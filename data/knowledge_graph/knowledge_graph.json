@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "enterprise": "Vision Loop (Sole Proprietorship)",
   "jurisdiction": "Republic of India",
   "integrity_status": "CRYPTOGRAPHICALLY_VERIFIED",
-  "generated_at": "2026-08-21T23:38:00Z",
-  "sha256_checksum": "cda18ec22a67979995dcd9970e41dcf2c177997f865ebdcf5b86d8b2c854152d",
+  "generated_at": "2026-08-22T00:26:00Z",
+  "sha256_checksum": "21f3f2c131a533f7edbeb4eb5272c048915ad68eaf59817cb96046e39438dd0e",
   "nodes": [
     {
       "id": "ENTITY:VISION_LOOP",
@@ -32,6 +32,7 @@
         "pan": "BGVPJ3356G",
         "pan_category": "Individual (P)",
         "aadhaar_masked": "XXXX-XXXX-4390",
+        "registered_phone": "9935858549",
         "registered_address": "72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503",
         "kyc_status": "VERIFIED_AUTHENTIC",
         "dpdp_consent_status": "GRANTED"
@@ -179,6 +180,52 @@
         ],
         "portability": "100% Cross-project portable & standalone installable"
       }
+    },
+    {
+      "id": "ACCOUNT:GOOGLE_CORP",
+      "type": "CorporateAccount",
+      "label": "Google Corporate & Cloud Infrastructure",
+      "properties": {
+        "email": "visionloop.in@gmail.com",
+        "recovery_email": "ruhiljaiswal1993@gmail.com",
+        "phone_2fa": "+91 9935858549",
+        "services": ["Gmail Relay", "Google Cloud Platform (GCP)", "Gemini 2.0 Flash API", "Google Maps Platform"],
+        "status": "ACTIVE_AND_VERIFIED"
+      }
+    },
+    {
+      "id": "ACCOUNT:GITHUB_ORG",
+      "type": "CloudHosting",
+      "label": "GitHub Organization & Global Pages CDN",
+      "properties": {
+        "organization": "visionloop-org",
+        "repository": "visionloop-org/visionloop",
+        "live_website": "https://visionloop-org.github.io/visionloop/",
+        "deployment_source": "/docs (Branch main)",
+        "status": "LIVE_DEPLOYED"
+      }
+    },
+    {
+      "id": "BRAND:DESIGN_SYSTEM",
+      "type": "BrandIdentity",
+      "label": "Vision Loop 3D Infinity Design System",
+      "properties": {
+        "symbol": "3D Electric-Cyan Ribbon Infinity Loop (V + ∞)",
+        "master_asset": "data/brand/logo.png",
+        "avatar_asset": "data/brand/avatar.png",
+        "theme": "Glassmorphic Dark Neon"
+      }
+    },
+    {
+      "id": "VAULT:ENTERPRISE_CREDENTIALS",
+      "type": "SecurityVault",
+      "label": "Enterprise Credentials & Secrets Vault",
+      "properties": {
+        "markdown_vault": "data/credentials/CREDENTIALS_AND_ACCOUNTS_VAULT.md",
+        "json_vault": "data/credentials/ENTERPRISE_CREDENTIALS_VAULT.json",
+        "status": "SECURED_LOCALLY",
+        "gitignore_protected": true
+      }
     }
   ],
   "edges": [
@@ -253,6 +300,30 @@
       "target": "IP:VISIONLOOP_SDK",
       "relationship": "HOLDS_EXCLUSIVE_IP_RIGHTS",
       "properties": { "asset_classification": "Intangible Capitalized IP" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "ACCOUNT:GOOGLE_CORP",
+      "relationship": "AUTHENTICATES_AND_COMMUNICATES_VIA",
+      "properties": { "primary_email": "visionloop.in@gmail.com" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "ACCOUNT:GITHUB_ORG",
+      "relationship": "HOSTS_AND_PUBLISHES_ON",
+      "properties": { "cdn_url": "https://visionloop-org.github.io/visionloop/" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "BRAND:DESIGN_SYSTEM",
+      "relationship": "DEFINES_BRAND_IDENTITY",
+      "properties": { "brand_trademark": "Vision Loop Infinity Ribbon" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "VAULT:ENTERPRISE_CREDENTIALS",
+      "relationship": "SEALED_IN_SECURITY_VAULT",
+      "properties": { "encryption_tier": "Local Ring-Fenced Storage" }
     }
   ]
 }

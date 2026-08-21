@@ -48,7 +48,6 @@ def main():
     # -------------------------------------------------------------------------
     print_header("1. FINANCIAL & TAX EQUATION INVARIANCE")
     
-    asset_node = nodes_by_id.get("ASSET:VL-EV-001")
     contract_node = nodes_by_id.get("CONTRACT:VL-LEASE-2026-001")
     tax_node = nodes_by_id.get("TAX:SAC_997311")
     treasury_node = nodes_by_id.get("TREASURY:SINKING_FUND")
@@ -82,7 +81,12 @@ def main():
     # -------------------------------------------------------------------------
     print_header("2. STATUTORY & IDENTITY CHECKSUM AUDIT")
     
+    proprietor_node = nodes_by_id.get("PROPRIETOR:SAPNA_JAISWAL")
     lessee_node = nodes_by_id.get("LESSEE:SWIFTLOGIX")
+    
+    prop_pan = proprietor_node["properties"]["pan"]
+    assert_invariant(len(prop_pan) == 10 and prop_pan[3] == 'P', f"Proprietor PAN {prop_pan} format valid (Individual P)")
+    
     pan = lessee_node["properties"]["pan"]
     gstin = lessee_node["properties"]["gstin"]
     
@@ -107,7 +111,6 @@ def main():
     # -------------------------------------------------------------------------
     print_header("4. GRAPH TOPOLOGY & REFERENTIAL INTEGRITY")
     
-    edge_count = len(kg_data["edges"])
     for idx, edge in enumerate(kg_data["edges"], start=1):
         src = edge["source"]
         tgt = edge["target"]
@@ -124,8 +127,9 @@ def main():
     serialized = json.dumps(kg_data["nodes"], sort_keys=True)
     computed_hash = hashlib.sha256(serialized.encode("utf-8")).hexdigest()
     
+    total_invariants = 13 + len(kg_data["edges"])
     print(f"  [HASH] SHA-256 Ontology Signature: {computed_hash}")
-    print("  [SUCCESS] Result: ALL 24 MATHEMATICAL & STRUCTURAL INTEGRITY INVARIANTS PASSED.")
+    print(f"  [SUCCESS] Result: ALL {total_invariants} MATHEMATICAL & STRUCTURAL INTEGRITY INVARIANTS PASSED.")
     print("  [SHIELD] Status: ZERO DATA CORRUPTION DETECTED across Vision Loop operations.")
     print("=" * 70 + "\n")
 
