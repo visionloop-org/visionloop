@@ -20,9 +20,12 @@ data/
 ├── brand/                              # Official Brand Assets & Design System
 │   └── logo.png                        # Official 3D electric-cyan loop logo & icon
 │
-├── legal/                              # Commercial Contracts & Counterparty Agreements
-│   ├── COMMERCIAL_VEHICLE_LEASE_AGREEMENT.md  # Master Commercial Lease Agreement (24 Mo)
-│   └── NO_OBJECTION_CERTIFICATE_PREMISES_NOC.md # Premises NOC from Property Owner for GST/MSME
+├── legal/                              # Commercial Contracts & Binding Legal Instruments
+│   ├── MASTER_COMMERCIAL_FLEET_LEASE_AGREEMENT.md # 36-Month SAC 997311 lease contract
+│   ├── NO_OBJECTION_CERTIFICATE_PREMISES_NOC.md # Lucknow registered office spousal consent NOC
+│   ├── TERMS_OF_USE_AND_PUBLIC_LICENSING.md # Multi-tier public license (Apache-2.0, CC BY-SA 4.0)
+│   ├── POWER_OF_ATTORNEY_OPERATIONAL_AUTHORIZATION.md # Special operational PoA
+│   └── MSME_STATUTORY_PROTECTION_FRAMEWORK.md # Sections 15 & 16 interest clauses
 │
 ├── compliance/                         # Institutional Handbooks & Regulatory Guides
 │   ├── INCORPORATION_AND_GST_GUIDE.md  # Sole Proprietorship, Udyam MSME & GST guide
