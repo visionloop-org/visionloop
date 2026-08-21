@@ -35,8 +35,10 @@ data/
 │   ├── GITHUB_AND_PAGES_SETUP.md       # GitHub Account & GitHub.io Pages deployment guide
 │   └── EXECUTIVE_BIO_AND_BRAND_STORY.md # Official Executive Bio & Brand Story for Sapna Jaiswal
 │
-├── media/                              # Commercial Media & YouTube Channel Architecture
-│   └── YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY.md # Channel branding, content pillars & monetization roadmap
+├── media/                              # Commercial Digital Media & YouTube Architecture
+│   ├── YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY.md # Content programming & FIRC AdSense monetization
+│   ├── YOUTUBE_VIDEO_PRODUCTION_PARAMETERS.md # Shorts (9:16) & Long-form (16:9) technical specs
+│   └── brand_voice_guidelines.json     # Multilingual voice-over parameters (English & Hindi)
 │
 ├── knowledge_graph/                    # Canonical Ontological Knowledge Graph
 │   ├── knowledge_graph.json            # Machine-readable 17-node graph with SHA-256 hash

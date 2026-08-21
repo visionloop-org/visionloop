@@ -16,6 +16,16 @@ from visionloop_sdk.swarm.operational_agents import (
     SoftwareEngineeringAgent,
     YouTubeMarketingAgent
 )
+from visionloop_sdk.swarm.youtube_agents import (
+    VideoFormat,
+    AudioLanguage,
+    AudioVoiceoverSpec,
+    VideoVisualSpec,
+    ScriptScene,
+    YouTubeVideoProductionPackage,
+    YouTubeShortsProducerAgent,
+    YouTubeLongformDirectorAgent
+)
 from visionloop_sdk.swarm.swarm_orchestrator import SwarmOrchestrator
 
 __all__ = [
@@ -33,6 +43,14 @@ __all__ = [
     "LegalComplianceAgent",
     "SoftwareEngineeringAgent",
     "YouTubeMarketingAgent",
+    "VideoFormat",
+    "AudioLanguage",
+    "AudioVoiceoverSpec",
+    "VideoVisualSpec",
+    "ScriptScene",
+    "YouTubeVideoProductionPackage",
+    "YouTubeShortsProducerAgent",
+    "YouTubeLongformDirectorAgent",
     "SwarmOrchestrator"
 ]
 

@@ -161,15 +161,62 @@ class ChiefAuditorVerificationAgent(BaseSwarmAgent):
         # 5. CROSS-EXAMINE YOUTUBE & DIGITAL MARKETING
         # ---------------------------------------------------------------------
         elif target_agent.role == AgentRole.YOUTUBE_MARKETING:
-            q1 = "Cross-Border Tax Inquest: Confirm Google AdSense payments are mapped as Zero-Rated Export of Services under GST LUT with Form W-8BEN treaty rates."
-            q1_msg = self.send_message(target_agent.role, MessageType.CHALLENGE_QUESTION, q1, payload)
-            dialogue.append(q1_msg)
+            # Check if this is a video production package
+            if "visual_spec" in payload or "format_type" in payload:
+                fmt = payload.get("format_type", "")
+                dur = payload.get("target_duration_seconds", 45)
+                v_spec = payload.get("visual_spec", {})
+                a_spec = payload.get("voiceover_spec", {})
 
-            ans1_msg = await target_agent.answer_challenge(q1, payload)
-            dialogue.append(ans1_msg)
+                # Inquest 1: Video Format & YouTube Framing Limits
+                q1 = f"Video Specification Inquest: Verify aspect ratio ({v_spec.get('aspect_ratio')}) and duration ({dur}s) comply strictly with YouTube standards."
+                q1_msg = self.send_message(target_agent.role, MessageType.CHALLENGE_QUESTION, q1, payload)
+                dialogue.append(q1_msg)
 
-            invariants_checked.append("Google AdSense Export of Services LUT & DTAA Invariant")
-            reasons.append("Foreign Inward Remittance Certificate (FIRC) and 15% US withholding treaty confirmed.")
+                ans1_msg = await target_agent.answer_challenge(q1, payload)
+                dialogue.append(ans1_msg)
+
+                if "SHORTS" in str(fmt):
+                    if dur < 60 and v_spec.get("aspect_ratio") == "9:16":
+                        invariants_checked.append("YouTube Shorts Formatting Invariant (9:16 Vertical, Duration < 60s)")
+                        reasons.append("Shorts format verified for mobile viewport retention.")
+                    else:
+                        is_verified = False
+                        reasons.append("Shorts format violation: duration >= 60s or not 9:16.")
+                elif "LONGFORM" in str(fmt):
+                    if dur >= 480 and v_spec.get("aspect_ratio") == "16:9":
+                        invariants_checked.append("YouTube Long-Form Invariant (16:9 Widescreen, Duration >= 8 mins for Mid-rolls)")
+                        reasons.append("Long-form format verified for mid-roll AdSense monetization.")
+                    else:
+                        is_verified = False
+                        reasons.append("Long-form violation: duration < 8 mins or not 16:9.")
+
+                # Inquest 2: Multilingual Audio & Loudness Standards
+                q2 = "Multilingual Audio Inquest: Confirm -14.0 LUFS audio normalization and 1:1 English/Hindi voiceover script parity."
+                q2_msg = self.send_message(target_agent.role, MessageType.CHALLENGE_QUESTION, q2, payload)
+                dialogue.append(q2_msg)
+
+                ans2_msg = await target_agent.answer_challenge(q2, payload)
+                dialogue.append(ans2_msg)
+
+                if a_spec.get("target_loudness_lufs") == -14.0 and payload.get("description_hindi"):
+                    invariants_checked.append("Bilingual Audio & -14 LUFS Loudness Invariant (English + Hindi)")
+                    reasons.append("Audio normalized to -14.0 LUFS with verified dual-language scripts.")
+                else:
+                    is_verified = False
+                    reasons.append("Audio loudness or localization parity check failed.")
+            else:
+                # Standard AdSense cross-border check
+                q1 = "Cross-Border Tax Inquest: Confirm Google AdSense payments are mapped as Zero-Rated Export of Services under GST LUT with Form W-8BEN treaty rates."
+                q1_msg = self.send_message(target_agent.role, MessageType.CHALLENGE_QUESTION, q1, payload)
+                dialogue.append(q1_msg)
+
+                ans1_msg = await target_agent.answer_challenge(q1, payload)
+                dialogue.append(ans1_msg)
+
+                invariants_checked.append("Google AdSense Export of Services LUT & DTAA Invariant")
+                reasons.append("Foreign Inward Remittance Certificate (FIRC) and 15% US withholding treaty confirmed.")
+
 
         # Issue Verification Result
         approval_type = MessageType.AUDIT_APPROVAL if is_verified else MessageType.AUDIT_REJECTION
