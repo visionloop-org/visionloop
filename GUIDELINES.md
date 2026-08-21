@@ -1,148 +1,195 @@
-# VISION LOOP — MASTER OPERATIONAL & DEVELOPMENT GUIDELINES
-*Comprehensive Enterprise Standard Operating Procedures (SOP), Architectural Principles & Governance Protocols*
+# Vision Loop — Agent & Developer Tooling Guidelines
+
+> **This document governs how all agents, developers, and AI assistants interact with this workspace.**
+> Read this before starting any task. These are not suggestions — they are operating standards.
 
 ---
 
-## 🏛️ 1. Core Enterprise Principles & Statutory Framework
+## Core Principle
 
-1. **Sole Proprietorship Structure:**
-   * Vision Loop operates as a zero-touch Indian Sole Proprietorship, 100% beneficially owned by **Sapna Jaiswal** (Verified Individual Sole Proprietor).
-   * Primary operational headquarters and fleet base depot: **Lucknow, Uttar Pradesh, India** (UP State Code `09`).
-   * Operating Corridors: **Lucknow – Kanpur – Delhi NCR Commercial Freight Corridors**.
-2. **Statutory Tax Framework (SAC 997311):**
-   * All transport asset leases are invoiced under Service Accounting Code **SAC 997311** (18% GST).
-   * **100% Input Tax Credit (ITC)** is claimed on commercial goods vehicle purchases, insurance, and charging infrastructure under **Section 17(5)(a)** of the CGST Act.
-3. **Statutory Payment Protection (MSMED Act 2006):**
-   * Registered under Micro Enterprise Activity **NIC 77101** (Renting/Leasing of Motor Vehicles).
-   * Mandates invoice settlement within **45 days**. Delayed settlements automatically accrue compound interest at **3x the RBI Bank Rate** under Section 16 with monthly rest.
-4. **Self-Sustaining Treasury & Zero Debt:**
-   * **15% of gross monthly revenue** is automatically swept into High-Yield Liquid Overnight Treasury Funds (~6.8% CAGR).
-   * Generates sufficient liquid replacement capital by Month 36 to purchase replacement/expansion assets with **zero debt distress or external loans**.
+**Always use the highest-level tool available. Never do manually what a tool can do automatically.**
 
----
-
-## 🔒 2. Public Domain Privacy & Data Governance (Financial & Identity Protection)
-
-> ### ⚠️ MANDATORY PRIVACY DIRECTIVE:
-> **All exact financial contract figures, customer invoice rates, specific monthly revenue run rates, private cash flow ledgers, and proprietor government identifiers (PAN Number: `BGVPJ3356G`, Aadhaar Numbers) MUST NEVER be published or displayed in public domains (e.g., Public GitHub Repositories, Public GitHub.io Website, Public Bios, Landing Pages, Marketing Collateral).**
-
-### Rules of Public vs. Private Boundaries:
-* ✅ **Public Domains (GitHub README, Website, Public Docs):**
-  * Display verified status: `Verified Individual Sole Proprietor (Income Tax & UIDAI Verified)`.
-  * Showcase the **structural statutory model** (SAC 997311 18% GST, 100% ITC benefit, 15% Sinking Fund reserve sweep, 2-Month Escrow buffer).
-  * Use institutional language: *"Custom Corporate Fleet Lease Plans"*, *"Competitive Institutional Rates"*, *"Automated Zoho Invoicing"*.
-* 🔐 **Private Local Vaults (`data/credentials/`, `data/kyc/`, `data/finance/`, `.env`, MongoDB):**
-  * Ring-fence exact rupee amounts, PAN/Aadhaar identity files, accounting ledger balances, customer contract IDs, and bank feed settlements.
-  * Always verify that `.gitignore` prevents private credentials and KYC PDFs from being committed.
-
----
-
-## 🤖 3. Sovereign 5-Phase Autonomous Swarm Protocol (Human-in-the-Loop Governance)
-
-> ### 👑 MANDATORY SOVEREIGN OPERATIONAL LAW:
-> **The AI Swarm MUST NEVER execute irreversible financial, legal, or operational actions automatically without traversing the 5-Phase Protocol and obtaining EXPLICIT PROPRIETOR (HUMAN) APPROVAL.**
-
-```mermaid
-graph LR
-    P1["1. GATHER DATA<br/>(Live Telemetry & Invariants)"] --> P2["2. PLAN STRATEGY<br/>(Task Decomposition)"]
-    P2 --> P3["3. GRILL & VERIFY<br/>(Auditor Interrogation)"]
-    P3 --> P4["4. PRESENT PROPOSAL<br/>(Briefing to Proprietor)"]
-    P4 --> P5["5. PROPRIETOR APPROVAL<br/>(Explicit Consent Gateway)"]
-    P5 --> P6["6. EXECUTE<br/>(Immutable Mutation & Ledger)"]
+```
+Priority Ladder (top = always preferred):
+  ┌─────────────────────────────────────────────┐
+  │  1. MCP Tool Call        ← fastest, reusable │
+  │  2. Repo Script          ← battle-tested     │
+  │  3. Shell command        ← one-offs only     │
+  │  4. Manual file edit     ← absolute last     │
+  └─────────────────────────────────────────────┘
 ```
 
-### The 5 Compulsory Phases:
-1. **Phase 1: GATHER DATA (Deep Contextual Ingestion):**
-   * Before making any assertions, ingest ground-truth data: live CAN-Bus telemetry, database state, statutory codes (SAC/NIC), customer profiles, and treasury ledgers.
-2. **Phase 2: PLAN STRATEGY (Decomposition & Routing):**
-   * **Garuda Executive Coordinator** structures a multi-step execution roadmap and assigns operational domains to specialized sentinels (Fleet, Treasury, Legal, Software, YouTube).
-3. **Phase 3: GRILL & VERIFY (Inter-Agent Cross-Examination):**
-   * **Chanakya Audit Sentinel** vigorously interrogates the operational worker with tough domain challenge questions.
-   * *Grilling Checks:* Sinking Fund 15.000% exactness, GST equality splits, 0.0 km/h standstill immobilizer safety, OEM 70% DC fast charge limits, and DPDP Act privacy redaction.
-4. **Phase 4: PRESENT PROPOSAL (Executive Briefing Gateway):**
-   * Synthesize a clean, transparent proposal receipt for **Sapna Jaiswal (Sole Proprietor)** with verified facts, auditor confidence score, invariants validated, and clear pros/cons.
-   * **State is locked at `AWAITING_PROPRIETOR_APPROVAL`. NO state mutation occurs.**
-5. **Phase 5: EXECUTE (Autonomous Mutation Upon Explicit Approval):**
-   * Upon receiving explicit proprietor consent, the action is executed, cryptographically signed, and logged to the immutable ledger.
+---
+
+## 1. MCP Server (Model Context Protocol)
+
+The Vision Loop MCP server is a **Docker-hosted tool API** that exposes all repeated tasks as callable endpoints. Start it once, call it everywhere.
+
+### Start the MCP Server
+```bash
+docker compose up mcp-server -d
+```
+
+### Tool Manifest
+```
+http://localhost:8765/tools   ← lists all available tools
+http://localhost:8765/        ← interactive Swagger UI
+```
+
+### Available MCP Tools
+
+| Tool | Endpoint | When to use |
+|---|---|---|
+| `kg_update` | `POST /tools/kg_update` | After adding any new file to `data/` |
+| `kg_verify` | `POST /tools/kg_verify` | Before every commit |
+| `kg_query` | `POST /tools/kg_query` | When looking up graph nodes |
+| `video_generate_payload` | `POST /tools/video_generate_payload` | Start of every new YouTube video |
+| `tts_generate` | `POST /tools/tts_generate` | Generate Hindi voiceover audio |
+| `gst_validate_pan` | `POST /tools/gst_validate_pan` | Before using any PAN in a document |
+| `gst_validate_gstin` | `POST /tools/gst_validate_gstin` | Before using any GSTIN in a document |
+| `run_tests` | `POST /tools/run_tests` | Validate code changes |
+
+### Example MCP Call
+```bash
+curl -X POST http://localhost:8765/tools/gst_validate_gstin \
+  -H "Content-Type: application/json" \
+  -d '{"gstin": "09BGVPJ3356G1ZK"}'
+```
 
 ---
 
-## 🧪 4. Mathematical Invariance & Anti-Corruption Verification
+## 2. Workspace Skills
 
-Vision Loop enforces zero tolerance for data corruption or business regression.
+Skills are loaded automatically by the agent when relevant tasks are requested. They live in `.agents/skills/`.
 
-1. **29 Mathematical Invariants:**
-   * All financial equations ($Base + GST = Total$, $CGST + SGST = GST$, $SinkingFund = 15\% \times Base$, $Deposit = 2 \times Base$) are mathematically tested.
-   * Statutory regex checksums for Indian PAN (10 chars, 4th char `P` for Individual, `C` for Company) and GSTIN (15 chars, state code prefix matching location).
-   * OEM Battery SLA guardrails (max 70% DC fast charge, 42°C thermal limit) and Standstill Immobilizer safety.
-2. **Cryptographic Knowledge Graph Signature:**
-   * The canonical Knowledge Graph (`knowledge_graph.json`, 17 Nodes, 16 Edges) is cryptographically signed with a SHA-256 hash (`d42948761edf4be3...`).
-   * Any change to graph nodes or relationships requires running `python scripts/verify_data_integrity.py` before committing.
-3. **Automated Unit Testing:**
-   * Run `python -m pytest tests/` on all builds.
-   * All 24 unit tests across legal, finance, telematics, comms, and AI agents must pass 100%.
+| Skill | Path | Activate for |
+|---|---|---|
+| `visionloop-ops` | `.agents/skills/visionloop-ops/` | Knowledge graph, integrity, pre-commit, scripts |
+| `youtube-production` | `.agents/skills/youtube-production/` | Any YouTube video, script, or short |
+| `gst-compliance` | `.agents/skills/gst-compliance/` | GST registration, filing, PAN/GSTIN, SAC codes |
+
+**Agent rule:** Before starting any task, check if a skill covers it. If yes, load the skill first.
 
 ---
 
-## 🤖 4. Autonomous Operations & Multi-Agent Swarm
+## 3. Repo Scripts
 
-Vision Loop operates with zero human operational friction through a containerized **AI Multi-Agent Swarm**:
+Scripts in `scripts/` are the fallback when the MCP server is not running.
 
-1. **Financial Sentinel (`services/ai-agent-service`):**
-   * Reconciles bank feeds on the 1st of each month.
-   * Automatically synthesizes Zoho Books invoices with SAC 997311 tax splits and sends dynamic UPI QR / e-NACH links.
-2. **Telematics Sentinel:**
-   * Continuously ingests CAN-Bus telemetry streams.
-   * Scores battery warranty preservation metrics (SoH %, SoC %, temperature, fast-charge ratio) and schedules 10,000 km periodic servicing.
-3. **Legal & Compliance Sentinel:**
-   * Audits MSMED Act 45-day payment timelines.
-   * Executes multi-tier polite-to-firm payment reminders and legal notices.
-4. **Executive Agent:**
-   * Synthesizes daily operational briefs and pushes actionable alerts to the **Telegram Mobile Command Bot (`@VisionLoop_Bot`)**.
-5. **Verifiable Event Logging:**
-   * Every operational tick, sweep, or alert is cryptographically hashed and logged to [`data/operations/live_operational_events.json`](file:///d:/VisionLoop/data/operations/live_operational_events.json) via `visionloop_finance.operations_logger`.
+| Script | Command | Trigger |
+|---|---|---|
+| `update_knowledge_graph.py` | `python scripts/update_knowledge_graph.py` | After new files added |
+| `verify_data_integrity.py` | `python scripts/verify_data_integrity.py` | Before commit |
+| `install_hooks.py` | `python scripts/install_hooks.py` | After fresh clone (one-time) |
 
 ---
 
-## 🛡️ 5. IoT Telematics & Hardware Safety Guardrails
+## 4. Git Pre-Commit Hook (Automatic)
 
-1. **Standstill Immobilization Protocol:**
-   * Remote motor cut-off or immobilizer relay engagement is **STRICTLY PROHIBITED** when the vehicle is in motion.
-   * The system strictly verifies `speed == 0.0 km/h` before issuing an immobilizer relay lock command.
-2. **OEM Battery Warranty SLA Preservation:**
-   * DC fast charging ratio must remain capped at **≤ 70%** of total charging volume.
-   * Battery operating temperature must not exceed **42.0°C**.
-   * Normal operating buffer is maintained between **15% and 90% SoC** to prevent lithium-ion cell degradation.
+The pre-commit hook runs automatically on every `git commit`. It cannot be skipped accidentally.
 
----
+```
+git commit
+    │
+    ▼
+STEP 1: Knowledge Graph Auto-Update  (scripts/update_knowledge_graph.py)
+    │     Discovers new files, adds typed nodes, recalculates SHA-256
+    ▼
+STEP 2: Data Integrity Verification  (scripts/verify_data_integrity.py)
+    │     71 mathematical & structural invariants
+    ▼
+STEP 3: Pytest Suite                 (python -m pytest tests/ -q)
+    │     31 automated unit tests
+    ▼
+COMMIT APPROVED  (or blocked with error details)
+```
 
-## 📦 6. Code Architecture & Python IP Packages (`packages/`)
-
-All core enterprise capabilities are built as reusable, standalone Python packages:
-
-* [`packages/visionloop-finance/`](file:///d:/VisionLoop/packages/visionloop-finance/): SAC 997311 GST Engine, 15% Sinking Fund Allocator, MSMED Act 3x RBI Interest Calculator, Dynamic UPI QR Generator, Operations Logger.
-* [`packages/visionloop-telematics/`](file:///d:/VisionLoop/packages/visionloop-telematics/): CAN-Bus Stream Parser, Tata OEM Battery SLA Scorer, 2dsphere Geofence Engine, Standstill Immobilizer Relay.
-* [`packages/visionloop-legal/`](file:///d:/VisionLoop/packages/visionloop-legal/): Dynamic Commercial Lease Synthesizer, Indian PAN/GSTIN Validator, Statutory MSME Compliance Auditor.
-* [`packages/visionloop-comms/`](file:///d:/VisionLoop/packages/visionloop-comms/): Telegram Command Bot Engine, WhatsApp Cloud API Dispatcher, Multi-Stage Escalation Collection Engine.
-* [`packages/visionloop-sdk/`](file:///d:/VisionLoop/packages/visionloop-sdk/): Unified Master Enterprise SDK.
-
----
-
-## 🔐 7. Security, Secrets Management & Ring-Fenced Data Vault
-
-1. **Local Secrets Vault:**
-   * All API keys, passwords, recovery emails, and personal access tokens (PATs) reside strictly in `.env` and `data/credentials/`.
-   * These directories are permanently declared in [`.gitignore`](file:///d:/VisionLoop/.gitignore).
-2. **DPDP Act 2023 Compliance:**
-   * Personal identifiable information (Aadhaar, PAN, phone numbers) must remain masked in public documentation.
-   * Full consent audit trails are preserved in `data/kyc/proprietor_kyc_dossier.json`.
+Emergency bypass (use sparingly): `git commit --no-verify`
 
 ---
 
-## 🚀 8. Git & Deployment Protocols
+## 5. When to Create a New Tool / Skill / MCP Endpoint
 
-1. **Dockerized Microservices:**
-   * All 8 containers (`dashboard-ui`, `core-api`, `zoho-connector`, `ai-agent-service`, `telematics-ingestor`, `telegram-bot`, `mongo`, `redis`) launch synchronously via `docker compose up --build -d`.
-2. **GitHub Pages Global CDN:**
-   * The public web platform is automatically published from the `/docs` directory on branch `main` at **`https://visionloop-org.github.io/visionloop/`**.
-   * Clean Vanilla CSS glassmorphism, responsive breakpoints, semantic HTML5, and rich aesthetic typography (`Outfit`, `JetBrains Mono`) are mandatory.
+**Create a new MCP tool when:**
+- A task will be repeated more than 3 times
+- The task involves external validation (PAN, GSTIN, API calls)
+- The output is machine-readable JSON consumed by other tools
+
+**Create a new Skill when:**
+- A domain requires 2+ pages of context to work correctly
+- The task requires specific file paths, formats, or business rules
+- Multiple agents will need the same reference knowledge
+
+**Create a new Script when:**
+- The task runs in the pre-commit pipeline
+- The task modifies core data files (knowledge_graph.json, etc.)
+- The task needs to run in CI/CD without Docker
+
+**Create a new Docker service when:**
+- The tool requires heavy dependencies (ML models, FFmpeg, etc.)
+- The tool needs persistent state between calls
+- Multiple agents need concurrent access
+
+---
+
+## 6. Data & Compliance Rules
+
+These rules apply to every agent interaction in this workspace. No exceptions.
+
+| Rule | Detail |
+|---|---|
+| **PAN / Aadhaar / Bank data** | Never committed in plaintext. Always blurred (25px Gaussian) in video. Always masked in logs. |
+| **Knowledge graph** | Updated automatically by pre-commit hook. Never manually edit `knowledge_graph.json` node counts in tests. |
+| **Test counts** | Use `>=` minimum assertions — never hardcode exact node/edge counts. |
+| **Windows encoding** | All Python scripts must include `sys.stdout.reconfigure(encoding='utf-8')`. |
+| **AI disclosure** | All video descriptions and public content must include the AI-Generated Content disclaimer. |
+| **Jurisdiction** | All operations are in Uttar Pradesh (State Code 09). Patna/Bihar = OUT OF SCOPE. |
+
+---
+
+## 7. Workflow for Common Tasks
+
+### A. Add a new YouTube tutorial
+1. Load skill: `youtube-production`
+2. Call MCP: `POST /tools/video_generate_payload` with topic and CTA
+3. Review and refine the script in `data/media/`
+4. `git commit` — pre-commit hook auto-registers the new file in the knowledge graph
+
+### B. Add a new service offering
+1. Load skill: `visionloop-ops`
+2. Create `data/services/<SERVICE_NAME>.md`
+3. `git commit` — pre-commit hook auto-discovers and adds the node
+
+### C. Validate a GSTIN before using it
+1. Call MCP: `POST /tools/gst_validate_gstin` — never validate manually
+
+### D. Verify the full system is healthy
+```bash
+# With Docker:
+curl http://localhost:8765/tools/kg_verify
+
+# Without Docker:
+python scripts/verify_data_integrity.py && python -m pytest tests/ -q
+```
+
+### E. Start fresh after cloning
+```bash
+python scripts/install_hooks.py   # installs pre-commit hook
+docker compose up mcp-server -d   # starts MCP server
+```
+
+---
+
+## 8. Docker Services Reference
+
+| Service | Container | Port | Purpose |
+|---|---|---|---|
+| MongoDB | `visionloop-mongodb` | 27017 | Unstructured document store |
+| Redis | `visionloop-redis` | 6379 | Cache & message broker |
+| **MCP Server** | **`visionloop-mcp`** | **8765** | **Operational tool API** |
+| Core API | `visionloop-api` | 8000 | Business logic REST API |
+| Telegram Bot | `visionloop-telegram` | — | Customer comms bot |
+
+Start all services: `docker compose up -d`
+Start MCP only: `docker compose up mcp-server -d`
+View logs: `docker compose logs mcp-server -f`

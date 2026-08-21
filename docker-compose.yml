@@ -169,6 +169,35 @@ services:
     networks:
       - visionloop-net
 
+  # --------------------------------------------------------------------------
+  # 7. Vision Loop MCP Server (Model Context Protocol)
+  #    Exposes repeated operational tasks as callable HTTP tools.
+  #    Port 8765 — http://localhost:8765
+  #    Tool manifest: http://localhost:8765/tools
+  # --------------------------------------------------------------------------
+  mcp-server:
+    build:
+      context: ./services/mcp-server
+      dockerfile: Dockerfile
+    container_name: visionloop-mcp
+    restart: unless-stopped
+    ports:
+      - "8765:8765"
+    volumes:
+      # Mount repo root read-write so tools can update knowledge_graph.json
+      - .:/repo
+      - ./data/media/audio:/app/data/media/audio
+    environment:
+      - PYTHONPATH=/repo
+    working_dir: /app
+    networks:
+      - visionloop-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8765/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
 volumes:
   mongodb_data:
   redis_data:
