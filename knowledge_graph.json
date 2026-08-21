@@ -3,8 +3,8 @@
   "enterprise": "Vision Loop (Sole Proprietorship)",
   "jurisdiction": "Republic of India",
   "integrity_status": "CRYPTOGRAPHICALLY_VERIFIED",
-  "generated_at": "2026-08-22T00:26:00Z",
-  "sha256_checksum": "21f3f2c131a533f7edbeb4eb5272c048915ad68eaf59817cb96046e39438dd0e",
+  "generated_at": "2026-08-21T20:24:19Z",
+  "sha256_checksum": "b445e5aa3be08062fe27bef852587966e78d824a9c503c1d5c3fe775c59db54a",
   "nodes": [
     {
       "id": "ENTITY:VISION_LOOP",
@@ -20,7 +20,7 @@
         "msme_udyam_nic": "77101",
         "operational_model": "Autonomous Asset Rental",
         "database_engine": "MongoDB 7.0 (Unstructured Document Store)",
-        "monthly_run_rate_inr": 84960.00
+        "monthly_run_rate_inr": 84960.0
       }
     },
     {
@@ -53,7 +53,7 @@
         "current_soc_pct": 92.5,
         "current_soh_pct": 99.4,
         "odometer_km": 3420.0,
-        "monthly_rental_base_inr": 72000.00
+        "monthly_rental_base_inr": 72000.0
       }
     },
     {
@@ -78,10 +78,10 @@
         "lessor": "Vision Loop (Proprietor: Sapna Jaiswal)",
         "start_date": "2026-08-01",
         "end_date": "2028-07-31",
-        "monthly_base_rent_inr": 72000.00,
-        "monthly_gst_inr": 12960.00,
-        "total_monthly_invoiced_inr": 84960.00,
-        "security_deposit_inr": 144000.00,
+        "monthly_base_rent_inr": 72000.0,
+        "monthly_gst_inr": 12960.0,
+        "total_monthly_invoiced_inr": 84960.0,
+        "security_deposit_inr": 144000.0,
         "deposit_status": "HELD_IN_ESCROW",
         "esign_status": "AADHAAR_OTP_VERIFIED"
       }
@@ -93,9 +93,9 @@
       "properties": {
         "statutory_gst_rate_pct": 18.0,
         "cgst_rate_pct": 9.0,
-        "cgst_amount_inr": 6480.00,
+        "cgst_amount_inr": 6480.0,
         "sgst_rate_pct": 9.0,
-        "sgst_amount_inr": 6480.00,
+        "sgst_amount_inr": 6480.0,
         "igst_rate_pct": 0.0,
         "itc_eligibility": "100% Full Input Tax Credit Claimable (Sec 17(5)(a))"
       }
@@ -106,9 +106,9 @@
       "label": "15% Asset Replacement Sinking Fund",
       "properties": {
         "monthly_allocation_pct": 15.0,
-        "monthly_inflow_inr": 10800.00,
+        "monthly_inflow_inr": 10800.0,
         "target_replacement_cycle_months": 36,
-        "accumulated_reserve_inr": 10800.00,
+        "accumulated_reserve_inr": 10800.0,
         "yield_instrument": "Liquid Overnight Treasury Fund (~6.8% CAGR)",
         "debt_burden": "ZERO (Fully self-funded asset replacement)"
       }
@@ -153,7 +153,12 @@
       "properties": {
         "port": 8004,
         "role": "24/7 Mobile Command Center & Push Alert Relay",
-        "capabilities": ["Status Queries", "Revenue Ledger", "Sinking Fund Balances", "Standstill Lock"]
+        "capabilities": [
+          "Status Queries",
+          "Revenue Ledger",
+          "Sinking Fund Balances",
+          "Standstill Lock"
+        ]
       }
     },
     {
@@ -196,7 +201,12 @@
         "email": "visionloop.in@gmail.com",
         "recovery_email": "ruhiljaiswal1993@gmail.com",
         "phone_2fa": "+91 9935858549",
-        "services": ["Gmail Relay", "Google Cloud Platform (GCP)", "Gemini 2.0 Flash API", "Google Maps Platform"],
+        "services": [
+          "Gmail Relay",
+          "Google Cloud Platform (GCP)",
+          "Gemini 2.0 Flash API",
+          "Google Maps Platform"
+        ],
         "status": "ACTIVE_AND_VERIFIED"
       }
     },
@@ -267,7 +277,10 @@
         "statutory_nic": "73100 / 59112",
         "tax_treatment": "Zero-Rated Export of Services with GST LUT",
         "forex_remittance": "FIRC Bank Inward Remittance",
-        "production_agents": ["Laghu Vani (Shorts 9:16)", "Dirgha Vani (Longform 16:9)"]
+        "production_agents": [
+          "Laghu Vani (Shorts 9:16)",
+          "Dirgha Vani (Longform 16:9)"
+        ]
       }
     },
     {
@@ -308,6 +321,366 @@
         "sinking_fund_reserve": "15.0%",
         "dpdp_pii_redaction": "PAN BGVPJ3356G & Aadhaar Sealed"
       }
+    },
+    {
+      "id": "SERVICE:GST_FILING_AND_REGISTRATION_CONSULTING_SERVICE",
+      "type": "CommercialService",
+      "label": "Service: GST_FILING_AND_REGISTRATION_CONSULTING_SERVICE",
+      "properties": {
+        "file_path": "data/services/GST_FILING_AND_REGISTRATION_CONSULTING_SERVICE.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:BUSINESS_BEST_PRACTICES_MANUAL",
+      "type": "ComplianceFramework",
+      "label": "Compliance: BUSINESS_BEST_PRACTICES_MANUAL",
+      "properties": {
+        "file_path": "data/compliance/BUSINESS_BEST_PRACTICES_MANUAL.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:EXECUTIVE_BIO_AND_BRAND_STORY",
+      "type": "ComplianceFramework",
+      "label": "Compliance: EXECUTIVE_BIO_AND_BRAND_STORY",
+      "properties": {
+        "file_path": "data/compliance/EXECUTIVE_BIO_AND_BRAND_STORY.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:GITHUB_AND_PAGES_SETUP",
+      "type": "ComplianceFramework",
+      "label": "Compliance: GITHUB_AND_PAGES_SETUP",
+      "properties": {
+        "file_path": "data/compliance/GITHUB_AND_PAGES_SETUP.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:GOOGLE_ACCOUNT_AND_GCP_SETUP",
+      "type": "ComplianceFramework",
+      "label": "Compliance: GOOGLE_ACCOUNT_AND_GCP_SETUP",
+      "properties": {
+        "file_path": "data/compliance/GOOGLE_ACCOUNT_AND_GCP_SETUP.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:GST_REGISTRATION_APPLICATION_DOSSIER",
+      "type": "ComplianceFramework",
+      "label": "Compliance: GST_REGISTRATION_APPLICATION_DOSSIER",
+      "properties": {
+        "file_path": "data/compliance/GST_REGISTRATION_APPLICATION_DOSSIER.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:INCORPORATION_AND_GST_GUIDE",
+      "type": "ComplianceFramework",
+      "label": "Compliance: INCORPORATION_AND_GST_GUIDE",
+      "properties": {
+        "file_path": "data/compliance/INCORPORATION_AND_GST_GUIDE.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:OPERATIONAL_AND_DEVELOPMENT_GUIDELINES",
+      "type": "ComplianceFramework",
+      "label": "Compliance: OPERATIONAL_AND_DEVELOPMENT_GUIDELINES",
+      "properties": {
+        "file_path": "data/compliance/OPERATIONAL_AND_DEVELOPMENT_GUIDELINES.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY",
+      "type": "ComplianceFramework",
+      "label": "Compliance: PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY",
+      "properties": {
+        "file_path": "data/compliance/PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:STRICT_SAFETY_AND_SECURITY_PROTOCOLS",
+      "type": "ComplianceFramework",
+      "label": "Compliance: STRICT_SAFETY_AND_SECURITY_PROTOCOLS",
+      "properties": {
+        "file_path": "data/compliance/STRICT_SAFETY_AND_SECURITY_PROTOCOLS.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:YOUTUBE_INDIA_STATUTORY_AND_COMMUNITY_GUIDELINES",
+      "type": "ComplianceFramework",
+      "label": "Compliance: YOUTUBE_INDIA_STATUTORY_AND_COMMUNITY_GUIDELINES",
+      "properties": {
+        "file_path": "data/compliance/YOUTUBE_INDIA_STATUTORY_AND_COMMUNITY_GUIDELINES.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "COMPLIANCE:YOUTUBE_MONETIZATION_AND_GST_GUIDE",
+      "type": "ComplianceFramework",
+      "label": "Compliance: YOUTUBE_MONETIZATION_AND_GST_GUIDE",
+      "properties": {
+        "file_path": "data/compliance/YOUTUBE_MONETIZATION_AND_GST_GUIDE.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "MEDIA:GST_REGISTRATION_VIDEO_PAYLOAD",
+      "type": "VideoProductionAsset",
+      "label": "Media: gst_registration_video_payload",
+      "properties": {
+        "file_path": "data/media/gst_registration_video_payload.json",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "MEDIA:YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY",
+      "type": "VideoProductionAsset",
+      "label": "Media: YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY",
+      "properties": {
+        "file_path": "data/media/YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "MEDIA:YOUTUBE_GST_REGISTRATION_EPISODE_SCRIPT",
+      "type": "VideoProductionAsset",
+      "label": "Media: YOUTUBE_GST_REGISTRATION_EPISODE_SCRIPT",
+      "properties": {
+        "file_path": "data/media/YOUTUBE_GST_REGISTRATION_EPISODE_SCRIPT.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "MEDIA:YOUTUBE_VIDEO_PRODUCTION_PARAMETERS",
+      "type": "VideoProductionAsset",
+      "label": "Media: YOUTUBE_VIDEO_PRODUCTION_PARAMETERS",
+      "properties": {
+        "file_path": "data/media/YOUTUBE_VIDEO_PRODUCTION_PARAMETERS.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "MEDIA:YOUTUBE_VIDEO_TUTORIAL_STANDARDS",
+      "type": "VideoProductionAsset",
+      "label": "Media: YOUTUBE_VIDEO_TUTORIAL_STANDARDS",
+      "properties": {
+        "file_path": "data/media/YOUTUBE_VIDEO_TUTORIAL_STANDARDS.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "LEGAL:COMMERCIAL_VEHICLE_LEASE_AGREEMENT",
+      "type": "LegalFramework",
+      "label": "Legal: COMMERCIAL_VEHICLE_LEASE_AGREEMENT",
+      "properties": {
+        "file_path": "data/legal/COMMERCIAL_VEHICLE_LEASE_AGREEMENT.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "LEGAL:NO_OBJECTION_CERTIFICATE_PREMISES_NOC",
+      "type": "LegalFramework",
+      "label": "Legal: NO_OBJECTION_CERTIFICATE_PREMISES_NOC",
+      "properties": {
+        "file_path": "data/legal/NO_OBJECTION_CERTIFICATE_PREMISES_NOC.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "LEGAL:TERMS_OF_USE_AND_PUBLIC_LICENSING",
+      "type": "LegalFramework",
+      "label": "Legal: TERMS_OF_USE_AND_PUBLIC_LICENSING",
+      "properties": {
+        "file_path": "data/legal/TERMS_OF_USE_AND_PUBLIC_LICENSING.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "BIZ:ENTERPRISE_BUSINESS_MODEL_AND_PROCESS_ARCHITECTURE",
+      "type": "BusinessModel",
+      "label": "BusinessModel: ENTERPRISE_BUSINESS_MODEL_AND_PROCESS_ARCHITECTURE",
+      "properties": {
+        "file_path": "data/business_model/ENTERPRISE_BUSINESS_MODEL_AND_PROCESS_ARCHITECTURE.md",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "PKG:VISIONLOOP_COMMS",
+      "type": "SoftwarePackage",
+      "label": "Package: visionloop-comms",
+      "properties": {
+        "file_path": "packages/visionloop-comms",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "PKG:VISIONLOOP_FINANCE",
+      "type": "SoftwarePackage",
+      "label": "Package: visionloop-finance",
+      "properties": {
+        "file_path": "packages/visionloop-finance",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "PKG:VISIONLOOP_LEGAL",
+      "type": "SoftwarePackage",
+      "label": "Package: visionloop-legal",
+      "properties": {
+        "file_path": "packages/visionloop-legal",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "PKG:VISIONLOOP_SDK",
+      "type": "SoftwarePackage",
+      "label": "Package: visionloop-sdk",
+      "properties": {
+        "file_path": "packages/visionloop-sdk",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "PKG:VISIONLOOP_TELEMATICS",
+      "type": "SoftwarePackage",
+      "label": "Package: visionloop-telematics",
+      "properties": {
+        "file_path": "packages/visionloop-telematics",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_AGENTIC_EXECUTOR",
+      "type": "TestSuite",
+      "label": "TestSuite: test_agentic_executor",
+      "properties": {
+        "file_path": "tests/test_agentic_executor.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_COMMS_PACKAGE",
+      "type": "TestSuite",
+      "label": "TestSuite: test_comms_package",
+      "properties": {
+        "file_path": "tests/test_comms_package.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_FINANCE_PACKAGE",
+      "type": "TestSuite",
+      "label": "TestSuite: test_finance_package",
+      "properties": {
+        "file_path": "tests/test_finance_package.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_KNOWLEDGE_GRAPH",
+      "type": "TestSuite",
+      "label": "TestSuite: test_knowledge_graph",
+      "properties": {
+        "file_path": "tests/test_knowledge_graph.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_LEGAL_PACKAGE",
+      "type": "TestSuite",
+      "label": "TestSuite: test_legal_package",
+      "properties": {
+        "file_path": "tests/test_legal_package.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_MULTI_AGENT_SWARM",
+      "type": "TestSuite",
+      "label": "TestSuite: test_multi_agent_swarm",
+      "properties": {
+        "file_path": "tests/test_multi_agent_swarm.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_OPERATIONS_LOGGER",
+      "type": "TestSuite",
+      "label": "TestSuite: test_operations_logger",
+      "properties": {
+        "file_path": "tests/test_operations_logger.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_SDK_PACKAGE",
+      "type": "TestSuite",
+      "label": "TestSuite: test_sdk_package",
+      "properties": {
+        "file_path": "tests/test_sdk_package.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_TELEMATICS_PACKAGE",
+      "type": "TestSuite",
+      "label": "TestSuite: test_telematics_package",
+      "properties": {
+        "file_path": "tests/test_telematics_package.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
+    },
+    {
+      "id": "TEST:TEST_YOUTUBE_AGENTS",
+      "type": "TestSuite",
+      "label": "TestSuite: test_youtube_agents",
+      "properties": {
+        "file_path": "tests/test_youtube_agents.py",
+        "discovered_at": "2026-08-21T20:21:54Z",
+        "auto_discovered": true
+      }
     }
   ],
   "edges": [
@@ -315,133 +688,465 @@
       "source": "PROPRIETOR:SAPNA_JAISWAL",
       "target": "ENTITY:VISION_LOOP",
       "relationship": "SOLE_PROPRIETOR_OF",
-      "properties": { "ownership_equity": "100%" }
+      "properties": {
+        "ownership_equity": "100%"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "ASSET:VL-EV-001",
       "relationship": "OWNS_AND_OPERATES",
-      "properties": { "ownership_type": "Absolute Sole Ownership" }
+      "properties": {
+        "ownership_type": "Absolute Sole Ownership"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "STATUTE:MSMED_ACT_2006",
       "relationship": "PROTECTED_BY",
-      "properties": { "registration": "Udyam Registered Micro Enterprise" }
+      "properties": {
+        "registration": "Udyam Registered Micro Enterprise"
+      }
     },
     {
       "source": "ASSET:VL-EV-001",
       "target": "CONTRACT:VL-LEASE-2026-001",
       "relationship": "SUBJECT_OF_LEASE",
-      "properties": { "lease_term_months": 24 }
+      "properties": {
+        "lease_term_months": 24
+      }
     },
     {
       "source": "CONTRACT:VL-LEASE-2026-001",
       "target": "LESSEE:SWIFTLOGIX",
       "relationship": "LESSEE_COUNTERPARTY",
-      "properties": { "deposit_held_inr": 144000.00 }
+      "properties": {
+        "deposit_held_inr": 144000.0
+      }
     },
     {
       "source": "CONTRACT:VL-LEASE-2026-001",
       "target": "TAX:SAC_997311",
       "relationship": "INVOICED_UNDER",
-      "properties": { "monthly_billed_inr": 84960.00 }
+      "properties": {
+        "monthly_billed_inr": 84960.0
+      }
     },
     {
       "source": "CONTRACT:VL-LEASE-2026-001",
       "target": "TREASURY:SINKING_FUND",
       "relationship": "FUNDS_15_PERCENT_RESERVE",
-      "properties": { "monthly_contribution_inr": 10800.00 }
+      "properties": {
+        "monthly_contribution_inr": 10800.0
+      }
     },
     {
       "source": "ASSET:VL-EV-001",
       "target": "SLA:BATTERY_WARRANTY",
       "relationship": "GOVERNED_BY_WARRANTY_SLA",
-      "properties": { "oem_provider": "Tata Motors Commercial" }
+      "properties": {
+        "oem_provider": "Tata Motors Commercial"
+      }
     },
     {
       "source": "ASSET:VL-EV-001",
       "target": "SECURITY:IMMOBILIZER_RELAY",
       "relationship": "CONTROLLED_BY_RELAY",
-      "properties": { "fail_safe": "Standstill verification enforced" }
+      "properties": {
+        "fail_safe": "Standstill verification enforced"
+      }
     },
     {
       "source": "AI_SWARM:SENTINELS",
       "target": "ENTITY:VISION_LOOP",
       "relationship": "AUTONOMOUSLY_OPERATES",
-      "properties": { "human_labor_hours": 0 }
+      "properties": {
+        "human_labor_hours": 0
+      }
     },
     {
       "source": "AI_SWARM:SENTINELS",
       "target": "COMMS:TELEGRAM_BOT",
       "relationship": "COMMUNICATES_AND_DISPATCHES",
-      "properties": { "frequency": "Real-time push notifications" }
+      "properties": {
+        "frequency": "Real-time push notifications"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "IP:VISIONLOOP_SDK",
       "relationship": "HOLDS_EXCLUSIVE_IP_RIGHTS",
-      "properties": { "asset_classification": "Intangible Capitalized IP" }
+      "properties": {
+        "asset_classification": "Intangible Capitalized IP"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "ACCOUNT:GOOGLE_CORP",
       "relationship": "AUTHENTICATES_AND_COMMUNICATES_VIA",
-      "properties": { "primary_email": "visionloop.in@gmail.com" }
+      "properties": {
+        "primary_email": "visionloop.in@gmail.com"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "ACCOUNT:GITHUB_ORG",
       "relationship": "HOSTS_AND_PUBLISHES_ON",
-      "properties": { "cdn_url": "https://visionloop-org.github.io/visionloop/" }
+      "properties": {
+        "cdn_url": "https://visionloop-org.github.io/visionloop/"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "BRAND:DESIGN_SYSTEM",
       "relationship": "DEFINES_BRAND_IDENTITY",
-      "properties": { "brand_trademark": "Vision Loop Infinity Ribbon" }
+      "properties": {
+        "brand_trademark": "Vision Loop Infinity Ribbon"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "VAULT:ENTERPRISE_CREDENTIALS",
       "relationship": "SEALED_IN_SECURITY_VAULT",
-      "properties": { "encryption_tier": "Local Ring-Fenced Storage" }
+      "properties": {
+        "encryption_tier": "Local Ring-Fenced Storage"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "DIVISION:COMMERCIAL_EV_LEASING",
       "relationship": "OPERATES_DIVISION",
-      "properties": { "status": "ACTIVE_OPERATIONAL" }
+      "properties": {
+        "status": "ACTIVE_OPERATIONAL"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "DIVISION:SOFTWARE_SAAS_IP",
       "relationship": "OPERATES_DIVISION",
-      "properties": { "status": "ACTIVE_OPERATIONAL" }
+      "properties": {
+        "status": "ACTIVE_OPERATIONAL"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "DIVISION:YOUTUBE_COMMERCIAL_MEDIA",
       "relationship": "OPERATES_DIVISION",
-      "properties": { "status": "ACTIVE_OPERATIONAL" }
+      "properties": {
+        "status": "ACTIVE_OPERATIONAL"
+      }
     },
     {
       "source": "AI_SWARM:SENTINELS",
       "target": "PROTOCOL:SOVEREIGN_5_PHASE_GOVERNANCE",
       "relationship": "ENFORCES_GOVERNANCE_LIFECYCLE",
-      "properties": { "status": "ACTIVE_ENFORCED" }
+      "properties": {
+        "status": "ACTIVE_ENFORCED"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "FRAMEWORK:PUBLIC_LICENSING",
       "relationship": "PUBLISHES_UNDER_LICENSE",
-      "properties": { "status": "ACTIVE_ENFORCED" }
+      "properties": {
+        "status": "ACTIVE_ENFORCED"
+      }
     },
     {
       "source": "ENTITY:VISION_LOOP",
       "target": "FRAMEWORK:STRICT_SAFETY_GUARDRAILS",
       "relationship": "ENFORCES_SAFETY_GUARDRAILS",
-      "properties": { "status": "ACTIVE_ENFORCED" }
+      "properties": {
+        "status": "ACTIVE_ENFORCED"
+      }
+    },
+    {
+      "source": "SERVICE:GST_FILING_AND_REGISTRATION_CONSULTING_SERVICE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:BUSINESS_BEST_PRACTICES_MANUAL",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:EXECUTIVE_BIO_AND_BRAND_STORY",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:GITHUB_AND_PAGES_SETUP",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:GOOGLE_ACCOUNT_AND_GCP_SETUP",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:GST_REGISTRATION_APPLICATION_DOSSIER",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:INCORPORATION_AND_GST_GUIDE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:OPERATIONAL_AND_DEVELOPMENT_GUIDELINES",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:STRICT_SAFETY_AND_SECURITY_PROTOCOLS",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:YOUTUBE_INDIA_STATUTORY_AND_COMMUNITY_GUIDELINES",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "COMPLIANCE:YOUTUBE_MONETIZATION_AND_GST_GUIDE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "MEDIA:GST_REGISTRATION_VIDEO_PAYLOAD",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "MEDIA:YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "MEDIA:YOUTUBE_GST_REGISTRATION_EPISODE_SCRIPT",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "MEDIA:YOUTUBE_VIDEO_PRODUCTION_PARAMETERS",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "MEDIA:YOUTUBE_VIDEO_TUTORIAL_STANDARDS",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "LEGAL:COMMERCIAL_VEHICLE_LEASE_AGREEMENT",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "LEGAL:NO_OBJECTION_CERTIFICATE_PREMISES_NOC",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "LEGAL:TERMS_OF_USE_AND_PUBLIC_LICENSING",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "BIZ:ENTERPRISE_BUSINESS_MODEL_AND_PROCESS_ARCHITECTURE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "PKG:VISIONLOOP_COMMS",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "PKG:VISIONLOOP_FINANCE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "PKG:VISIONLOOP_LEGAL",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "PKG:VISIONLOOP_SDK",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "PKG:VISIONLOOP_TELEMATICS",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_AGENTIC_EXECUTOR",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_COMMS_PACKAGE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_FINANCE_PACKAGE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_KNOWLEDGE_GRAPH",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_LEGAL_PACKAGE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_MULTI_AGENT_SWARM",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_OPERATIONS_LOGGER",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_SDK_PACKAGE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_TELEMATICS_PACKAGE",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
+    },
+    {
+      "source": "TEST:TEST_YOUTUBE_AGENTS",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "OWNED_BY",
+      "properties": {
+        "auto_discovered": true
+      }
     }
   ]
 }
