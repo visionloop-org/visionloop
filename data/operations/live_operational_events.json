@@ -4,10 +4,9 @@
     "event_type": "INCORPORATION_AND_KYC_VERIFIED",
     "category": "GOVERNANCE",
     "actor": "AI_SWARM_SENTINEL",
-    "description": "Verified Sole Proprietorship KYC for Sapna Jaiswal (PAN BGVPJ3356G, Aadhaar XXXX-XXXX-4390)",
+    "description": "Verified Sole Proprietorship KYC for Sapna Jaiswal (Income Tax & UIDAI Verified)",
     "payload": {
       "proprietor": "Sapna Jaiswal",
-      "pan": "BGVPJ3356G",
       "status": "VERIFIED"
     },
     "sha256_signature": "600fa890729dd66b842649df4a846bc086e1587edf61eae24a4a1c6bf843f337"

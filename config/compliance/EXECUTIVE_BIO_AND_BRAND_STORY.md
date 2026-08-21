@@ -39,8 +39,8 @@ Starting with commercial electric goods carriages (**Tata Intra EV**, Yellow Boa
 | **Enterprise Name** | **Vision Loop** |
 | **Legal Entity** | Sole Proprietorship (Republic of India) |
 | **Proprietor Name** | **Sapna Jaiswal** (D/O Sanjay Jaiswal) |
-| **Permanent Account Number (PAN)** | **`BGVPJ3356G`** (Category: Individual `P`) |
-| **Aadhaar Identity** | **`9847 1618 4390`** (Masked: `XXXX-XXXX-4390`, UIDAI) |
+| **Proprietor Identity** | **Verified Individual Sole Proprietor** (Income Tax & UIDAI Verified) |
+| **Data Protection Tier** | **DPDP Act 2023 Compliant** (PII Ring-Fenced in Private Vault) |
 | **Corporate Email** | **`visionloop.in@gmail.com`** |
 | **Recovery Email** | `ruhiljaiswal1993@gmail.com` |
 | **Primary Contact (2FA)** | `+91 9935858549` |

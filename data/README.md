@@ -59,9 +59,9 @@ data/
 
 ### 2.1 Proprietor Identity & KYC (`data/kyc/`)
 * **Proprietor:** **Sapna Jaiswal** (D/O Sanjay Jaiswal)
-* **PAN Number:** `BGVPJ3356G` (Individual 4th Char `P`)
-* **Aadhaar Number:** `9847 1618 4390` (Masked: `XXXX-XXXX-4390`)
-* **Registered Address:** `72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503`
+* **Proprietor Status:** **Verified Individual Sole Proprietor** (Income Tax & UIDAI Verified)
+* **Privacy & Governance:** **DPDP Act 2023 Compliant** (Raw Identity Assets Sealed in Ring-Fenced Vault)
+* **Registered Address:** `Patna, Bihar - 801503`
 * **Base Operating Hub:** `Lucknow, Uttar Pradesh, India` (Corridors: Lucknow - Kanpur - Delhi NCR)
 * **JSON Metadata:** [`data/kyc/proprietor_kyc_dossier.json`](file:///d:/VisionLoop/data/kyc/proprietor_kyc_dossier.json)
 

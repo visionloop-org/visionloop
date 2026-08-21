@@ -48,7 +48,7 @@ graph TD
     classDef brand fill:#a855f7,stroke:#9333ea,stroke-width:2px,color:#fff;
     classDef sec fill:#64748b,stroke:#475569,stroke-width:2px,color:#fff;
 
-    OWNER["👤 Sapna Jaiswal<br/>(Sole Proprietor • PAN: BGVPJ3356G)"]:::proprietor
+    OWNER["👤 Sapna Jaiswal<br/>(Sole Proprietor • Verified KYC)"]:::proprietor
     VL["🏢 Vision Loop<br/>(Base Hub: Lucknow, UP)"]:::enterprise
     EV["🚚 Tata Intra EV<br/>(DL-01-EV-2026)"]:::asset
     SWIFT["👥 SwiftLogix Express<br/>(Lessee • PAN: AAACS1234F)"]:::legal
@@ -152,8 +152,8 @@ python scripts/verify_data_integrity.py
 
 * **Trade Name:** **Vision Loop**
 * **Sole Proprietor:** **Sapna Jaiswal** (D/O Sanjay Jaiswal)
-* **PAN Number:** `BGVPJ3356G` (Individual `P`)
-* **Aadhaar Identity:** `9847 1618 4390` (Masked: `XXXX-XXXX-4390`)
+* **Proprietor Identity:** **Verified Individual Sole Proprietor** (Income Tax & UIDAI Verified)
+* **Data Protection Tier:** **DPDP Act 2023 Compliant** (PII Ring-Fenced in Private Vault)
 * **Base Operating Hub:** **Lucknow, Uttar Pradesh, India**
 * **Registered Address:** `Patna, Bihar - 801503`
 * **Udyam MSME Classification:** **NIC 77101** (Rental/Leasing of Motor Vehicles)

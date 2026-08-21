@@ -18,7 +18,7 @@ graph TD
     classDef brand fill:#a855f7,stroke:#9333ea,stroke-width:2px,color:#fff;
     classDef sec fill:#64748b,stroke:#475569,stroke-width:2px,color:#fff;
 
-    OWNER["👤 Sapna Jaiswal<br/>(Sole Proprietor • PAN: BGVPJ3356G)"]:::proprietor
+    OWNER["👤 Sapna Jaiswal<br/>(Sole Proprietor • Verified KYC)"]:::proprietor
     VL["🏢 Vision Loop<br/>(Sole Proprietorship • India)"]:::enterprise
     EV["🚚 Tata Intra EV<br/>(DL-01-EV-2026)"]:::asset
     SWIFT["👥 SwiftLogix Express<br/>(Lessee • PAN: AAACS1234F)"]:::legal
@@ -58,7 +58,7 @@ graph TD
 
 ## 2. Ontological Node Encyclopedia
 
-1. **`PROPRIETOR:SAPNA_JAISWAL`**: Sole Proprietor with 100% equity. Verified PAN `BGVPJ3356G`, Aadhaar `XXXX-XXXX-4390`, Phone `9935858549`, Registered Address in Patna, Bihar - 801503.
+1. **`PROPRIETOR:SAPNA_JAISWAL`**: Sole Proprietor with 100% equity. Income Tax & UIDAI Verified KYC (Identity records sealed in private vault), Registered Address in Patna, Bihar - 801503, Base Hub in Lucknow, Uttar Pradesh.
 2. **`ENTITY:VISION_LOOP`**: Indian Sole Proprietorship trading entity registered under MSME Udyam **NIC 77101** (Rental/Leasing of Motor Vehicles).
 3. **`ASSET:VL-EV-001`**: Commercial Electric Goods Carriage — **Tata Intra EV** (Yellow Board `DL-01-EV-2026`, VIN: `MAT612345N2A09876`, 26.0 kWh battery).
 4. **`LESSEE:SWIFTLOGIX`**: SwiftLogix Express Delivery Pvt Ltd (PAN: `AAACS1234F`, GSTIN: `07AAACS1234F1Z5`).

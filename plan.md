@@ -5,7 +5,7 @@
 
 ## 1. Executive Summary & Vision
 
-**Vision Loop** is conceived as a **next-generation, fully autonomous Sole Proprietorship asset rental company** operating in India, owned by **Sapna Jaiswal** (PAN: `BGVPJ3356G`) with headquarters and primary base operations in **Lucknow, Uttar Pradesh**. By fusing physical asset leasing with hyper-automated digital operations, Vision Loop eliminates traditional administrative friction, minimizes human operational overhead, and maximizes capital velocity.
+**Vision Loop** is conceived as a **next-generation, fully autonomous Sole Proprietorship asset rental company** operating in India, owned by **Sapna Jaiswal** (Sole Proprietor) with headquarters and primary base operations in **Lucknow, Uttar Pradesh**. By fusing physical asset leasing with hyper-automated digital operations, Vision Loop eliminates traditional administrative friction, minimizes human operational overhead, and maximizes capital velocity.
 
 ### Initial Launch Target
 * **Primary Initial Asset:** Commercial Electric Vehicle — **Tata Intra EV** (Yellow Board `DL-01-EV-2026`).

@@ -6,7 +6,7 @@
 ## 🏛️ 1. Core Enterprise Principles & Statutory Framework
 
 1. **Sole Proprietorship Structure:**
-   * Vision Loop operates as a zero-touch Indian Sole Proprietorship, 100% beneficially owned by **Sapna Jaiswal** (PAN: `BGVPJ3356G`, Aadhaar: `XXXX-XXXX-4390`).
+   * Vision Loop operates as a zero-touch Indian Sole Proprietorship, 100% beneficially owned by **Sapna Jaiswal** (Verified Individual Sole Proprietor).
    * Primary operational headquarters and fleet base depot: **Lucknow, Uttar Pradesh, India** (UP State Code `09`).
    * Operating Corridors: **Lucknow – Kanpur – Delhi NCR Commercial Freight Corridors**.
 2. **Statutory Tax Framework (SAC 997311):**
@@ -21,17 +21,18 @@
 
 ---
 
-## 🔒 2. Public Domain Financial Privacy & Data Governance
+## 🔒 2. Public Domain Privacy & Data Governance (Financial & Identity Protection)
 
 > ### ⚠️ MANDATORY PRIVACY DIRECTIVE:
-> **All exact financial contract figures, customer invoice rates, specific monthly revenue run rates, and private cash flow ledgers MUST NEVER be published or displayed in public domains (e.g., Public GitHub Repositories, Public GitHub.io Website, Public Bios, Landing Pages, Marketing Collateral).**
+> **All exact financial contract figures, customer invoice rates, specific monthly revenue run rates, private cash flow ledgers, and proprietor government identifiers (PAN Number: `BGVPJ3356G`, Aadhaar Numbers) MUST NEVER be published or displayed in public domains (e.g., Public GitHub Repositories, Public GitHub.io Website, Public Bios, Landing Pages, Marketing Collateral).**
 
 ### Rules of Public vs. Private Boundaries:
 * ✅ **Public Domains (GitHub README, Website, Public Docs):**
+  * Display verified status: `Verified Individual Sole Proprietor (Income Tax & UIDAI Verified)`.
   * Showcase the **structural statutory model** (SAC 997311 18% GST, 100% ITC benefit, 15% Sinking Fund reserve sweep, 2-Month Escrow buffer).
   * Use institutional language: *"Custom Corporate Fleet Lease Plans"*, *"Competitive Institutional Rates"*, *"Automated Zoho Invoicing"*.
-* 🔐 **Private Local Vaults (`data/credentials/`, `data/finance/`, `.env`, MongoDB):**
-  * Ring-fence exact rupee amounts, accounting ledger balances, customer contract IDs, and bank feed settlements.
+* 🔐 **Private Local Vaults (`data/credentials/`, `data/kyc/`, `data/finance/`, `.env`, MongoDB):**
+  * Ring-fence exact rupee amounts, PAN/Aadhaar identity files, accounting ledger balances, customer contract IDs, and bank feed settlements.
   * Always verify that `.gitignore` prevents private credentials and KYC PDFs from being committed.
 
 ---
