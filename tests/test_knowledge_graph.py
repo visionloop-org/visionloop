@@ -10,8 +10,8 @@ def test_knowledge_graph_structure():
         kg = json.load(f)
         
     assert "nodes" in kg and "edges" in kg
-    assert len(kg["nodes"]) >= 12
-    assert len(kg["edges"]) >= 11
+    assert len(kg["nodes"]) == 17
+    assert len(kg["edges"]) == 16
 
 def test_knowledge_graph_financial_identities():
     kg_path = Path(__file__).resolve().parent.parent / "knowledge_graph.json"

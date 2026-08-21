@@ -12,7 +12,7 @@
 * **Aadhaar Identity:** `XXXX-XXXX-4390` (UIDAI Registered)
 * **Registered Residential / Official Address:**
   `72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503`
-* **Operational Fleet Hub:** Delhi NCR Commercial Logistics Zone (Operating Yellow-Board Fleet)
+* **Operational Fleet Base Hub:** **Lucknow, Uttar Pradesh** (Commercial Freight Corridors: Lucknow – Kanpur – Delhi NCR)
 
 ---
 

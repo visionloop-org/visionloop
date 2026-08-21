@@ -30,7 +30,7 @@ data/
 │   └── EXECUTIVE_BIO_AND_BRAND_STORY.md # Official Executive Bio & Brand Story for Sapna Jaiswal
 │
 ├── knowledge_graph/                    # Canonical Ontological Knowledge Graph
-│   ├── knowledge_graph.json            # Machine-readable 13-node graph with SHA-256 hash
+│   ├── knowledge_graph.json            # Machine-readable 17-node graph with SHA-256 hash
 │   └── KNOWLEDGE_GRAPH.md              # Mathematical invariant specifications & Mermaid diagrams
 │
 ├── operations/                         # Autonomous Operational Journals & Growth Models
@@ -60,6 +60,7 @@ data/
 * **PAN Number:** `BGVPJ3356G` (Individual 4th Char `P`)
 * **Aadhaar Number:** `9847 1618 4390` (Masked: `XXXX-XXXX-4390`)
 * **Registered Address:** `72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503`
+* **Base Operating Hub:** `Lucknow, Uttar Pradesh, India` (Corridors: Lucknow - Kanpur - Delhi NCR)
 * **JSON Metadata:** [`data/kyc/proprietor_kyc_dossier.json`](file:///d:/VisionLoop/data/kyc/proprietor_kyc_dossier.json)
 
 ### 2.2 Commercial Legal Contracts (`data/legal/`)
@@ -79,8 +80,8 @@ data/
 
 ### 2.4 Enterprise Knowledge Graph (`data/knowledge_graph/`)
 * **Canonical JSON:** [`data/knowledge_graph/knowledge_graph.json`](file:///d:/VisionLoop/data/knowledge_graph/knowledge_graph.json)
-  * 13 Ontological Nodes, 12 Semantic Relationships.
-  * SHA-256 Checksum: `5e4ed39a70bc860b70c53b81df4bbdd14cceccd3de4c1af3c1d6611e52075937`.
+  * 17 Ontological Nodes, 16 Semantic Relationships.
+  * SHA-256 Checksum: `d42948761edf4be3e3ca1a05bdc5bb10152e2eb1356cb751ae9b0769ac2b82cd`.
 * **Specification:** [`data/knowledge_graph/KNOWLEDGE_GRAPH.md`](file:///d:/VisionLoop/data/knowledge_graph/KNOWLEDGE_GRAPH.md)
 
 ### 2.5 Seed Data & MongoDB Schemas (`data/seed_data/`)

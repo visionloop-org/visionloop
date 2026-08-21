@@ -1,58 +1,165 @@
-# Vision Loop 🚀
-### Fully Automated Sole Proprietorship Asset Rental Enterprise
+<div align="center">
 
-Vision Loop is an AI-driven, fully containerized asset rental enterprise headquartered in India. Starting with commercial electric vehicles (Tata Intra EV), Vision Loop operates with zero human operational friction through automated Zoho Books financial rails, real-time IoT telematics ingestion, autonomous AI agents, and a **24/7 Telegram Mobile Command Bot**.
+<img src="docs/logo.png" alt="Vision Loop Logo" width="160" />
 
----
+# VISION LOOP
+### Autonomous Commercial Asset & Electric Vehicle Leasing Platform
+**Headquartered in Lucknow, Uttar Pradesh • Republic of India**
 
-## 🏗️ Tech Stack & Architecture
+[![Live Website](https://img.shields.io/badge/Live_Website-visionloop--org.github.io-06b6d4?style=for-the-badge&logo=github)](https://visionloop-org.github.io/visionloop/)
+[![Knowledge Graph](https://img.shields.io/badge/Knowledge_Graph-17_Nodes_•_Verified-10b981?style=for-the-badge)](data/knowledge_graph/KNOWLEDGE_GRAPH.md)
+[![Tests](https://img.shields.io/badge/Tests-24%2F24_Passing-38bdf8?style=for-the-badge)](tests/)
+[![License](https://img.shields.io/badge/Entity-Sole_Proprietorship_(India)-f59e0b?style=for-the-badge)](data/compliance/EXECUTIVE_BIO_AND_BRAND_STORY.md)
 
-* **Containerization:** Docker & Docker Compose (8 Microservices)
-* **Database & Caching:** MongoDB 7.0 (Unstructured Document Store), Redis 7
-* **Backend Core:** FastAPI (Python 3.11), Motor Async Driver, Pydantic v2
-* **Accounting & Compliance:** Zoho Books REST API (OAuth 2.0, SAC 997311, 18% GST, e-NACH/UPI QR)
-* **Mobile & Messaging:** Telegram Bot API (Mobile Command Center), WhatsApp Cloud API
-* **AI Autonomous Engine:** Multi-agent swarm (Financial Sentinel, Telematics Sentinel, Legal Auditor, Executive Briefer)
-* **IoT & Telematics:** Ingestion engine for CAN-Bus & GPS streams, battery SoC/SoH, and remote standstill immobilizer
-* **Frontend:** Glassmorphic modern React + Vite dashboard
+</div>
 
 ---
 
-## ⚡ Quick Start with Docker
+## 🏢 1. Executive Overview
 
-1. **Clone the repository and copy environment variables:**
-   ```bash
-   cp .env.example .env
-   ```
+**Vision Loop** is a technology-driven, zero-touch Indian Sole Proprietorship enterprise specializing in the institutional leasing and management of commercial electric vehicles (**Tata Intra EV**, Yellow Board `DL-01-EV-2026`). Founded and solely owned by **Sapna Jaiswal**, Vision Loop operates from its primary base hub in **Lucknow, Uttar Pradesh**, serving the high-density **Lucknow – Kanpur – Delhi NCR freight logistics corridors**.
 
-2. **Launch all 8 services via Docker Compose:**
-   ```bash
-   docker compose up --build
-   ```
-
-3. **Access Services:**
-   * 🖥️ **Command Center Dashboard:** [http://localhost:3000](http://localhost:3000)
-   * 🤖 **Telegram Bot Service:** [http://localhost:8004](http://localhost:8004)
-   * 🔌 **Core REST API & Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
-   * 📊 **Zoho Connector API:** [http://localhost:8001/docs](http://localhost:8001/docs)
-   * 🤖 **AI Multi-Agent Service:** [http://localhost:8002/docs](http://localhost:8002/docs)
-   * 📡 **Telematics & IoT Ingestor:** [http://localhost:8003/docs](http://localhost:8003/docs)
+The enterprise eliminates operational overhead through an autonomous **AI Multi-Agent Swarm** that reconciles **Zoho Books** invoices under **SAC 997311** (18% GST), enforces **MSMED Act 2006** 45-day statutory payment terms, audits IoT CAN-Bus battery telemetry, and sweeps **15% of monthly revenue (₹10,800/mo)** into a high-yield liquid sinking fund for debt-free capital replacement.
 
 ---
 
-## 📱 Telegram Mobile Bot Commands
-* `/start` — Interactive control menu with quick-action buttons
-* `/status` — Live fleet radar (SoC %, Speed, Odometer, Location)
-* `/revenue` — Monthly run rate (₹84,960/mo) & cash flow stats
-* `/treasury` — 15% Sinking Fund reserve & escrow status
-* `/aiswarm` — Trigger autonomous AI Swarm cycle
-* `/lock` — Engage standstill emergency motor cut-off
+## 💰 2. Financial Architecture & Unit Economics (SAC 997311)
+
+$$\begin{aligned}
+\text{Base Commercial Rent} &= \mathbf{₹72,000.00 / \text{month}} \\
+\text{18\% GST (SAC 997311)} &= \mathbf{₹12,960.00 / \text{month}} \quad (\text{CGST } ₹6,480 + \text{SGST } ₹6,480) \\
+\text{Total Gross Invoiced} &= \mathbf{₹84,960.00 / \text{month (e-NACH / UPI QR)}} \\
+\text{15\% Sinking Fund} &= \mathbf{₹10,800.00 / \text{month (Liquid Overnight Fund @ 6.8\% CAGR)}} \\
+\text{Refundable Security Deposit} &= \mathbf{₹1,44,000.00 (2 Months Base Rent in Escrow)} \\
+\text{100\% Input Tax Credit (ITC)} &= \mathbf{\text{Claimable under Section 17(5)(a) of CGST Act}}
+\end{aligned}$$
 
 ---
 
-## 📦 Modular Reusable IP Packages (`packages/`)
-* [`visionloop-finance`](file:///d:/VisionLoop/packages/visionloop-finance/): Zoho Books, SAC 997311, Sinking Fund Treasury, MSMED Act 45-day interest.
-* [`visionloop-telematics`](file:///d:/VisionLoop/packages/visionloop-telematics/): CAN-Bus stream parser, Battery Warranty SLA Scorer, Standstill immobilizer.
-* [`visionloop-legal`](file:///d:/VisionLoop/packages/visionloop-legal/): Dynamic Lease Agreement synthesizer, Indian PAN/GSTIN validator.
-* [`visionloop-comms`](file:///d:/VisionLoop/packages/visionloop-comms/): Telegram Bot Dispatcher, WhatsApp Cloud API collection reminders.
-* [`visionloop-sdk`](file:///d:/VisionLoop/packages/visionloop-sdk/): Unified master SDK for cross-project integration.
+## 🌐 3. Canonical Knowledge Graph Topology (17 Nodes, 16 Edges)
+
+```mermaid
+graph TD
+    classDef proprietor fill:#f43f5e,stroke:#e11d48,stroke-width:2px,color:#fff;
+    classDef enterprise fill:#06b6d4,stroke:#0891b2,stroke-width:2px,color:#fff;
+    classDef asset fill:#3b82f6,stroke:#2563eb,stroke-width:2px,color:#fff;
+    classDef legal fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#fff;
+    classDef tax fill:#f59e0b,stroke:#d97706,stroke-width:2px,color:#fff;
+    classDef treasury fill:#10b981,stroke:#059669,stroke-width:2px,color:#fff;
+    classDef ai fill:#ec4899,stroke:#db2777,stroke-width:2px,color:#fff;
+    classDef cloud fill:#0ea5e9,stroke:#0284c7,stroke-width:2px,color:#fff;
+    classDef brand fill:#a855f7,stroke:#9333ea,stroke-width:2px,color:#fff;
+    classDef sec fill:#64748b,stroke:#475569,stroke-width:2px,color:#fff;
+
+    OWNER["👤 Sapna Jaiswal<br/>(Sole Proprietor • PAN: BGVPJ3356G)"]:::proprietor
+    VL["🏢 Vision Loop<br/>(Base Hub: Lucknow, UP)"]:::enterprise
+    EV["🚚 Tata Intra EV<br/>(DL-01-EV-2026)"]:::asset
+    SWIFT["👥 SwiftLogix Express<br/>(Lessee • PAN: AAACS1234F)"]:::legal
+    LEASE["📜 Master Lease Contract<br/>(VL-LEASE-2026-001)"]:::legal
+    SAC["📑 SAC 997311<br/>(18% GST • 100% ITC)"]:::tax
+    SINK["🐷 15% Sinking Fund<br/>(₹10,800/mo Reserve)"]:::treasury
+    MSME["⚖️ MSMED Act 2006<br/>(Sec 15/16 • 45-Day Cap)"]:::legal
+    SLA["⚡ Battery Warranty SLA<br/>(Tata Motors OEM)"]:::asset
+    IMMOB["🔒 Standstill Immobilizer<br/>(Speed == 0.0 km/h)"]:::asset
+    SWARM["🤖 AI Multi-Agent Swarm<br/>(4 Autonomous Sentinels)"]:::ai
+    TG["📱 Telegram Command Bot<br/>(Port 8004 • @VisionLoop_Bot)"]:::cloud
+    IP["📦 Modular IP Packages<br/>(visionloop-sdk)"]:::enterprise
+    GOOGLE["📧 Google Corporate & GCP<br/>(visionloop.in@gmail.com)"]:::cloud
+    GITHUB["🐙 GitHub Org & Pages<br/>(visionloop-org.github.io)"]:::cloud
+    BRAND["🎨 3D Infinity Logo System<br/>(data/brand/logo.png)"]:::brand
+    VAULT["🔐 Enterprise Secrets Vault<br/>(data/credentials/)"]:::sec
+
+    OWNER -->|SOLE_PROPRIETOR_OF| VL
+    VL -->|OWNS_AND_OPERATES| EV
+    VL -->|PROTECTED_BY| MSME
+    VL -->|HOLDS_IP_RIGHTS| IP
+    VL -->|AUTHENTICATES_VIA| GOOGLE
+    VL -->|HOSTS_AND_PUBLISHES_ON| GITHUB
+    VL -->|DEFINES_BRAND_IDENTITY| BRAND
+    VL -->|SEALED_IN_VAULT| VAULT
+    EV -->|SUBJECT_OF_LEASE| LEASE
+    LEASE -->|LESSEE_COUNTERPARTY| SWIFT
+    LEASE -->|INVOICED_UNDER| SAC
+    LEASE -->|FUNDS_15_PERCENT_RESERVE| SINK
+    EV -->|GOVERNED_BY_WARRANTY_SLA| SLA
+    EV -->|CONTROLLED_BY_RELAY| IMMOB
+    SWARM -->|AUTONOMOUSLY_OPERATES| VL
+    SWARM -->|COMMUNICATES_AND_DISPATCHES| TG
+```
+
+---
+
+## 🏗️ 4. Technology Stack & Container Architecture
+
+* **Containerization:** Docker & Docker Compose (8 Autonomous Microservices)
+* **Unstructured Database:** MongoDB 7.0 (2dsphere Geospatial Indexing, JSON Document Store)
+* **API Layer:** FastAPI (Python 3.11/3.13), Pydantic v2, Motor Async Driver
+* **Accounting & Invoicing:** Zoho Books API (OAuth 2.0, SAC 997311, e-NACH auto-debit, dynamic UPI QR)
+* **Mobile Command Center:** Telegram Bot API (Port `8004`, bidirectional Antigravity AI execution bridge)
+* **AI Multi-Agent Swarm:** 4 Specialized Sentinels (Financial, Telematics, Legal, Executive)
+* **IoT & Telematics:** Ingestion engine for CAN-Bus streams, Tata OEM Battery SLA validation, standstill immobilizer
+* **Frontend:** Glassmorphic modern React + Vite dashboard ([http://localhost:3000](http://localhost:3000))
+* **Live Static CDN:** GitHub Pages ([https://visionloop-org.github.io/visionloop/](https://visionloop-org.github.io/visionloop/))
+
+---
+
+## 📦 5. Modular Python IP Packages (`packages/`)
+
+Every core automation is engineered as a standalone, pip-installable Python package:
+
+1. **[`visionloop-finance`](file:///d:/VisionLoop/packages/visionloop-finance/):** SAC 997311 GST Engine, 15% Sinking Fund Allocator, MSMED Act 3x RBI Interest Calculator, Dynamic UPI QR Generator, Operations Logger.
+2. **[`visionloop-telematics`](file:///d:/VisionLoop/packages/visionloop-telematics/):** CAN-Bus Stream Parser, Tata OEM Battery SLA Scorer, 2dsphere Geofence Engine, Standstill Immobilizer Relay.
+3. **[`visionloop-legal`](file:///d:/VisionLoop/packages/visionloop-legal/):** Dynamic Commercial Lease Synthesizer, Indian PAN/GSTIN Validator, Statutory MSME Compliance Auditor.
+4. **[`visionloop-comms`](file:///d:/VisionLoop/packages/visionloop-comms/):** Telegram Command Bot Engine, WhatsApp Cloud API Dispatcher, Escalation Collection Copy Engine.
+5. **[`visionloop-sdk`](file:///d:/VisionLoop/packages/visionloop-sdk/):** Unified master enterprise SDK.
+
+---
+
+## 🚀 6. Quick Start with Docker
+
+```bash
+# 1. Clone repository
+git clone https://github.com/visionloop-org/visionloop.git
+cd visionloop
+
+# 2. Configure environment
+cp .env.example .env
+
+# 3. Launch all 8 microservices
+docker compose up --build -d
+```
+
+### Active Service Endpoints:
+* 🖥️ **Command Center UI:** [http://localhost:3000](http://localhost:3000)
+* 🤖 **Telegram Command Service:** [http://localhost:8004](http://localhost:8004)
+* 🔌 **Core REST API & Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
+* 📊 **Zoho Connector API:** [http://localhost:8001/docs](http://localhost:8001/docs)
+* 🤖 **AI Multi-Agent Service:** [http://localhost:8002/docs](http://localhost:8002/docs)
+* 📡 **Telematics & IoT Ingestor:** [http://localhost:8003/docs](http://localhost:8003/docs)
+
+---
+
+## 🧪 7. Verification & Invariance Auditing
+
+```bash
+# Run 24 unit tests across all IP packages and AI agents
+python -m pytest tests/
+
+# Run 29-invariant mathematical & cryptographic knowledge graph audit
+python scripts/verify_data_integrity.py
+```
+
+---
+
+## ⚖️ 8. Governance & Statutory Snapshot
+
+* **Trade Name:** **Vision Loop**
+* **Sole Proprietor:** **Sapna Jaiswal** (D/O Sanjay Jaiswal)
+* **PAN Number:** `BGVPJ3356G` (Individual `P`)
+* **Aadhaar Identity:** `9847 1618 4390` (Masked: `XXXX-XXXX-4390`)
+* **Base Operating Hub:** **Lucknow, Uttar Pradesh, India**
+* **Registered Address:** `Patna, Bihar - 801503`
+* **Udyam MSME Classification:** **NIC 77101** (Rental/Leasing of Motor Vehicles)
+* **GSTIN Classification:** **SAC 997311** (18% GST)
+* **Official Email:** `visionloop.in@gmail.com`
+* **Corporate Website:** **[https://visionloop-org.github.io/visionloop/](https://visionloop-org.github.io/visionloop/)**

@@ -5,12 +5,14 @@
 
 ## 1. Executive Summary & Vision
 
-**Vision Loop** is conceived as a **next-generation, fully autonomous Sole Proprietorship asset rental company** operating in India. By fusing physical asset leasing with hyper-automated digital operations, Vision Loop eliminates traditional administrative friction, minimizes human operational overhead, and maximizes capital velocity.
+**Vision Loop** is conceived as a **next-generation, fully autonomous Sole Proprietorship asset rental company** operating in India, owned by **Sapna Jaiswal** (PAN: `BGVPJ3356G`) with headquarters and primary base operations in **Lucknow, Uttar Pradesh**. By fusing physical asset leasing with hyper-automated digital operations, Vision Loop eliminates traditional administrative friction, minimizes human operational overhead, and maximizes capital velocity.
 
 ### Initial Launch Target
-* **Primary Initial Asset:** Commercial Electric Vehicle — **Tata Intra EV** (or equivalent class commercial EV).
-* **Monthly Revenue Target:** **₹72,000 + GST** per vehicle on a long-term corporate / logistics / commercial lease.
-* **Core Tech Backbone:** Full-stack containerized architecture (**Docker Compose**) integrating **Unstructured Document Database (MongoDB)**, **Zoho Books APIs**, **IoT/Telematics ingestors**, **AI operational agents**, and an **automated banking/payment rail**.
+* **Primary Initial Asset:** Commercial Electric Vehicle — **Tata Intra EV** (Yellow Board `DL-01-EV-2026`).
+* **Monthly Revenue Target:** **₹72,000 + 18% GST (SAC 997311) = ₹84,960.00 / month** per vehicle on a long-term commercial lease with SwiftLogix Express.
+* **Base Operating Hub:** Lucknow, Uttar Pradesh (Freight Corridors: Lucknow – Kanpur – Delhi NCR).
+* **Core Tech Backbone:** Full-stack containerized architecture (**Docker Compose**) integrating **MongoDB 7.0**, **Zoho Books APIs**, **IoT CAN-Bus Telematics**, **AI Agent Swarm**, and **Telegram Mobile Command Bot (@VisionLoop_Bot)**.
+* **Live Web Platform:** [https://visionloop-org.github.io/visionloop/](https://visionloop-org.github.io/visionloop/)
 
 ---
 
