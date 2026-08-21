@@ -1,0 +1,123 @@
+[
+  {
+    "timestamp": "2026-08-21T19:00:07.396645+00:00",
+    "event_type": "INCORPORATION_AND_KYC_VERIFIED",
+    "category": "GOVERNANCE",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Verified Sole Proprietorship KYC for Sapna Jaiswal (PAN BGVPJ3356G, Aadhaar XXXX-XXXX-4390)",
+    "payload": {
+      "proprietor": "Sapna Jaiswal",
+      "pan": "BGVPJ3356G",
+      "status": "VERIFIED"
+    },
+    "sha256_signature": "600fa890729dd66b842649df4a846bc086e1587edf61eae24a4a1c6bf843f337"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.397052+00:00",
+    "event_type": "CANONICAL_KNOWLEDGE_GRAPH_SEALED",
+    "category": "SECURITY",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Knowledge graph compiled with 17 nodes and 16 edges (SHA-256 Invariants 100% Passed)",
+    "payload": {
+      "nodes_count": 17,
+      "edges_count": 16,
+      "invariants_passed": 29
+    },
+    "sha256_signature": "fd31af46048fa54d1758a5edcbbf715347c57d0b2b152a1e11502c7d910194ab"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.406358+00:00",
+    "event_type": "MASTER_LEASE_EXECUTED",
+    "category": "LEGAL",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Master Commercial Lease executed with SwiftLogix Express for Tata Intra EV (DL-01-EV-2026)",
+    "payload": {
+      "lease_id": "VL-LEASE-2026-001",
+      "lessee": "SwiftLogix Express Delivery Pvt Ltd",
+      "term_months": 24,
+      "monthly_invoiced_inr": 84960.0
+    },
+    "sha256_signature": "5a92542a55d57963a469bd97159dbd20904e718ab8ccde6d5942ffa9749fb107"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.417306+00:00",
+    "event_type": "GOOGLE_CORP_INFRASTRUCTURE_ACTIVATED",
+    "category": "INFRASTRUCTURE",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Registered official Google Account visionloop.in@gmail.com with GCP & Gmail Relay",
+    "payload": {
+      "email": "visionloop.in@gmail.com",
+      "recovery": "ruhiljaiswal1993@gmail.com",
+      "status": "ACTIVE"
+    },
+    "sha256_signature": "1a24fff1fc5bd31bfee163c92eaeceeac5e9b16c8a6108cbaa85617e6f3bddd2"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.426045+00:00",
+    "event_type": "GITHUB_PAGES_GLOBAL_CDN_DEPLOYED",
+    "category": "DEPLOYMENT",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Deployed public static website to GitHub Pages at https://visionloop-org.github.io/visionloop/",
+    "payload": {
+      "org": "visionloop-org",
+      "url": "https://visionloop-org.github.io/visionloop/",
+      "status": "LIVE"
+    },
+    "sha256_signature": "e0f396bff9648c0eacd6443abe66406d3f792938dc24cdf995e27dce9fe600f6"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.436578+00:00",
+    "event_type": "MONTH_1_INVOICE_GENERATED_ZOHO",
+    "category": "FINANCIAL",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Generated SAC 997311 Invoice #VL-INV-2026-001 for Rs. 84,960.00 with 18% GST",
+    "payload": {
+      "invoice_number": "VL-INV-2026-001",
+      "base_rent": 72000.0,
+      "gst_amt": 12960.0,
+      "total": 84960.0
+    },
+    "sha256_signature": "019a07a1c5f78707a8d941c28bcd71d278ec3e54750ad5f0d74a40264dbea0e7"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.448970+00:00",
+    "event_type": "SINKING_FUND_SWEEP_EXECUTED",
+    "category": "TREASURY",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Automated 15% Sinking Fund sweep of Rs. 10,800.00 to Liquid Overnight Treasury Fund",
+    "payload": {
+      "allocation_pct": 15.0,
+      "amount_inr": 10800.0,
+      "yield_cagr": 0.068,
+      "cumulative_reserve_inr": 10800.0
+    },
+    "sha256_signature": "891138f81c019263e0932fd25c06442fc8a8bc215f832c7fbeff94e82951afb3"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.461398+00:00",
+    "event_type": "TELEMATICS_SLA_HEARTBEAT",
+    "category": "TELEMATICS",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "CAN-Bus Telemetry verified: SoC 92.5%, SoH 99.4%, Temp 28.5C (Tata Warranty SLA Optimal)",
+    "payload": {
+      "asset_tag": "VL-EV-001",
+      "soc_pct": 92.5,
+      "soh_pct": 99.4,
+      "temp_c": 28.5,
+      "sla_status": "COMPLIANT"
+    },
+    "sha256_signature": "35fb1b30fe073f4e6621ec442a0efec9d3c85efac2f2e1cb92468d9dae1921b8"
+  },
+  {
+    "timestamp": "2026-08-21T19:00:07.474454+00:00",
+    "event_type": "AI_SWARM_SENTINEL_TICK",
+    "category": "AI_OPS",
+    "actor": "AI_SWARM_SENTINEL",
+    "description": "Multi-Agent Swarm completed 24/7 audit cycle across Finance, Telematics, Legal & Executive",
+    "payload": {
+      "sentinels_active": 4,
+      "human_intervention_required": false
+    },
+    "sha256_signature": "e09d93ca5a390f1b13d43a4c47dab6046a944d184e866b3d03191f32f1e48708"
+  }
+]
