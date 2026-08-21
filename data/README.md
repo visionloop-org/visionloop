@@ -29,6 +29,10 @@ data/
 │   ├── knowledge_graph.json            # Machine-readable 13-node graph with SHA-256 hash
 │   └── KNOWLEDGE_GRAPH.md              # Mathematical invariant specifications & Mermaid diagrams
 │
+├── credentials/                        # Master Credentials & Secrets Vault
+│   ├── CREDENTIALS_AND_ACCOUNTS_VAULT.md # Master logins, passwords & recovery records
+│   └── ENTERPRISE_CREDENTIALS_VAULT.json # Machine-readable credentials JSON
+│
 ├── seed_data/                          # Database Seed Assets & MongoDB Records
 │   ├── init-mongo.js                   # Primary MongoDB 7.0 initialization & index script
 │   ├── assets_seed.json                # Seed document for Tata Intra EV (DL-01-EV-2026)

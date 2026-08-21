@@ -39,6 +39,9 @@ dist-ssr/
 .env.*.local
 *.pem
 *.key
+data/credentials/
+data/kyc/*.pdf
+data/kyc/*.png
 
 # Database & Docker Volumes
 postgres_data/
