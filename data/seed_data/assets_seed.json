@@ -1,0 +1,14 @@
+[
+  {
+    "asset_tag": "VL-EV-001",
+    "name": "Tata Intra EV Commercial Goods Carriage",
+    "vin": "MAT612345N2A09876",
+    "registration_number": "DL-01-EV-2026",
+    "battery_capacity_kwh": 26.0,
+    "current_soc_pct": 92.5,
+    "current_soh_pct": 99.4,
+    "odometer_km": 3420.0,
+    "monthly_base_rent_inr": 72000.0,
+    "status": "LEASED"
+  }
+]

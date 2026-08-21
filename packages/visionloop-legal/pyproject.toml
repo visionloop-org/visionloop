@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visionloop-legal"
+version = "1.0.0"
+description = "Reusable Indian Contract & LegalTech Engine: Dynamic Commercial Lease Synthesizer, PAN/GSTIN KYC Validator & MSMED Compliance Auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.0.0"
+]
+authors = [
+    { name = "Vision Loop Engineering", email = "engineering@visionloop.in" }
+]

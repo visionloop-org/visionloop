@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visionloop-finance"
+version = "1.0.0"
+description = "Reusable Financial Automation Engine: Zoho Books Sync, SAC 997311 GST Engine, MSMED Act Interest & Sinking Fund Treasury"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0"
+]
+authors = [
+    { name = "Vision Loop Engineering", email = "engineering@visionloop.in" }
+]

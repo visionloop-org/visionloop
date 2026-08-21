@@ -1,0 +1,178 @@
+version: '3.8'
+
+services:
+  # --------------------------------------------------------------------------
+  # 1. MongoDB Unstructured Document Database
+  # --------------------------------------------------------------------------
+  db:
+    image: mongo:7.0-jammy
+    container_name: visionloop-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-visionloop_admin}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-visionloop_secure_pass_2026}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE:-visionloop_db}
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./config/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - visionloop-net
+
+  # --------------------------------------------------------------------------
+  # 2. Redis In-Memory Cache & Message Broker
+  # --------------------------------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: visionloop-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - visionloop-net
+
+  # --------------------------------------------------------------------------
+  # 3. Core API Service (FastAPI + Motor Async MongoDB Driver)
+  # --------------------------------------------------------------------------
+  core-api:
+    build:
+      context: ./services/core-api
+      dockerfile: Dockerfile
+    container_name: visionloop-core-api
+    restart: unless-stopped
+    environment:
+      MONGODB_URI: ${MONGODB_URI:-mongodb://visionloop_admin:visionloop_secure_pass_2026@db:27017/visionloop_db?authSource=admin}
+      DATABASE_NAME: ${DATABASE_NAME:-visionloop_db}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      ZOHO_BOOKS_URL: http://zoho-connector:8001
+      AI_AGENT_URL: http://ai-agent-service:8002
+      TELEMATICS_URL: http://telematics-listener:8003
+      TELEGRAM_BOT_URL: http://telegram-bot:8004
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - visionloop-net
+
+  # --------------------------------------------------------------------------
+  # 4. Zoho Books Integration Connector
+  # --------------------------------------------------------------------------
+  zoho-connector:
+    build:
+      context: ./services/zoho-connector
+      dockerfile: Dockerfile
+    container_name: visionloop-zoho-connector
+    restart: unless-stopped
+    environment:
+      CORE_API_URL: http://core-api:8000
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      ZOHO_CLIENT_ID: ${ZOHO_CLIENT_ID:-dummy_client_id}
+      ZOHO_CLIENT_SECRET: ${ZOHO_CLIENT_SECRET:-dummy_client_secret}
+      ZOHO_REFRESH_TOKEN: ${ZOHO_REFRESH_TOKEN:-dummy_refresh_token}
+      ZOHO_ORG_ID: ${ZOHO_ORG_ID:-dummy_org_id}
+      ZOHO_API_DOMAIN: ${ZOHO_API_DOMAIN:-https://books.zoho.in/api/v3}
+    ports:
+      - "8001:8001"
+    depends_on:
+      - core-api
+    networks:
+      - visionloop-net
+
+  # --------------------------------------------------------------------------
+  # 5. AI Operational Multi-Agent Service
+  # --------------------------------------------------------------------------
+  ai-agent-service:
+    build:
+      context: ./services/ai-agent-service
+      dockerfile: Dockerfile
+    container_name: visionloop-ai-agents
+    restart: unless-stopped
+    environment:
+      CORE_API_URL: http://core-api:8000
+      ZOHO_BOOKS_URL: http://zoho-connector:8001
+      TELEGRAM_BOT_URL: http://telegram-bot:8004
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    ports:
+      - "8002:8002"
+    depends_on:
+      - core-api
+    networks:
+      - visionloop-net
+
+  # --------------------------------------------------------------------------
+  # 6. Telematics & IoT Ingestion Worker
+  # --------------------------------------------------------------------------
+  telematics-listener:
+    build:
+      context: ./services/telematics-listener
+      dockerfile: Dockerfile
+    container_name: visionloop-telematics
+    restart: unless-stopped
+    environment:
+      CORE_API_URL: http://core-api:8000
+      SIMULATION_INTERVAL_SEC: 5
+    ports:
+      - "8003:8003"
+    depends_on:
+      - core-api
+    networks:
+      - visionloop-net
+
+  # --------------------------------------------------------------------------
+  # 7. Telegram Bot & Mobile Command Service
+  # --------------------------------------------------------------------------
+  telegram-bot:
+    build:
+      context: ./services/telegram-bot
+      dockerfile: Dockerfile
+    container_name: visionloop-telegram-bot
+    restart: unless-stopped
+    environment:
+      CORE_API_URL: http://core-api:8000
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_ADMIN_CHAT_ID: ${TELEGRAM_ADMIN_CHAT_ID:-}
+    ports:
+      - "8004:8004"
+    depends_on:
+      - core-api
+    networks:
+      - visionloop-net
+
+  # --------------------------------------------------------------------------
+  # 8. Dashboard Command Center UI (Vite / React)
+  # --------------------------------------------------------------------------
+  dashboard-ui:
+    build:
+      context: ./services/dashboard-ui
+      dockerfile: Dockerfile
+    container_name: visionloop-dashboard
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_CORE_API_URL=http://localhost:8000
+    depends_on:
+      - core-api
+    networks:
+      - visionloop-net
+
+volumes:
+  mongodb_data:
+  redis_data:
+
+networks:
+  visionloop-net:
+    driver: bridge

@@ -1,0 +1,13 @@
+{
+  "sac_code": "997311",
+  "service_description": "Leasing of transport vehicles without operator",
+  "base_monthly_rent_inr": 72000.0,
+  "gst_rate_pct": 18.0,
+  "cgst_inr": 6480.0,
+  "sgst_inr": 6480.0,
+  "total_monthly_invoiced_inr": 84960.0,
+  "sinking_fund_pct": 15.0,
+  "monthly_sinking_fund_inflow_inr": 10800.0,
+  "security_deposit_inr": 144000.0,
+  "itc_rule": "100% Full Input Tax Credit claimable under Section 17(5)(a)"
+}

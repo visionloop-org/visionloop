@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visionloop-telematics"
+version = "1.0.0"
+description = "Reusable IoT Fleet Telematics & Battery SLA Engine: CAN-Bus Stream Normalizer, Geofencing & Standstill Immobilizer Safety Protocol"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.0.0"
+]
+authors = [
+    { name = "Vision Loop Engineering", email = "engineering@visionloop.in" }
+]

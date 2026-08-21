@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visionloop-comms"
+version = "1.0.0"
+description = "Reusable AI Messaging & WhatsApp Collections Engine: Multi-Stage Escalation Templates & Cloud API Dispatcher"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0"
+]
+authors = [
+    { name = "Vision Loop Engineering", email = "engineering@visionloop.in" }
+]

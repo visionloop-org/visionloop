@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Loop — Autonomous Commercial EV & Asset Leasing in India</title>
+  <meta name="description" content="Vision Loop is an AI-orchestrated Indian Sole Proprietorship enterprise leasing commercial electric vehicles with zero operational friction, 15% Sinking Fund treasury, and Zoho Books integration.">
+  <meta name="keywords" content="commercial EV leasing, Tata Intra EV, Delhi NCR fleet rental, SAC 997311, MSME 45-day payment, EV fleet telematics, Vision Loop">
+  <meta name="author" content="Vision Loop">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Vision Loop — Autonomous Commercial EV & Asset Leasing">
+  <meta property="og:description" content="Commercial EV Fleet Operations • SAC 997311 • 15% Sinking Fund • AI Agent Swarm">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">
+          <span class="brand-name">VISION LOOP</span>
+          <span class="brand-sub">Proprietorship • India</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#fleet">Fleet Radar</a>
+        <a href="#financials">SAC 997311 & Treasury</a>
+        <a href="#knowledge-graph">Knowledge Graph</a>
+        <a href="#packages">Modular IP SDK</a>
+        <a href="#governance">Governance</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://t.me/VisionLoop_Bot" target="_blank" class="btn btn-telegram" id="btn-tg-nav">
+          <span>🤖</span> Open Telegram Bot
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Zero-Touch Autonomous Leasing Enterprise</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Institutional Commercial Asset Leasing, <span class="gradient-text">Orchestrated by AI.</span>
+        </h1>
+        
+        <p class="hero-desc">
+          Vision Loop rents commercial electric fleets (Tata Intra EV) under statutory Indian tax frameworks (SAC 997311), powered by a 15% Sinking Fund treasury, IoT CAN-Bus telematics, and an autonomous AI agent swarm.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#fleet" class="btn btn-primary">
+            <span>⚡ View Live Fleet Telemetry</span>
+          </a>
+          <a href="#knowledge-graph" class="btn btn-outline">
+            <span>🌐 Explore Knowledge Graph</span>
+          </a>
+        </div>
+
+        <!-- Key Metrics Ribbon -->
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <div class="metric-val">₹84,960</div>
+            <div class="metric-lbl">Monthly Run Rate (SAC 997311)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">15%</div>
+            <div class="metric-lbl">Sinking Fund Reserve (₹10,800/mo)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">99.4%</div>
+            <div class="metric-lbl">Battery Health (Tata OEM SLA)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">24 / 24</div>
+            <div class="metric-lbl">Invariants Verified (Zero Corruption)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Interactive Radar Hero Visual -->
+      <div class="hero-visual">
+        <div class="glass-card fleet-live-card">
+          <div class="card-header">
+            <div class="card-title-group">
+              <span class="badge badge-cyan">ASSET #1</span>
+              <h3>Tata Intra EV Carriage</h3>
+            </div>
+            <span class="badge badge-emerald" id="hero-live-status">LIVE CAN-BUS</span>
+          </div>
+
+          <div class="vehicle-specs-grid">
+            <div class="spec-box">
+              <span class="spec-label">REGISTRATION</span>
+              <span class="spec-value mono highlight">DL-01-EV-2026</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">BATTERY SOC</span>
+              <span class="spec-value mono emerald" id="hero-soc-val">92.5%</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">SPEED</span>
+              <span class="spec-value mono" id="hero-speed-val">24.5 km/h</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">ODOMETER</span>
+              <span class="spec-value mono" id="hero-odo-val">3,420.0 km</span>
+            </div>
+          </div>
+
+          <!-- Battery Progress Bar -->
+          <div class="battery-bar-container">
+            <div class="battery-labels">
+              <span>26.0 kWh Liquid-Cooled LFP Pack</span>
+              <span id="hero-soh-val">SoH: 99.4%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="hero-soc-bar" style="width: 92.5%;"></div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="lessee-info">
+              <span class="lessee-label">Assigned Lessee:</span>
+              <strong class="lessee-name">SwiftLogix Express Delivery Pvt Ltd</strong>
+            </div>
+            <span class="badge badge-amber">e-NACH Mandate Active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Live Fleet Radar & Telematics -->
+  <section id="fleet" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-purple">REAL-TIME TELEMETRICS</span>
+        <h2>High-Precision IoT & Battery Health Radar</h2>
+        <p>Continuous CAN-Bus ingestion, 2dsphere Delhi NCR geofencing, and OEM warranty preservation guardrails.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="glass-card feature-card">
+          <div class="feature-icon cyan">🔋</div>
+          <h3>Tata OEM Battery Preservation SLA</h3>
+          <p>Enforces maximum 70% DC fast charge ratio and active thermal throttling below 42.0°C to preserve 5-year OEM warranty.</p>
+          <div class="feature-tag">SLA Strict • Zero Degradation Drift</div>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="feature-icon emerald">🔒</div>
+          <h3>Ethical Standstill Immobilizer Relay</h3>
+          <p>Remote motor ignition cut-off is strictly enforced only when vehicle velocity is verified at 0.0 km/h standstill.</p>
+          <div class="feature-tag">Safety Guardrail Enforced</div>
+        </div>
+
+        <div class="glass-card feature-card">
+          <div class="feature-icon amber">📍</div>
+          <h3>2dsphere Geofence Monitoring</h3>
+          <p>High-resolution geospatial containment within the Delhi NCR commercial delivery corridor with automated breach alerts.</p>
+          <div class="feature-tag">MongoDB 2dsphere Indexed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Statutory Tax & 15% Sinking Fund Treasury -->
+  <section id="financials" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-emerald">FINANCIAL ARCHITECTURE</span>
+        <h2>Statutory GST & 15% Sinking Fund Model</h2>
+        <p>Mathematical proof of capital accumulation, zero debt liability, and 100% Input Tax Credit optimization.</p>
+      </div>
+
+      <div class="financial-split-grid">
+        <div class="glass-card financial-card">
+          <h3>Monthly Invoicing Breakdown (SAC 997311)</h3>
+          <div class="pricing-table">
+            <div class="price-row">
+              <span>Base Commercial Vehicle Lease Rent</span>
+              <span class="mono">₹72,000.00</span>
+            </div>
+            <div class="price-row">
+              <span>CGST @ 9% (Intra-state)</span>
+              <span class="mono">₹6,480.00</span>
+            </div>
+            <div class="price-row">
+              <span>SGST @ 9% (Intra-state)</span>
+              <span class="mono">₹6,480.00</span>
+            </div>
+            <div class="price-row total-row">
+              <span>Total Monthly Invoiced (e-NACH / UPI)</span>
+              <span class="mono total-val">₹84,960.00</span>
+            </div>
+          </div>
+          <p class="tax-note">
+            🛡️ <b>100% Full Input Tax Credit (ITC):</b> Fully claimable under Section 17(5)(a) of the CGST Act against commercial goods vehicle purchase, insurance, and charging infrastructure.
+          </p>
+        </div>
+
+        <div class="glass-card financial-card">
+          <h3>15% Asset Replacement Sinking Fund</h3>
+          <div class="sinking-fund-display">
+            <div class="sinking-stat">
+              <span class="stat-label">MONTHLY CONTRIBUTION</span>
+              <span class="stat-value mono emerald">₹10,800.00</span>
+            </div>
+            <div class="sinking-stat">
+              <span class="stat-label">36-MONTH PROJECTED RESERVE</span>
+              <span class="stat-value mono cyan">₹3,88,800+</span>
+            </div>
+          </div>
+          <p class="sinking-desc">
+            Vision Loop automatically sweeps 15% of monthly revenue into a high-yield liquid overnight treasury fund (~6.8% CAGR). At Month 36, the accumulated reserve fully funds asset replacement with zero debt distress.
+          </p>
+          <div class="escrow-box">
+            <span>🛡️ Security Deposit Held in Escrow:</span>
+            <strong class="mono">₹1,44,000.00 (2 Months Base Rent)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Enterprise Knowledge Graph -->
+  <section id="knowledge-graph" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-cyan">ONTOLOGICAL KNOWLEDGE GRAPH</span>
+        <h2>Cryptographic Business Truth & Anti-Corruption Shield</h2>
+        <p>13 Ontological Nodes and 12 Semantic Relationships verified with SHA-256 integrity signatures.</p>
+      </div>
+
+      <div class="kg-interactive-wrapper glass-card">
+        <div class="kg-stats-ribbon">
+          <div><b>Status:</b> <span class="badge badge-emerald">VERIFIED_CORRUPTION_FREE</span></div>
+          <div><b>Checksum:</b> <code class="mono">5e4ed39a70bc860b...</code></div>
+          <div><b>Invariants Passed:</b> <span class="mono">24 / 24</span></div>
+        </div>
+
+        <div class="kg-node-grid">
+          <div class="kg-card">
+            <span class="kg-type">Proprietor</span>
+            <h4>Sapna Jaiswal</h4>
+            <p>PAN: BGVPJ3356G • 100% Sole Ownership</p>
+          </div>
+          <div class="kg-card">
+            <span class="kg-type">Enterprise</span>
+            <h4>Vision Loop</h4>
+            <p>Udyam MSME NIC 77101 • India</p>
+          </div>
+          <div class="kg-card">
+            <span class="kg-type">Physical Asset</span>
+            <h4>Tata Intra EV</h4>
+            <p>DL-01-EV-2026 • 26.0 kWh Battery</p>
+          </div>
+          <div class="kg-card">
+            <span class="kg-type">Corporate Lessee</span>
+            <h4>SwiftLogix Express</h4>
+            <p>PAN: AAACS1234F • GSTIN: 07AAACS1234F1Z5</p>
+          </div>
+          <div class="kg-card">
+            <span class="kg-type">Contract</span>
+            <h4>VL-LEASE-2026-001</h4>
+            <p>24-Month Lease • ₹84,960/mo Billed</p>
+          </div>
+          <div class="kg-card">
+            <span class="kg-type">Treasury</span>
+            <h4>15% Sinking Fund</h4>
+            <p>₹10,800/mo • Month 36 Replacement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Modular Reusable Python IP Packages -->
+  <section id="packages" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-purple">PROPRIETARY ASSETS</span>
+        <h2>Standalone Python IP Packages (`visionloop-sdk`)</h2>
+        <p>Every automation workflow is engineered as an exportable, pip-installable library for cross-industry portability.</p>
+      </div>
+
+      <div class="packages-grid">
+        <div class="glass-card pkg-card">
+          <div class="pkg-header">
+            <h4>visionloop-finance</h4>
+            <span class="badge badge-cyan">v1.0.0</span>
+          </div>
+          <p>Zoho Books OAuth, SAC 997311 GST Engine, 15% Sinking Fund Allocator, MSMED Act 3x RBI Interest Calculator, Dynamic UPI QR Generator.</p>
+          <code class="pkg-install mono">pip install ./packages/visionloop-finance</code>
+        </div>
+
+        <div class="glass-card pkg-card">
+          <div class="pkg-header">
+            <h4>visionloop-telematics</h4>
+            <span class="badge badge-emerald">v1.0.0</span>
+          </div>
+          <p>CAN-Bus Stream Parser, Battery Warranty SLA Scorer, 2dsphere Geofence Engine, 10k KM Maintenance Scheduler, Standstill Immobilizer.</p>
+          <code class="pkg-install mono">pip install ./packages/visionloop-telematics</code>
+        </div>
+
+        <div class="glass-card pkg-card">
+          <div class="pkg-header">
+            <h4>visionloop-legal</h4>
+            <span class="badge badge-amber">v1.0.0</span>
+          </div>
+          <p>Dynamic Commercial Lease Synthesizer, Indian PAN & GSTIN KYC Checksum Validator, Statutory MSME Compliance Auditor.</p>
+          <code class="pkg-install mono">pip install ./packages/visionloop-legal</code>
+        </div>
+
+        <div class="glass-card pkg-card">
+          <div class="pkg-header">
+            <h4>visionloop-comms</h4>
+            <span class="badge badge-purple">v1.0.0</span>
+          </div>
+          <p>Telegram Command Bot Engine, WhatsApp Cloud API Dispatcher, Multi-Stage Escalation Collection Copy Engine.</p>
+          <code class="pkg-install mono">pip install ./packages/visionloop-comms</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Governance & Statutory Identity -->
+  <section id="governance" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-amber">STATUTORY DOSSIER</span>
+        <h2>Proprietor Identity & Institutional Governance</h2>
+        <p>Organized in full compliance with the Ministry of MSME, GST Council, and DPDP Act 2023.</p>
+      </div>
+
+      <div class="governance-grid">
+        <div class="glass-card gov-card">
+          <h3>Sole Proprietorship Identity</h3>
+          <ul class="gov-list">
+            <li><b>Trade Name:</b> Vision Loop</li>
+            <li><b>Sole Proprietor:</b> Sapna Jaiswal (D/O Sanjay Jaiswal)</li>
+            <li><b>PAN:</b> <code class="mono">BGVPJ3356G</code> (Individual Verified)</li>
+            <li><b>Aadhaar:</b> <code class="mono">XXXX-XXXX-4390</code> (UIDAI Verified)</li>
+            <li><b>Registered Office:</b> Patna, Bihar - 801503</li>
+          </ul>
+        </div>
+
+        <div class="glass-card gov-card">
+          <h3>Statutory Legal Frameworks</h3>
+          <ul class="gov-list">
+            <li><b>MSME / Udyam:</b> NIC 77101 (Rental & Leasing of Motor Vehicles)</li>
+            <li><b>MSMED Act 2006:</b> Sections 15 & 16 (Statutory 45-day payment limit & 3x RBI interest)</li>
+            <li><b>GSTIN Classification:</b> SAC 997311 (Transport vehicle lease @ 18% GST)</li>
+            <li><b>DPDP Act 2023:</b> Digital Personal Data Protection & Consent Governance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-icon small">⚡</div>
+        <span><b>VISION LOOP</b> • Autonomous Commercial Asset Operations</span>
+      </div>
+      <div class="footer-copy">
+        © 2026 Vision Loop. All rights reserved. Zero human operational friction.
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

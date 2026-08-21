@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0.0",
+  "enterprise": "Vision Loop (Sole Proprietorship)",
+  "jurisdiction": "Republic of India",
+  "integrity_status": "CRYPTOGRAPHICALLY_VERIFIED",
+  "generated_at": "2026-08-21T23:38:00Z",
+  "sha256_checksum": "cda18ec22a67979995dcd9970e41dcf2c177997f865ebdcf5b86d8b2c854152d",
+  "nodes": [
+    {
+      "id": "ENTITY:VISION_LOOP",
+      "type": "Enterprise",
+      "label": "Vision Loop",
+      "properties": {
+        "legal_structure": "Sole Proprietorship",
+        "proprietor_name": "Sapna Jaiswal",
+        "proprietor_pan": "BGVPJ3356G",
+        "country": "India",
+        "registered_state": "Bihar (10) / Operating Delhi NCR (07)",
+        "msme_udyam_nic": "77101",
+        "operational_model": "Autonomous Asset Rental",
+        "database_engine": "MongoDB 7.0 (Unstructured Document Store)",
+        "monthly_run_rate_inr": 84960.00
+      }
+    },
+    {
+      "id": "PROPRIETOR:SAPNA_JAISWAL",
+      "type": "IndividualProprietor",
+      "label": "Sapna Jaiswal (Sole Proprietor)",
+      "properties": {
+        "full_name": "Sapna Jaiswal",
+        "father_name": "Sanjay Jaiswal",
+        "pan": "BGVPJ3356G",
+        "pan_category": "Individual (P)",
+        "aadhaar_masked": "XXXX-XXXX-4390",
+        "registered_address": "72/75 A, Kaliasthan, Near Police Station, Dinapur-Cum-Khagaul, Patna, Bihar - 801503",
+        "kyc_status": "VERIFIED_AUTHENTIC",
+        "dpdp_consent_status": "GRANTED"
+      }
+    },
+    {
+      "id": "ASSET:VL-EV-001",
+      "type": "PhysicalAsset",
+      "label": "Tata Intra EV (DL-01-EV-2026)",
+      "properties": {
+        "vin": "MAT612345N2A09876",
+        "registration_number": "DL-01-EV-2026",
+        "registration_type": "Commercial Goods Carriage (Yellow Board)",
+        "battery_capacity_kwh": 26.0,
+        "certified_range_km": 140,
+        "payload_capacity_kg": 1000,
+        "current_soc_pct": 92.5,
+        "current_soh_pct": 99.4,
+        "odometer_km": 3420.0,
+        "monthly_rental_base_inr": 72000.00
+      }
+    },
+    {
+      "id": "LESSEE:SWIFTLOGIX",
+      "type": "CorporateClient",
+      "label": "SwiftLogix Express Delivery Pvt Ltd",
+      "properties": {
+        "pan": "AAACS1234F",
+        "gstin": "07AAACS1234F1Z5",
+        "signatory": "Rajesh Sharma (Director)",
+        "phone": "+919876543210",
+        "billing_address": "Plot 42, Okhla Phase-III, New Delhi - 110020",
+        "kyc_status": "VERIFIED",
+        "enach_mandate": "ACTIVE"
+      }
+    },
+    {
+      "id": "CONTRACT:VL-LEASE-2026-001",
+      "type": "LegalContract",
+      "label": "Master Commercial Lease (24 Months)",
+      "properties": {
+        "lessor": "Vision Loop (Proprietor: Sapna Jaiswal)",
+        "start_date": "2026-08-01",
+        "end_date": "2028-07-31",
+        "monthly_base_rent_inr": 72000.00,
+        "monthly_gst_inr": 12960.00,
+        "total_monthly_invoiced_inr": 84960.00,
+        "security_deposit_inr": 144000.00,
+        "deposit_status": "HELD_IN_ESCROW",
+        "esign_status": "AADHAAR_OTP_VERIFIED"
+      }
+    },
+    {
+      "id": "TAX:SAC_997311",
+      "type": "TaxClassification",
+      "label": "SAC 997311 (Transport Vehicle Lease)",
+      "properties": {
+        "statutory_gst_rate_pct": 18.0,
+        "cgst_rate_pct": 9.0,
+        "cgst_amount_inr": 6480.00,
+        "sgst_rate_pct": 9.0,
+        "sgst_amount_inr": 6480.00,
+        "igst_rate_pct": 0.0,
+        "itc_eligibility": "100% Full Input Tax Credit Claimable (Sec 17(5)(a))"
+      }
+    },
+    {
+      "id": "TREASURY:SINKING_FUND",
+      "type": "TreasuryReserve",
+      "label": "15% Asset Replacement Sinking Fund",
+      "properties": {
+        "monthly_allocation_pct": 15.0,
+        "monthly_inflow_inr": 10800.00,
+        "target_replacement_cycle_months": 36,
+        "accumulated_reserve_inr": 10800.00,
+        "yield_instrument": "Liquid Overnight Treasury Fund (~6.8% CAGR)",
+        "debt_burden": "ZERO (Fully self-funded asset replacement)"
+      }
+    },
+    {
+      "id": "STATUTE:MSMED_ACT_2006",
+      "type": "RegulatoryStatute",
+      "label": "MSMED Act 2006 (Sections 15 & 16)",
+      "properties": {
+        "enterprise_classification": "Micro Enterprise (Service)",
+        "statutory_payment_limit_days": 45,
+        "overdue_penalty_multiplier": "3x RBI Bank Rate",
+        "statutory_compounding": "Monthly Rest"
+      }
+    },
+    {
+      "id": "SLA:BATTERY_WARRANTY",
+      "type": "QualitySLA",
+      "label": "Tata Motors OEM Battery Preservation SLA",
+      "properties": {
+        "max_dc_fast_charge_ratio": "70%",
+        "min_ac_slow_charge_ratio": "30%",
+        "operating_soc_buffer": "15% - 90%",
+        "max_operating_temp_c": 42.0,
+        "oem_periodic_service_interval_km": 10000.0
+      }
+    },
+    {
+      "id": "SECURITY:IMMOBILIZER_RELAY",
+      "type": "IoTController",
+      "label": "Ethical Standstill Immobilizer Relay",
+      "properties": {
+        "safety_guardrail": "Speed == 0.0 km/h standstill verification before lock",
+        "trigger_conditions": "Uncured default >7 days OR geofence breach",
+        "current_status": "DISENGAGED (Vehicle Operational)"
+      }
+    },
+    {
+      "id": "COMMS:TELEGRAM_BOT",
+      "type": "CommunicationsChannel",
+      "label": "Vision Loop Telegram Command Bot",
+      "properties": {
+        "port": 8004,
+        "role": "24/7 Mobile Command Center & Push Alert Relay",
+        "capabilities": ["Status Queries", "Revenue Ledger", "Sinking Fund Balances", "Standstill Lock"]
+      }
+    },
+    {
+      "id": "AI_SWARM:SENTINELS",
+      "type": "AIAgentSwarm",
+      "label": "Autonomous AI Multi-Agent Swarm",
+      "properties": {
+        "financial_sentinel": "Zoho Invoicing & WhatsApp Collections",
+        "telematics_sentinel": "Battery Health & 10k KM Maintenance Booking",
+        "legal_sentinel": "Lease Synthesis & MSMED Act Enforcement",
+        "executive_agent": "Enterprise Health & Treasury Ledger Synthesis"
+      }
+    },
+    {
+      "id": "IP:VISIONLOOP_SDK",
+      "type": "ProprietaryIP",
+      "label": "Modular Python IP Packages",
+      "properties": {
+        "packages": [
+          "visionloop-finance",
+          "visionloop-telematics",
+          "visionloop-legal",
+          "visionloop-comms",
+          "visionloop-sdk"
+        ],
+        "portability": "100% Cross-project portable & standalone installable"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "PROPRIETOR:SAPNA_JAISWAL",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "SOLE_PROPRIETOR_OF",
+      "properties": { "ownership_equity": "100%" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "ASSET:VL-EV-001",
+      "relationship": "OWNS_AND_OPERATES",
+      "properties": { "ownership_type": "Absolute Sole Ownership" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "STATUTE:MSMED_ACT_2006",
+      "relationship": "PROTECTED_BY",
+      "properties": { "registration": "Udyam Registered Micro Enterprise" }
+    },
+    {
+      "source": "ASSET:VL-EV-001",
+      "target": "CONTRACT:VL-LEASE-2026-001",
+      "relationship": "SUBJECT_OF_LEASE",
+      "properties": { "lease_term_months": 24 }
+    },
+    {
+      "source": "CONTRACT:VL-LEASE-2026-001",
+      "target": "LESSEE:SWIFTLOGIX",
+      "relationship": "LESSEE_COUNTERPARTY",
+      "properties": { "deposit_held_inr": 144000.00 }
+    },
+    {
+      "source": "CONTRACT:VL-LEASE-2026-001",
+      "target": "TAX:SAC_997311",
+      "relationship": "INVOICED_UNDER",
+      "properties": { "monthly_billed_inr": 84960.00 }
+    },
+    {
+      "source": "CONTRACT:VL-LEASE-2026-001",
+      "target": "TREASURY:SINKING_FUND",
+      "relationship": "FUNDS_15_PERCENT_RESERVE",
+      "properties": { "monthly_contribution_inr": 10800.00 }
+    },
+    {
+      "source": "ASSET:VL-EV-001",
+      "target": "SLA:BATTERY_WARRANTY",
+      "relationship": "GOVERNED_BY_WARRANTY_SLA",
+      "properties": { "oem_provider": "Tata Motors Commercial" }
+    },
+    {
+      "source": "ASSET:VL-EV-001",
+      "target": "SECURITY:IMMOBILIZER_RELAY",
+      "relationship": "CONTROLLED_BY_RELAY",
+      "properties": { "fail_safe": "Standstill verification enforced" }
+    },
+    {
+      "source": "AI_SWARM:SENTINELS",
+      "target": "ENTITY:VISION_LOOP",
+      "relationship": "AUTONOMOUSLY_OPERATES",
+      "properties": { "human_labor_hours": 0 }
+    },
+    {
+      "source": "AI_SWARM:SENTINELS",
+      "target": "COMMS:TELEGRAM_BOT",
+      "relationship": "COMMUNICATES_AND_DISPATCHES",
+      "properties": { "frequency": "Real-time push notifications" }
+    },
+    {
+      "source": "ENTITY:VISION_LOOP",
+      "target": "IP:VISIONLOOP_SDK",
+      "relationship": "HOLDS_EXCLUSIVE_IP_RIGHTS",
+      "properties": { "asset_classification": "Intangible Capitalized IP" }
+    }
+  ]
+}
