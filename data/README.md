@@ -28,9 +28,13 @@ data/
 │   ├── BUSINESS_BEST_PRACTICES_MANUAL.md # 15% Sinking Fund & DPDP Act 2023 operating rules
 │   ├── OPERATIONAL_AND_DEVELOPMENT_GUIDELINES.md # Master SOP and architectural guidelines
 │   ├── PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY.md # Financial privacy rule for public channels
+│   ├── YOUTUBE_MONETIZATION_AND_GST_GUIDE.md # Google AdSense FIRC, LUT & W-8BEN tax guide
 │   ├── GOOGLE_ACCOUNT_AND_GCP_SETUP.md # Official Google Account & GCP setup guide
 │   ├── GITHUB_AND_PAGES_SETUP.md       # GitHub Account & GitHub.io Pages deployment guide
 │   └── EXECUTIVE_BIO_AND_BRAND_STORY.md # Official Executive Bio & Brand Story for Sapna Jaiswal
+│
+├── media/                              # Commercial Media & YouTube Channel Architecture
+│   └── YOUTUBE_COMMERCIAL_CHANNEL_STRATEGY.md # Channel branding, content pillars & monetization roadmap
 │
 ├── knowledge_graph/                    # Canonical Ontological Knowledge Graph
 │   ├── knowledge_graph.json            # Machine-readable 17-node graph with SHA-256 hash
