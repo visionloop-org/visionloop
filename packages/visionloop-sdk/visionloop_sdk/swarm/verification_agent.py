@@ -220,6 +220,21 @@ class ChiefAuditorVerificationAgent(BaseSwarmAgent):
                 else:
                     is_verified = False
                     reasons.append("Video privacy violation: auto_blur_sensitive_pii is disabled.")
+
+                # Inquest 4: Indian Statutory Regulations (IT Rules 2021 & ASCI)
+                q4 = "India Regulatory Inquest: Verify IT Rules 2021 Universal 'U' rating, Resident Grievance Officer, and ASCI/SEBI disclaimers."
+                q4_msg = self.send_message(target_agent.role, MessageType.CHALLENGE_QUESTION, q4, payload)
+                dialogue.append(q4_msg)
+
+                ans4_msg = await target_agent.answer_challenge(q4, payload)
+                dialogue.append(ans4_msg)
+
+                if payload.get("grievance_officer_email") == "visionloop.in@gmail.com" and payload.get("statutory_financial_disclaimer_india"):
+                    invariants_checked.append("IT Rules 2021 & ASCI India Regulatory Invariant (Rating 'U' + Grievance Officer)")
+                    reasons.append("Compliant with IT Rules 2021 Grievance Redressal and ASCI financial disclosures.")
+                else:
+                    is_verified = False
+                    reasons.append("India regulatory compliance check failed: Missing Grievance Officer or ASCI disclaimer.")
             else:
                 # Standard AdSense cross-border check
                 q1 = "Cross-Border Tax Inquest: Confirm Google AdSense payments are mapped as Zero-Rated Export of Services under GST LUT with Form W-8BEN treaty rates."

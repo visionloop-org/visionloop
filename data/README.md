@@ -37,6 +37,7 @@ data/
 │   ├── BUSINESS_BEST_PRACTICES_MANUAL.md # 15% Sinking Fund & DPDP Act 2023 operating rules
 │   ├── OPERATIONAL_AND_DEVELOPMENT_GUIDELINES.md # Master SOP and architectural guidelines
 │   ├── PUBLIC_DOMAIN_FINANCIAL_PRIVACY_POLICY.md # Financial privacy rule for public channels
+│   ├── YOUTUBE_INDIA_STATUTORY_AND_COMMUNITY_GUIDELINES.md # IT Rules 2021, ASCI & DPDP Act 2023 guide
 │   ├── YOUTUBE_MONETIZATION_AND_GST_GUIDE.md # Google AdSense FIRC, LUT & W-8BEN tax guide
 │   ├── GOOGLE_ACCOUNT_AND_GCP_SETUP.md # Official Google Account & GCP setup guide
 │   ├── GITHUB_AND_PAGES_SETUP.md       # GitHub Account & GitHub.io Pages deployment guide

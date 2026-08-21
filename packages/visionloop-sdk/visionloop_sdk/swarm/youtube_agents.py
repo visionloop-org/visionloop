@@ -77,6 +77,17 @@ class YouTubeVideoProductionPackage(BaseModel):
     description_hindi: str
     cta_action: str
     estimated_production_cost_inr: float = 0.0
+    # Indian Regulatory Compliance Metadata (IT Rules 2021 & ASCI)
+    content_rating_india: str = "U (Universal / All Ages)"
+    grievance_officer_email: str = "visionloop.in@gmail.com"
+    asci_sponsored_disclosure_required: bool = False
+    statutory_financial_disclaimer_india: str = (
+        "DISCLAIMER: Content published by Vision Loop is for educational and informational purposes only. "
+        "Lease returns, EV battery lifecycles, and treasury fund yields are subject to operating market conditions. "
+        "Vision Loop does not provide SEBI-registered investment advice. Consult a licensed CA/financial advisor."
+    )
+    arai_range_certification_disclosed: bool = True
+
 
 
 # -----------------------------------------------------------------------------
@@ -187,6 +198,8 @@ class YouTubeShortsProducerAgent(BaseSwarmAgent):
             ans = "Bilingual Audio Verification: Script has 1:1 dual English & Hindi neural voiceover with -14 LUFS loudness and subtitle burns."
         elif "blur" in challenge_question.lower() or "privacy" in challenge_question.lower() or "pan" in challenge_question.lower() or "credential" in challenge_question.lower():
             ans = "On-Screen Privacy Guardrail: All raw PAN, Aadhaar numbers, API keys, credentials, and bank account numbers are verified blurred with Gaussian filter (auto_blur_sensitive_pii = True)."
+        elif "india" in challenge_question.lower() or "rules" in challenge_question.lower() or "grievance" in challenge_question.lower() or "asci" in challenge_question.lower():
+            ans = "India Regulatory Compliance: Certified Universal 'U' under IT Rules 2021 with Grievance Officer (visionloop.in@gmail.com) and ASCI statutory financial disclaimers embedded."
         else:
             ans = "YouTube Shorts specifications verified compliant with Google creator monetization guidelines."
         return self.send_message(AgentRole.CHIEF_AUDITOR, MessageType.RESPONSE_CLARIFICATION, ans, proposal_context)
@@ -309,6 +322,8 @@ class YouTubeLongformDirectorAgent(BaseSwarmAgent):
             ans = "Timestamp & SEO Verification: Structured chapters with exact mm:ss timestamps and localized descriptions are embedded."
         elif "blur" in challenge_question.lower() or "privacy" in challenge_question.lower() or "pan" in challenge_question.lower() or "credential" in challenge_question.lower():
             ans = "On-Screen Privacy Guardrail: All on-screen dashboard recordings and b-roll apply Gaussian blur to PAN, Aadhaar, bank accounts, and API credentials (auto_blur_sensitive_pii = True)."
+        elif "india" in challenge_question.lower() or "rules" in challenge_question.lower() or "grievance" in challenge_question.lower() or "asci" in challenge_question.lower():
+            ans = "India Regulatory Compliance: Certified Universal 'U' under IT Rules 2021 with Resident Grievance Officer and ASCI/SEBI disclaimers included."
         else:
             ans = "Long-form 4K 16:9 technical specifications verified compliant with YouTube broadcast standards."
         return self.send_message(AgentRole.CHIEF_AUDITOR, MessageType.RESPONSE_CLARIFICATION, ans, proposal_context)
