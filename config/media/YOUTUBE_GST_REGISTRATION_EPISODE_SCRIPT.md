@@ -96,7 +96,7 @@
 
 ### 🚀 Scene 5: Verification, ARN & Vision Loop Services (08:30 – 10:00)
 * **Visual Framing:** Aadhaar OTP popup followed by ARN success banner. Full-screen presentation of Vision Loop GST Compliance Services.
-* **On-Screen Graphic:** Vision Loop GST Suite: New Registration (₹1,999), Creator Nil/LUT Filing (₹999/mo), Fleet B2B Suite (₹2,499/mo).
+* **On-Screen Graphic:** Vision Loop GST Suite: New Registration (₹1,999), Creator Export/LUT & Nil Filing (₹999/mo).
 * **Voiceover (Hindi — `hi-IN`):**
   > *"अंतिम स्टेप में 'Verification' बॉक्स को टिक करके 'Submit with EVC' पर क्लिक करें और आधार OTP दर्ज करें।*
   > 
@@ -129,10 +129,8 @@ Learn how to get a 100% legal GSTIN for your Sole Proprietorship business in Ind
 🤖 Telegram Support Bot: https://t.me/VisionLoop_Bot
 
 💼 VISION LOOP GST REGISTRATION & MONTHLY FILING SERVICES:
-• End-to-End New GST Registration (Form GST REG-01)
-• Monthly GSTR-1 & GSTR-3B Automated Returns
-• Zero-Rated Export of Services with GST LUT for YouTube Creators & SaaS Exporters
-• 100% Commercial EV Input Tax Credit (ITC) Reconciliation under Section 17(5)(a)
+• End-to-End New GST Registration (Form GST REG-01) — ₹1,999 (One-time)
+• Monthly GSTR-1 & GSTR-3B Returns + Zero-Rated Export LUT (YouTube & SaaS) — ₹999/mo
 
 CHAPTERS:
 00:00 - Hook & GST Benefits for Sole Proprietors

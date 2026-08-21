@@ -87,8 +87,7 @@ graph TD
 
 ## 💰 4. Service Pricing Matrix
 
-| Service Tier | Deliverables | Monthly / One-Time Fee |
+| Service Tier | Deliverables | Pricing (INR) |
 | :--- | :--- | :--- |
-| **Tier 1: New GST Registration** | Full Form GST REG-01 filing, NOC drafting, Aadhaar e-KYC, and ARN tracking until REG-06 certificate is issued. | **₹1,999.00** *(One-time)* |
-| **Tier 2: Monthly Nil / Export Filing** | GSTR-1 + GSTR-3B monthly filing + Annual GST LUT (RFD-11) for YouTube creators & SaaS exporters. | **₹999.00 / month** |
-| **Tier 3: Full Commercial Fleet & B2B Retainer** | Monthly B2B invoicing, 100% Section 17(5)(a) ITC reconciliation, GSTR-1, GSTR-3B, and annual GSTR-9 audit. | **₹2,499.00 / month** |
+| **Tier 1: New GST Registration** | Full Form GST REG-01 filing, Spousal/Shared Consent NOC drafting, Geocoded address proof mapping, Aadhaar e-KYC, and ARN tracking until Form GST REG-06 certificate is issued. | **₹1,999.00** *(One-time)* |
+| **Tier 2: Monthly Nil / Creator Export Filing** | Monthly GSTR-1 + GSTR-3B filings + Annual GST Letter of Undertaking (LUT / RFD-11) for zero-rated export of YouTube creator earnings & SaaS software services. | **₹999.00 / month** |
